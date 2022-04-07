@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: qatar2;
+  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+
+@font-face {
+  font-family: qatar3;
+  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+
+@font-face {
+  font-family: qatar2;
+  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+
+@font-face {
+  font-family: qatar3;
+  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+
+.hero {
+  background-image: url(../../assets/img/indeximg.jpg);
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.ti {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px; }
+
+.titulo {
+  font-family: qatar2;
+  color: #56042C;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px; }
+
+.subtitulo {
+  font-family: qatar3;
+  color: white;
+  font-size: 1.5rem; }
+  .subtitulo:hover {
+    color: #56042C; }
