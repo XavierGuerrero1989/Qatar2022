@@ -42,3 +42,25 @@
   font-size: 1.5rem; }
   .subtitulo:hover {
     color: #56042C; }
+
+@font-face {
+  font-family: qatar2;
+  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+
+@font-face {
+  font-family: qatar3;
+  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+
+.navbar__list {
+  justify-content: end; }
+
+.navbar-custom {
+  background-color: #56042C;
+  color: white;
+  font-family: qatar2; }
+
+.nav-link {
+  color: white !important; }
+
+.logonav {
+  height: 150px; }

@@ -1,0 +1,21 @@
+@import "./responsive";
+@import "./variables";
+
+.navbar__list{
+    justify-content: end;
+
+}
+
+.navbar-custom {
+    background-color: $color-qatar;
+    color: white;
+    font-family: $font-normal;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.logonav{
+    height: 150px;
+}
