@@ -29,7 +29,7 @@
      "pais7 g7 g8 pais8"
      "pais9 g9 g10 pais10"
      "pais11 g11 g12 pais12";
-    grid-template-columns: 1fr repeat(2, 0.15fr) 1fr !important;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 10px;
@@ -40,6 +40,11 @@
         color: white;
     }
     }
+
+.indicador {
+    width: 30px;
+    height: 30px;
+}
 
 .orden {
     display: grid;
@@ -53,5 +58,5 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;    
-    }
 
+}

@@ -5,30 +5,30 @@
 
 @font-face {
   font-family: qatar1;
-  src: url(../../assets/fonts/ArabicMedium.ttf); }
+  src: url(../assets/fonts/ArabicMedium.ttf); }
 
 @font-face {
   font-family: qatar2;
-  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
 
 @font-face {
   font-family: qatar3;
-  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
 @font-face {
   font-family: qatar1;
-  src: url(../../assets/fonts/ArabicMedium.ttf); }
+  src: url(../assets/fonts/ArabicMedium.ttf); }
 
 @font-face {
   font-family: qatar2;
-  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
 
 @font-face {
   font-family: qatar3;
-  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
 .hero {
-  background-image: url(../../assets/img/indeximg.jpg);
+  background-image: url(../assets/img/indeximg.jpg);
   height: 100vh;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -53,15 +53,15 @@
 
 @font-face {
   font-family: qatar1;
-  src: url(../../assets/fonts/ArabicMedium.ttf); }
+  src: url(../assets/fonts/ArabicMedium.ttf); }
 
 @font-face {
   font-family: qatar2;
-  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
 
 @font-face {
   font-family: qatar3;
-  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
 .navbar__list {
   justify-content: end; }
@@ -90,18 +90,18 @@
 
 @font-face {
   font-family: qatar1;
-  src: url(../../assets/fonts/ArabicMedium.ttf); }
+  src: url(../assets/fonts/ArabicMedium.ttf); }
 
 @font-face {
   font-family: qatar2;
-  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
 
 @font-face {
   font-family: qatar3;
-  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
 .heroe {
-  background-image: url("../../assets/img/hero.jpg");
+  background-image: url("../assets/img/hero.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -112,8 +112,7 @@
   font-family: qatar2;
   color: #56042C;
   font-size: 3rem;
-  border-radius: 20px 20px 20px 20px;
-  height: 12vh; }
+  border-radius: 20px 20px 20px 20px; }
 
 .presentacion__titulo {
   font-family: qatar2;
@@ -127,18 +126,18 @@
 
 @font-face {
   font-family: qatar1;
-  src: url(../../assets/fonts/ArabicMedium.ttf); }
+  src: url(../assets/fonts/ArabicMedium.ttf); }
 
 @font-face {
   font-family: qatar2;
-  src: url(../../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
 
 @font-face {
   font-family: qatar3;
-  src: url(../../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
 .imginicio {
-  background-image: url("../../assets/img/pronosticador.jpg");
+  background-image: url("../assets/img/pronosticador.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -156,7 +155,7 @@
 .grupo {
   display: grid;
   grid-template-areas: "pais1 g1 g2 pais2" "pais3 g3 g4 pais4" "pais5 g5 g6 pais6" "pais7 g7 g8 pais8" "pais9 g9 g10 pais10" "pais11 g11 g12 pais12";
-  grid-template-columns: 1fr repeat(2, 0.15fr) 1fr !important;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 10px; }
@@ -164,6 +163,10 @@
     background-color: #56042C;
     font-family: qatar1;
     color: white; }
+
+.indicador {
+  width: 30px;
+  height: 30px; }
 
 .orden {
   display: grid;
