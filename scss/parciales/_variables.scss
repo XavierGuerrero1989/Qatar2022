@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: qatar1;
+    src: url(../../assets/fonts/ArabicMedium.ttf);
+}
 
 @font-face {
     font-family: qatar2;
@@ -11,8 +14,8 @@
 }
 
 
-
-$font-normal: qatar2;
+$font-bold: qatar2;
+$font-normal: qatar1;
 $font-heavy: qatar3;
 $color-qatar: #56042C
 

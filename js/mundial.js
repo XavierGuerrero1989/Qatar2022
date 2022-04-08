@@ -227,12 +227,15 @@ const grupoH = [
 ]
 
 function resultadosA () {
-
-    let goles1 = parseInt(prompt("Primer partido: Qatar vs Ecuardor. ¿cuantos goles hizo Qatar?"))
-    let goles2 = parseInt(prompt("Primer partido: Qatar vs Ecuardor. ¿cuantos goles hizo Ecuador?"))
-
-    qatar.golesFavor = qatar.golesFavor + goles1 
-    ecuador.golesFavor = ecuador.golesFavor + goles2
+    let goles1 = document.getElementById(g1)
+        goles1.addEventListener ("input", () => {
+            qatar.golesFavor = qatar.golesFavor + goles1.value 
+            ecuador.golesContra = ecuador.golesContra + goles1.value 
+        })
+    let goles2 = document.getElementById(g2)
+        goles2.addEventListener ('input', () => {
+            ecuador.golesFavor = ecuador.golesFavor + goles2.value 
+        })
     qatar.golesContra = qatar.golesContra + goles2
     ecuador.golesContra = ecuador.golesContra + goles1 
     if (goles1 > goles2) {
@@ -245,7 +248,8 @@ function resultadosA () {
         qatar.puntos = qatar.puntos + 0
         ecuador.puntos = ecuador.puntos + 3
     }
-    
+          
+
     let goles3 = parseInt(prompt("Segundo partido: Senegal vs Paises Bajos. ¿cuantos goles hizo Senegal?"))
     let goles4 = parseInt(prompt("Segundo partido: Senegal vs Paises Bajos. ¿cuantos goles hizo Paises Bajos?"))
 
@@ -335,19 +339,20 @@ function resultadosA () {
         ecuador.puntos = ecuador.puntos + 0
         senegal.puntos = senegal.puntos + 3
     }
+}
 
-    }
+    
 
     function clasificacionA(){
 
         grupoA.sort((a,b)=> b.puntos - a.puntos);
-        console.log(grupoA);
+        let clasificado1 = getElementById("clasi1")
+        clasificado1.innerText = grupoA.pais[0]
     
     }
 
-    function clasificadosA(){
-        console.log(grupoA[0], grupoA[1]);
-    }
+    resultadosA();
+    clasificacionA ();
 
     function resultadosB () {
 
@@ -596,59 +601,5 @@ function resultadosA () {
             function clasificadosC(){
                 console.log(grupoC[0], grupoC[1]);
             }
-do {
-    opcion = parseInt(prompt("Bienvenido: \n ¿Que Grupo quiere cargar? \n 1 - GRUPO A \n 2 - GRUPO B \n 3 - GRUPO C \n 4 - GRUPO D \n 5 - GRUPO E \n 6 - GRUPO F \n 7 - GRUPO G \n 8 - GRUPO H \n 9 - Clasificados \n 10 - Salir"))
 
-    switch (opcion) {
-        case 1:
-            resultadosA ();
-            clasificacionA ();
-            break;
-        case 2:
-            resultadosB ();
-            clasificacionB ();
-            break;
-        case 3:
-            resultadosC ();
-            clasificacionC ();
-            break;
-       case 4:
-            resultadosD ();
-            clasificacionD ();
-            break;
-       case 5:
-            resultadosE ();
-            clasificacionE ();
-            break;
-       case 6:
-            resultadosF ();
-            clasificacionF ();
-            break;
-        case 7:
-            resultadosG ();
-            clasificacionG ();
-            break;    
-        case 8:
-            resultadosH ();
-            clasificacionH ();
-            break; 
-        case 9:
-            clasificadosA ();
-            clasificadosB ();
-            clasificadosC ();
-            clasificadosD ();
-            clasificadosE ();
-            clasificadosF ();
-            clasificadosG ();
-            clasificadosH ();
-            break;
-        case 10:
-            alert("Adios!");
-            break;
-        default:
-            alert("Elija una opcion correcta");
-            break;
-    }
-    
-} while (opcion !== 10);
 

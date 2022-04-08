@@ -1,0 +1,57 @@
+@import "./responsive";
+@import "./variables";
+
+.imginicio{
+    background-image: url("../../assets/img/pronosticador.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh; 
+}
+
+.explicacion{
+    font-family: $font-heavy;
+    color: $color-qatar;
+    padding: 15px;
+}
+
+.tituloGrupo{
+    font-family: $font-bold;
+    color: $color-qatar;
+}
+
+.grupo {
+    display: grid;
+    grid-template-areas:
+     "pais1 g1 g2 pais2"
+     "pais3 g3 g4 pais4"
+     "pais5 g5 g6 pais6"
+     "pais7 g7 g8 pais8"
+     "pais9 g9 g10 pais10"
+     "pais11 g11 g12 pais12";
+    grid-template-columns: 1fr repeat(2, 0.15fr) 1fr !important;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+
+    &__fila {
+        background-color: $color-qatar;
+        font-family: $font-normal;
+        color: white;
+    }
+    }
+
+.orden {
+    display: grid;
+    grid-template-areas:
+        "cabeza1 pts gfs gcs dfs"
+        "clasi1"
+        ""
+        ""
+        "";
+    grid-template-columns: 2fr repeat(4, 0.7fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;    
+    }
+

@@ -6,16 +6,29 @@
 
 }
 
+.navtitle{
+    font-family: $font-heavy;
+    color: white;
+    font-size: 2rem;
+}
+
 .navbar-custom {
     background-color: $color-qatar;
     color: white;
-    font-family: $font-normal;
+    font-family: $font-bold;
+    overflow: hidden;
 }
 
 .nav-link {
     color: white !important;
 }
 
+.dropfont{
+    font-family: $font-normal !important;
+    color: $color-qatar !important;
+}
+
 .logonav{
-    height: 150px;
+    height: 200px;
+    padding: 25px;
 }

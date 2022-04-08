@@ -1,0 +1,31 @@
+@import "./responsive";
+@import "./variables";
+
+.heroe{
+    background-image: url("../../assets/img/hero.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh; 
+}
+
+.heroe__title{
+    background-color: white;
+    font-family: $font-bold;
+    color: $color-qatar;
+    font-size: 3rem;
+    border-radius: 20px 20px 20px 20px;
+    height: 12vh;
+}
+
+.presentacion__titulo{
+    font-family: $font-bold;
+    font-size: 3rem;
+    color: $color-qatar;
+}
+
+.presentacion__sub{
+    font-family: $font-normal;
+    font-size: 2rem;
+    color: $color-qatar;
+}
