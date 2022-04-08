@@ -226,15 +226,16 @@ const grupoH = [
     },
 ]
 
-function resultadosA () {
+function resultadosA (g1,g2) {
     let goles1 = document.getElementById(g1)
+    let goles2 = document.getElementById(g2)
         goles1.addEventListener ("input", () => {
             qatar.golesFavor = qatar.golesFavor + goles1.value 
-            ecuador.golesContra = ecuador.golesContra + goles1.value 
+            ecuador.golesContra = ecuador.golesContra + goles1.value
         })
-    let goles2 = document.getElementById(g2)
         goles2.addEventListener ('input', () => {
             ecuador.golesFavor = ecuador.golesFavor + goles2.value 
+            qatar.golesContra = qatar.golesContra + goles2.value
         })
     qatar.golesContra = qatar.golesContra + goles2
     ecuador.golesContra = ecuador.golesContra + goles1 
@@ -345,10 +346,10 @@ function resultadosA () {
 
     function clasificacionA(){
 
-        grupoA.sort((a,b)=> b.puntos - a.puntos);
+        grupoA.sort((a,b) => b.puntos - a.puntos);
         let clasificado1 = getElementById("clasi1")
-        clasificado1.innerText = grupoA.pais[0]
-    
+        clasificado1.innerText = grupoA.pais[0];
+        
     }
 
     resultadosA();
