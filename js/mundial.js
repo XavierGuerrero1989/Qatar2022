@@ -226,8 +226,8 @@ const grupoH = [
 ]
 
 
-let goles1 = document.getElementById("g1");
-let goles2 = document.getElementById("g2");
+let goles1 = document.getElementById("g1").value;
+let goles2 = document.getElementById("g2").value;
 
 function resultadosA () {
         goles1.addEventListener ('input', (calculadoraDeGoles));
