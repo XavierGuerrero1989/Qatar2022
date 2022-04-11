@@ -228,24 +228,42 @@ const grupoH = [
 
 let goles1 = document.getElementById("g1");
 let goles2 = document.getElementById("g2");
+let goles3 = document.getElementById("g3");
+let goles4 = document.getElementById("g4");
+let goles5 = document.getElementById("g5");
+let goles6 = document.getElementById("g6");
+let goles7 = document.getElementById("g7");
+let goles8 = document.getElementById("g8");
+let goles9 = document.getElementById("g9");
+let goles10 = document.getElementById("g10");
+let goles11= document.getElementById("g11");
+let goles12 = document.getElementById("g12");
 
 function resultadosA () {
+
+    //PARTIDO1
+
         goles1.addEventListener('input', calculadoraDeGoles);
         goles2.addEventListener('input', calculadoraDeGoles1);
     function calculadoraDeGoles () {
-        qatar.golesFavor = qatar.golesFavor + parseInt(goles1.value);
-        console.log(parseInt(goles1.value));
-        ecuador.golesContra = ecuador.golesContra + goles1.value
+        if (parseInt(goles1.value) >= 0) {
+            qatar.golesFavor = qatar.golesFavor + parseInt(goles1.value);
+            console.log(qatar.golesFavor);
+            ecuador.golesContra = ecuador.golesContra + parseInt(goles1.value)
+        }
     }
     function calculadoraDeGoles1 () {
-        ecuador.golesFavor = ecuador.golesFavor + goles2.value
-        qatar.golesContra = qatar.golesContra + goles2.value
+        if (parseInt(goles2.value) >= 0 ) {
+            ecuador.golesFavor = ecuador.golesFavor + parseInt(goles2.value);
+            qatar.golesContra = qatar.golesContra + parseInt(goles2.value);
+        }
+        
     }
 
-    if (goles1 > goles2) {
+    if (parseInt(goles1.value) > parseInt(goles2.value)) {
             qatar.puntos = qatar.puntos + 3
             ecuador.puntos = ecuador.puntos + 0
-        } else if (goles1 == goles2) {
+        } else if (parseInt(goles1.value) == parseInt(goles2.value)) {
             qatar.puntos = qatar.puntos + 1
             ecuador.puntos = ecuador.puntos + 1
         } else {
@@ -253,117 +271,176 @@ function resultadosA () {
             ecuador.puntos = ecuador.puntos + 3
         }
 
+         //PARTIDO 2
+    
+        goles3.addEventListener('input', calculadoraDeGoles2);
+        goles4.addEventListener('input', calculadoraDeGoles3);
+    function calculadoraDeGoles2 () {
+        if (parseInt(goles3.value) >= 0) {
+            senegal.golesFavor = senegal.golesFavor + parseInt(goles3.value);
+            paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles3.value)
+        }     
+    }
+
+    function calculadoraDeGoles3 () {
+        if (parseInt(goles4.value) >= 0 ) {
+            paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles4.value);
+            senegal.golesContra = senegal.golesContra + parseInt(goles4.value);
+        }
+        
+    }
+
+    if (parseInt(goles3.value) > parseInt(goles4.value)) {
+            senegal.puntos = senegal.puntos + 3
+            paisesBajos.puntos = paisesBajos.puntos + 0
+        } else if (parseInt(goles3.value) == parseInt(goles4.value)) {
+            senegal.puntos = senegal.puntos + 1
+            paisesBajos.puntos = paisesBajos.puntos + 1
+        } else {
+            senegal.puntos = senegal.puntos + 0
+            paisesBajos.puntos = paisesBajos.puntos + 3
+        }
+
+    //PARTIDO 3
+    
+    goles5.addEventListener('input', calculadoraDeGoles4);
+    goles6.addEventListener('input', calculadoraDeGoles5);
+function calculadoraDeGoles4 () {
+    if (parseInt(goles5.value) >= 0) {
+        qatar.golesFavor = qatar.golesFavor + parseInt(goles5.value);
+        senegal.golesContra = senegal.golesContra + parseInt(goles5.value)
+    }     
+}
+function calculadoraDeGoles5 () {
+    if (parseInt(goles6.value) >= 0 ) {
+        senegal.golesFavor = senegal.golesFavor + parseInt(goles6.value);
+        qatar.golesContra = qatar.golesContra + parseInt(goles6.value);
+    }
+    
+}
+
+if (parseInt(goles5.value) > parseInt(goles6.value)) {
+        qatar.puntos = qatar.puntos + 3
+        senegal.puntos = senegal.puntos + 0
+    } else if (parseInt(goles5.value) == parseInt(goles6.value)) {
+        qatar.puntos = qatar.puntos + 1
+        senegal.puntos = senegal.puntos + 1
+    } else {
+        qatar.puntos = qatar.puntos + 0
+        senegal.puntos = senegal.puntos + 3
+    }
+
+     //PARTIDO 4
+
+    goles7.addEventListener('input', calculadoraDeGoles6);
+    goles8.addEventListener('input', calculadoraDeGoles7);
+function calculadoraDeGoles6 () {
+    if (parseInt(goles7.value) >= 0) {
+        ecuador.golesFavor = ecuador.golesFavor + parseInt(goles7.value);
+        paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles7.value)
+    }     
+}
+
+function calculadoraDeGoles7 () {
+    if (parseInt(goles8.value) >= 0 ) {
+        paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles8.value);
+        ecuador.golesContra = ecuador.golesContra + parseInt(goles8.value);
+    }
+    
+}
+
+if (parseInt(goles7.value) > parseInt(goles8.value)) {
+        ecuador.puntos = ecuador.puntos + 3
+        paisesBajos.puntos = paisesBajos.puntos + 0
+    } else if (parseInt(goles7.value) == parseInt(goles8.value)) {
+        ecuador.puntos = ecuador.puntos + 1
+        paisesBajos.puntos = paisesBajos.puntos + 1
+    } else {
+        ecuador.puntos = ecuador.puntos + 0
+        paisesBajos.puntos = paisesBajos.puntos + 3
+    }
+
+//PARTIDO 5
+
+goles9.addEventListener('input', calculadoraDeGoles8);
+goles10.addEventListener('input', calculadoraDeGoles9);
+function calculadoraDeGoles8 () {
+if (parseInt(goles9.value) >= 0) {
+    qatar.golesFavor = qatar.golesFavor + parseInt(goles9.value);
+    paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles9.value)
+}     
+}
+
+function calculadoraDeGoles9 () {
+if (parseInt(goles10.value) >= 0 ) {
+    paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles10.value);
+    qatar.golesContra = qatar.golesContra + parseInt(goles10.value);
+}
+
+}
+
+if (parseInt(goles9.value) > parseInt(goles10.value)) {
+    qatar.puntos = qatar.puntos + 3
+    paisesBajos.puntos = paisesBajos.puntos + 0
+} else if (parseInt(goles9.value) == parseInt(goles10.value)) {
+    qatar.puntos = qatar.puntos + 1
+    paisesBajos.puntos = paisesBajos.puntos + 1
+} else {
+    qatar.puntos = qatar.puntos + 0
+    paisesBajos.puntos = paisesBajos.puntos + 3
+}
+
+//PARTIDO 6
+
+goles11.addEventListener('input', calculadoraDeGoles10);
+goles12.addEventListener('input', calculadoraDeGoles11);
+function calculadoraDeGoles10 () {
+if (parseInt(goles11.value) >= 0) {
+    ecuador.golesFavor = ecuador.golesFavor + parseInt(goles11.value);
+    senegal.golesContra = senegal.golesContra + parseInt(goles11.value)
+}     
+}
+
+function calculadoraDeGoles11 () {
+if (parseInt(goles12.value) >= 0 ) {
+    senegal.golesFavor = senegal.golesFavor + parseInt(goles12.value);
+    ecuador.golesContra = ecuador.golesContra + parseInt(goles12.value);
+}
+
+}
+
+if (parseInt(goles11.value) > parseInt(goles12.value)) {
+    ecuador.puntos = ecuador.puntos + 3
+    senegal.puntos = senegal.puntos + 0
+} else if (parseInt(goles11.value) == parseInt(goles12.value)) {
+    ecuador.puntos = ecuador.puntos + 1
+    senegal.puntos = senegal.puntos + 1
+} else {
+    ecuador.puntos = ecuador.puntos + 0
+    senegal.puntos = senegal.puntos + 3
+}
+
 }
            
-    
-          
+function clasificacionA(){
 
-//     let goles3 = parseInt(prompt("Segundo partido: Senegal vs Paises Bajos. ¿cuantos goles hizo Senegal?"))
-//     let goles4 = parseInt(prompt("Segundo partido: Senegal vs Paises Bajos. ¿cuantos goles hizo Paises Bajos?"))
-
-//     senegal.golesFavor = senegal.golesFavor + goles3 
-//     paisesBajos.golesFavor = paisesBajos.golesFavor + goles4
-//     senegal.golesContra = senegal.golesContra + goles4
-//     paisesBajos.golesContra = paisesBajos.golesContra + goles3 
-//     if (goles3 > goles4) {
-//         senegal.puntos = senegal.puntos + 3
-//         paisesBajos.puntos = paisesBajos.puntos + 0
-//     } else if (goles3 == goles4) {
-//         senegal.puntos = senegal.puntos + 1
-//         paisesBajos.puntos = paisesBajos.puntos + 1
-//     } else {
-//         senegal.puntos = senegal.puntos + 0
-//         paisesBajos.puntos = paisesBajos.puntos + 3
-//     }
-
-//     let goles5 = parseInt(prompt("Tercer partido: Qatar vs Senegal. ¿cuantos goles hizo Qatar?"))
-//     let goles6 = parseInt(prompt("Tercer partido: Qatar vs Senegal. ¿cuantos goles hizo Senegal?"))
-
-//     qatar.golesFavor = qatar.golesFavor + goles5 
-//     senegal.golesFavor = senegal.golesFavor + goles6
-//     qatar.golesContra = qatar.golesContra + goles6
-//     senegal.golesContra = senegal.golesContra + goles5 
-//     if (goles5 > goles6) {
-//         qatar.puntos = qatar.puntos + 3
-//         senegal.puntos = senegal.puntos + 0
-//     } else if (goles5 == goles6) {
-//         qatar.puntos = qatar.puntos + 1
-//         senegal.puntos = senegal.puntos + 1
-//     } else {
-//         qatar.puntos = qatar.puntos + 0
-//         senegal.puntos = senegal.puntos + 3
-//     }
-
-//     let goles7 = parseInt(prompt("Cuarto partido: Ecuador vs Paises Bajos. ¿cuantos goles hizo Ecuador?"))
-//     let goles8 = parseInt(prompt("Cuarto partido: Ecuador vs Paises Bajos. ¿cuantos goles hizo Paises Bajos?"))
-
-//     ecuador.golesFavor = ecuador.golesFavor + goles7 
-//     paisesBajos.golesFavor = paisesBajos.golesFavor + goles8
-//     ecuador.golesContra = ecuador.golesContra + goles8
-//     paisesBajos.golesContra = paisesBajos.golesContra + goles7 
-//     if (goles7 > goles8) {
-//         ecuador.puntos = ecuador.puntos + 3
-//         paisesBajos.puntos = paisesBajos.puntos + 0
-//     } else if (goles7 == goles8) {
-//         ecuador.puntos = ecuador.puntos + 1
-//         paisesBajos.puntos = paisesBajos.puntos + 1
-//     } else {
-//         ecuador.puntos = ecuador.puntos + 0
-//         paisesBajos.puntos = paisesBajos.puntos + 3
-//     }
-
-//     let goles9 = parseInt(prompt("Quinto partido: Qatar vs Paises Bajos. ¿cuantos goles hizo Qatar?"))
-//     let goles10 = parseInt(prompt("Quinto partido: Qatar vs Paises Bajos. ¿cuantos goles hizo Paises Bajos?"))
-
-//     qatar.golesFavor = qatar.golesFavor + goles9 
-//     paisesBajos.golesFavor = paisesBajos.golesFavor + goles10
-//     qatar.golesContra = qatar.golesContra + goles10
-//     paisesBajos.golesContra = paisesBajos.golesContra + goles9 
-//     if (goles9 > goles10) {
-//         qatar.puntos = qatar.puntos + 3
-//         paisesBajos.puntos = paisesBajos.puntos + 0
-//     } else if (goles7 == goles8) {
-//         qatar.puntos = qatar.puntos + 1
-//         paisesBajos.puntos = paisesBajos.puntos + 1
-//     } else {
-//         qatar.puntos = qatar.puntos + 0
-//         paisesBajos.puntos = paisesBajos.puntos + 3
-//     }
-
-//     let goles11 = parseInt(prompt("Sexto partido: Ecuador vs Senegal. ¿cuantos goles hizo Ecuador?"))
-//     let goles12 = parseInt(prompt("Sexto partido: Ecuador vs Senegal. ¿cuantos goles hizo Senegal?"))
-
-//     ecuador.golesFavor = ecuador.golesFavor + goles11 
-//     senegal.golesFavor = senegal.golesFavor + goles12
-//     ecuador.golesContra = ecuador.golesContra + goles12
-//     senegal.golesContra = senegal.golesContra + goles11 
-//     if (goles11 > goles12) {
-//         ecuador.puntos = ecuador.puntos + 3
-//         senegal.puntos = senegal.puntos + 0
-//     } else if (goles11 == goles12) {
-//         ecuador.puntos = ecuador.puntos + 1
-//         senegal.puntos = senegal.puntos + 1
-//     } else {
-//         ecuador.puntos = ecuador.puntos + 0
-//         senegal.puntos = senegal.puntos + 3
-//     }
-// }
-
-    
-
-    function clasificacionA(){
-
-        grupoA.sort((a,b) => b.puntos - a.puntos);
-        console.log(grupoA[0]);
-
-
-        let clasificado1 = document.getElementById("clasi1")
-        clasificado1.innerText = grupoA[0].pais;
+    grupoA.sort((a,b) => b.puntos - a.puntos);
+    let clasificado1 = document.getElementById("clasi1")
+    clasificado1.innerText = grupoA[0].pais;
+    let clasificado2 = document.getElementById("clasi2")
+    clasificado2.innerText = grupoA[1].pais;
+    let tercero = document.getElementById("ter")
+    tercero.innerText = grupoA[2].pais;
+    let cuarto = document.getElementById("cuar")
+    cuarto.innerText = grupoA[3].pais;
         
     }
 
     resultadosA();
-    clasificacionA ();
+    clasificacionA ();    
+          
+
+
 
     // function resultadosB () {
 
