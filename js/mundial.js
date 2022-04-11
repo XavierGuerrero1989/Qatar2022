@@ -226,14 +226,15 @@ const grupoH = [
 ]
 
 
-let goles1 = document.getElementById("g1").value;
-let goles2 = document.getElementById("g2").value;
+let goles1 = document.getElementById("g1");
+let goles2 = document.getElementById("g2");
 
 function resultadosA () {
-        goles1.addEventListener ('input', (calculadoraDeGoles));
-        goles2.addEventListener ('input', (calculadoraDeGoles1));
+        goles1.addEventListener('input', calculadoraDeGoles);
+        goles2.addEventListener('input', calculadoraDeGoles1);
     function calculadoraDeGoles () {
-        qatar.golesFavor = qatar.golesFavor + goles1.value 
+        qatar.golesFavor = qatar.golesFavor + parseInt(goles1.value);
+        console.log(parseInt(goles1.value));
         ecuador.golesContra = ecuador.golesContra + goles1.value
     }
     function calculadoraDeGoles1 () {
@@ -356,8 +357,8 @@ function resultadosA () {
         console.log(grupoA[0]);
 
 
-        // let clasificado1 = document.getElementById("clasi1")
-        // clasificado1.innerText = grupoA.pais[0];
+        let clasificado1 = document.getElementById("clasi1")
+        clasificado1.innerText = grupoA[0].pais;
         
     }
 
