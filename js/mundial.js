@@ -3,84 +3,96 @@ const qatar = {
         pais: "Qatar",
         puntos: 0,
         golesFavor: 0,
-        golesContra: 0
+        golesContra: 0,
+        diferencia: 0
 }
 
 const ecuador = {
         pais: "Ecuador",
         puntos: 0,
         golesFavor: 0,
-        golesContra: 0
+        golesContra: 0,
+        diferencia: 0
 }
 
 const senegal = {
     pais: "Senegal",
     puntos: 0,
     golesFavor: 0,
-    golesContra: 0
+    golesContra: 0,
+    diferencia: 0
 }
 
 const paisesBajos = {
     pais: "Paises Bajos",
     puntos: 0,
     golesFavor: 0,
-    golesContra: 0
+    golesContra: 0,
+    diferencia: 0
 }
 
 const inglaterra = {
         pais: "Inglaterra",
         puntos: 0,
         golesFavor: 0,
-        golesContra: 0
+        golesContra: 0,
+        diferencia: 0
     }
     
 const iran = {
         pais: "Iran",
         puntos: 0,
         golesFavor: 0,
-        golesContra: 0
+        golesContra: 0,
+        diferencia: 0
     }
 
 const eeuu = {
         pais: "Estados Unidos",
         puntos: 0,
         golesFavor: 0,
-        golesContra: 0
+        golesContra: 0,
+        diferencia: 0
     }
 
 const escocia = {
         pais: "Escocia",
         puntos: 0,
         golesFavor: 0,
-        golesContra: 0
+        golesContra: 0,
+        diferencia: 0
     }
 
 const argentina = {
             pais: "Argentina",
             puntos: 0,
             golesFavor: 0,
-            golesContra: 0
+            golesContra: 0,
+            diferencia: 0
         }
 
 const arabia = {
             pais: "Arabia Saudita",
             puntos: 0,
             golesFavor: 0,
-            golesContra: 0
+            golesContra: 0,
+            diferencia: 0
         }
 
 const mexico = {
             pais: "Mexico",
             puntos: 0,
             golesFavor: 0,
-            golesContra: 0
+            golesContra: 0,
+            diferencia: 0
         }
 
 const polonia = {
             pais: "Polonia",
             puntos: 0,
             golesFavor: 0,
-            golesContra: 0
+            golesContra: 0,
+            diferencia: 0
         }
 
 
@@ -248,7 +260,7 @@ const grupoH = [
     function calculadoraDeGoles () {
         if (parseInt(goles1.value) >= 0) {
             qatar.golesFavor = qatar.golesFavor + parseInt(goles1.value);
-            ecuador.golesContra = ecuador.golesContra + parseInt(goles1.value)
+            ecuador.golesContra = ecuador.golesContra + parseInt(goles1.value);
         }
     }
     function calculadoraDeGoles1 () {
@@ -459,7 +471,18 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
             senegal.puntos = senegal.puntos + 3
         }
 
-    grupoA.sort((a,b) => b.puntos - a.puntos);
+    qatar.diferencia = qatar.golesFavor - qatar.golesContra
+    ecuador.diferencia = ecuador.golesFavor - ecuador.golesContra
+    senegal.diferencia = senegal.golesFavor - senegal.golesContra
+    paisesBajos.diferencia = paisesBajos.golesFavor - paisesBajos.golesContra
+
+    grupoA.sort(
+        function(a,b) {
+            if (b.puntos === a.puntos) {
+                return b.diferencia - a.diferencia;
+            }
+    })
+
     let clasificado1 = document.getElementById("clasi1")
     clasificado1.innerText = grupoA[0].pais;
     let clasificado2 = document.getElementById("clasi2")
@@ -492,6 +515,14 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
     contra3.innerText = grupoA[2].golesContra;
     let contra4 = document.getElementById("gc4")
     contra4.innerText = grupoA[3].golesContra;
+    let difGol1 = document.getElementById("df1")
+    difGol1.innerText = grupoA[0].diferencia;
+    let difGol2 = document.getElementById("df2")
+    difGol2.innerText = grupoA[1].diferencia;
+    let difGol3 = document.getElementById("df3")
+    difGol3.innerText = grupoA[2].diferencia;
+    let difGol4 = document.getElementById("df4")
+    difGol4.innerText = grupoA[3].diferencia;
     }   
 ))
    

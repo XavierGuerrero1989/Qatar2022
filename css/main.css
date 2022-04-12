@@ -170,8 +170,8 @@
 
 .orden {
   display: grid;
-  grid-template-areas: "cabeza1 pts gfs gcs" "clasi1 pts1 gf1 gc1" "clasi2 pts2 gf2 gc2" "ter pts3 gf3 gc3" "cuar pts4 gf4 gc4";
-  grid-template-columns: 1fr repeat(3, 0.7fr);
+  grid-template-areas: "cabeza1 pts gfs gcs df" "clasi1 pts1 gf1 gc1 df1" "clasi2 pts2 gf2 gc2 df2" "ter pts3 gf3 gc3 df3" "cuar pts4 gf4 gc4 df4";
+  grid-template-columns: 1fr repeat(4, 0.5fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
