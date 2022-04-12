@@ -542,7 +542,7 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
     puntuacionE();
     partido6();
     puntuacionF();
-    console.log(grupoA);
+ 
 
 
     
