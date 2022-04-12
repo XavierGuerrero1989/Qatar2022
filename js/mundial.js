@@ -239,7 +239,9 @@ const grupoH = [
     let goles12 = document.getElementById("g12");
 
 
-function partido1 () {
+
+
+    function partido1 () {
 
         goles1.addEventListener('input', calculadoraDeGoles);
         goles2.addEventListener('input', calculadoraDeGoles1);
@@ -258,7 +260,7 @@ function partido1 () {
     }
 }
 
-function puntuacionA () {
+    function puntuacionA () {
     goles1.addEventListener('input', goles2.addEventListener('input', () => {
        
     if (parseInt(goles1.value) > parseInt(goles2.value)) {
@@ -278,7 +280,7 @@ function puntuacionA () {
 }
     
 
-function partido2 () {
+    function partido2 () {
 
     goles3.addEventListener('input', calculadoraDeGoles2);
     goles4.addEventListener('input', calculadoraDeGoles3);
@@ -298,7 +300,7 @@ function partido2 () {
     }
 }
 
-function puntuacionB () {
+    function puntuacionB () {
 goles3.addEventListener('input', goles4.addEventListener('input', () => {
    
 if (parseInt(goles3.value) > parseInt(goles4.value)) {
@@ -316,17 +318,17 @@ if (parseInt(goles3.value) > parseInt(goles4.value)) {
 }))
 }
 
-function partido3 () {
+    function partido3 () {
 
     goles5.addEventListener('input', calculadoraDeGoles4);
     goles6.addEventListener('input', calculadoraDeGoles5);
-function calculadoraDeGoles4 () {
+    function calculadoraDeGoles4 () {
     if (parseInt(goles5.value) >= 0) {
         qatar.golesFavor = qatar.golesFavor + parseInt(goles5.value);
         senegal.golesContra = senegal.golesContra + parseInt(goles5.value)
     }     
 }
-function calculadoraDeGoles5 () {
+    function calculadoraDeGoles5 () {
     if (parseInt(goles6.value) >= 0 ) {
         senegal.golesFavor = senegal.golesFavor + parseInt(goles6.value);
         qatar.golesContra = qatar.golesContra + parseInt(goles6.value);
@@ -334,7 +336,7 @@ function calculadoraDeGoles5 () {
 }
 }
 
-function puntuacionC () {
+    function puntuacionC () {
 goles5.addEventListener('input', goles6.addEventListener('input', () => {
    
     if (parseInt(goles5.value) > parseInt(goles6.value)) {
@@ -351,18 +353,18 @@ goles5.addEventListener('input', goles6.addEventListener('input', () => {
 }))
 }
 
-function partido4 () {
+    function partido4 () {
 
     goles7.addEventListener('input', calculadoraDeGoles6);
     goles8.addEventListener('input', calculadoraDeGoles7);
-function calculadoraDeGoles6 () {
+    function calculadoraDeGoles6 () {
     if (parseInt(goles7.value) >= 0) {
         ecuador.golesFavor = ecuador.golesFavor + parseInt(goles7.value);
         paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles7.value)
     }     
 }
 
-function calculadoraDeGoles7 () {
+    function calculadoraDeGoles7 () {
     if (parseInt(goles8.value) >= 0 ) {
         paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles8.value);
         ecuador.golesContra = ecuador.golesContra + parseInt(goles8.value);
@@ -370,7 +372,7 @@ function calculadoraDeGoles7 () {
 }
 }
 
-function puntuacionD () {
+    function puntuacionD () {
 goles7.addEventListener('input', goles8.addEventListener('input', () => {
    
     if (parseInt(goles7.value) > parseInt(goles8.value)) {
@@ -492,25 +494,26 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
     contra4.innerText = grupoA[3].golesContra;
     }   
 ))
-
-    
+   
 }
 
 
+    partido1 ();
+    puntuacionA ();
+    partido2 ();
+    puntuacionB ();
+    partido3();
+    puntuacionC();
+    partido4();
+    puntuacionD();
+    partido5();
+    puntuacionE();
+    partido6();
+    puntuacionF();
+    console.log(grupoA);
 
-partido1 ();
-puntuacionA ();
-partido2 ();
-puntuacionB ();
-partido3();
-puntuacionC();
-partido4();
-puntuacionD();
-partido5();
-puntuacionE();
-partido6();
-puntuacionF();
 
+    
 
 
 
