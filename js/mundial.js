@@ -237,6 +237,9 @@ const grupoH = [
     },
 ]
 
+
+ 
+
     let goles1 = document.getElementById("g1");
     let goles2 = document.getElementById("g2");
     let goles3 = document.getElementById("g3");
@@ -250,7 +253,7 @@ const grupoH = [
     let goles11= document.getElementById("g11");
     let goles12 = document.getElementById("g12");
 
-
+   
 
 
     function partido1 () {
@@ -529,7 +532,24 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
    
 }
 
+// console.log(grupoA);
 
+//     partido1 ();
+//     puntuacionA ();
+//     partido2 ();
+//     puntuacionB ();
+//     partido3();
+//     puntuacionC();
+//     partido4();
+//     puntuacionD();
+//     partido5();
+//     puntuacionE();
+//     partido6();
+//     puntuacionF();
+//     console.log(grupoA);
+
+
+document.getElementById('cargaData').addEventListener('click', function(){
     partido1 ();
     puntuacionA ();
     partido2 ();
@@ -542,10 +562,8 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
     puntuacionE();
     partido6();
     puntuacionF();
- 
-
-
-    
+    console.log(grupoA)
+});
 
 
 
