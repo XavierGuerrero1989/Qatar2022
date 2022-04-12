@@ -478,9 +478,10 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
 
     grupoA.sort(
         function(a,b) {
-            if (b.puntos === a.puntos) {
+            if (b.puntos == a.puntos) {
                 return b.diferencia - a.diferencia;
             }
+            return b.puntos > a.puntos ? 1 : -1;
     })
 
     let clasificado1 = document.getElementById("clasi1")
