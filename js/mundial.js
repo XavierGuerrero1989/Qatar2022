@@ -569,7 +569,6 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
 
 
 
-
         
 
 
