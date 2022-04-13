@@ -532,8 +532,10 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
    
 }
 
-// console.log(grupoA);
+let organizador = document.getElementById("cargaData");
+organizador.addEventListener("click", clasificadorA);
 
+<<<<<<< HEAD
 //     partido1 ();
 //     puntuacionA ();
 //     partido2 ();
@@ -550,6 +552,9 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
 
 
 // document.getElementById('cargaData').addEventListener('click', function(){
+=======
+function clasificadorA () {
+>>>>>>> df5e16bb0d358094811349605ffd66d941a259c6
     partido1 ();
     puntuacionA ();
     partido2 ();
@@ -562,8 +567,18 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
     puntuacionE();
     partido6();
     puntuacionF();
+<<<<<<< HEAD
 //     console.log(grupoA)
 // });
+=======
+}
+
+
+
+
+
+
+>>>>>>> df5e16bb0d358094811349605ffd66d941a259c6
 
 
 
