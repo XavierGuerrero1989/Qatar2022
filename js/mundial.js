@@ -532,24 +532,10 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
    
 }
 
-// console.log(grupoA);
+let organizador = document.getElementById("cargaData");
+organizador.addEventListener("click", clasificadorA);
 
-//     partido1 ();
-//     puntuacionA ();
-//     partido2 ();
-//     puntuacionB ();
-//     partido3();
-//     puntuacionC();
-//     partido4();
-//     puntuacionD();
-//     partido5();
-//     puntuacionE();
-//     partido6();
-//     puntuacionF();
-//     console.log(grupoA);
-
-
-document.getElementById('cargaData').addEventListener('click', function(){
+function clasificadorA () {
     partido1 ();
     puntuacionA ();
     partido2 ();
@@ -562,8 +548,11 @@ document.getElementById('cargaData').addEventListener('click', function(){
     puntuacionE();
     partido6();
     puntuacionF();
-    console.log(grupoA)
-});
+}
+
+
+
+
 
 
 
