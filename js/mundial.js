@@ -549,7 +549,7 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
 //     console.log(grupoA);
 
 
-document.getElementById('cargaData').addEventListener('click', function(){
+// document.getElementById('cargaData').addEventListener('click', function(){
     partido1 ();
     puntuacionA ();
     partido2 ();
@@ -562,9 +562,8 @@ document.getElementById('cargaData').addEventListener('click', function(){
     puntuacionE();
     partido6();
     puntuacionF();
-    console.log(grupoA)
-});
-
+//     console.log(grupoA)
+// });
 
 
 
