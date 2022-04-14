@@ -532,10 +532,9 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
    
 }
 
-let organizador = document.getElementById("cargaData");
-organizador.addEventListener("click", clasificadorA);
+// let organizador = document.getElementById("cargaData");
+// organizador.addEventListener("click", clasificadorA);
 
-<<<<<<< HEAD
 //     partido1 ();
 //     puntuacionA ();
 //     partido2 ();
@@ -551,10 +550,7 @@ organizador.addEventListener("click", clasificadorA);
 //     console.log(grupoA);
 
 
-// document.getElementById('cargaData').addEventListener('click', function(){
-=======
-function clasificadorA () {
->>>>>>> df5e16bb0d358094811349605ffd66d941a259c6
+// document.getElementById(`cargaData`).addEventListener(`click`, function(){
     partido1 ();
     puntuacionA ();
     partido2 ();
@@ -567,82 +563,14 @@ function clasificadorA () {
     puntuacionE();
     partido6();
     puntuacionF();
-<<<<<<< HEAD
 //     console.log(grupoA)
 // });
-=======
-}
-
-
-
-
-
-
->>>>>>> df5e16bb0d358094811349605ffd66d941a259c6
 
 
 
 
 
         
-
-
-// function partido6 () {
-// goles11.addEventListener('input', calculadoraDeGoles10);
-// goles12.addEventListener('input', calculadoraDeGoles11);
-// function calculadoraDeGoles10 () {
-// if (parseInt(goles11.value) >= 0) {
-//     ecuador.golesFavor = ecuador.golesFavor + parseInt(goles11.value);
-//     senegal.golesContra = senegal.golesContra + parseInt(goles11.value)
-// }     
-// }
-
-// function calculadoraDeGoles11 () {
-// if (parseInt(goles12.value) >= 0 ) {
-//     senegal.golesFavor = senegal.golesFavor + parseInt(goles12.value);
-//     ecuador.golesContra = ecuador.golesContra + parseInt(goles12.value);
-// }
-
-// }
-
-// if (parseInt(goles11.value) > parseInt(goles12.value)) {
-//     ecuador.puntos = ecuador.puntos + 3
-//     senegal.puntos = senegal.puntos + 0
-// } else if (parseInt(goles11.value) == parseInt(goles12.value)) {
-//     ecuador.puntos = ecuador.puntos + 1
-//     senegal.puntos = senegal.puntos + 1
-// } else {
-//     ecuador.puntos = ecuador.puntos + 0
-//     senegal.puntos = senegal.puntos + 3
-// }
-
-// }
-           
-
-// function clasificacionA(){
-
-//     grupoA.sort((a,b) => b.puntos - a.puntos);
-//     console.log(grupoA);
-//     let clasificado1 = document.getElementById("clasi1")
-//     clasificado1.innerText = grupoA[0].pais;
-//     let clasificado2 = document.getElementById("clasi2")
-//     clasificado2.innerText = grupoA[1].pais;
-//     let tercero = document.getElementById("ter")
-//     tercero.innerText = grupoA[2].pais;
-//     let cuarto = document.getElementById("cuar")
-//     cuarto.innerText = grupoA[3].pais;
-        
-//     }
-
-
-//     partido2 ();
-//     partido3 ();
-//     partido4 ();
-//     partido5 ();
-//     partido6 ();
-//     clasificacionA ();    
-          
-
 
 
     // function resultadosB () {
