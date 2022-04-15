@@ -238,8 +238,8 @@ const grupoH = [
 ]
 
 
- 
 
+    
     let goles1 = document.getElementById("g1");
     let goles2 = document.getElementById("g2");
     let goles3 = document.getElementById("g3");
@@ -253,13 +253,12 @@ const grupoH = [
     let goles11= document.getElementById("g11");
     let goles12 = document.getElementById("g12");
 
-   
 
 
     function partido1 () {
-
         goles1.addEventListener('input', calculadoraDeGoles);
         goles2.addEventListener('input', calculadoraDeGoles1);
+        
     function calculadoraDeGoles () {
         if (parseInt(goles1.value) >= 0) {
             qatar.golesFavor = qatar.golesFavor + parseInt(goles1.value);
@@ -273,11 +272,23 @@ const grupoH = [
         }
         
     }
+    function borrado () {
+        if (parseInt(goles1.value) >= 0) {
+            qatar.golesFavor = 0 + parseInt(goles1.value);
+            ecuador.golesContra = 0 + parseInt(goles1.value);
+        }
+    }
+    function borrado1 () {
+        if (parseInt(goles2.value) >= 0 ) {
+            ecuador.golesFavor = 0 + parseInt(goles2.value);
+            qatar.golesContra = 0 + parseInt(goles2.value);
+        }
+    }
 }
 
     function puntuacionA () {
     goles1.addEventListener('input', goles2.addEventListener('input', () => {
-       
+    
     if (parseInt(goles1.value) > parseInt(goles2.value)) {
             
             qatar.puntos = qatar.puntos + 3
@@ -333,6 +344,8 @@ if (parseInt(goles3.value) > parseInt(goles4.value)) {
 }))
 }
 
+
+
     function partido3 () {
 
     goles5.addEventListener('input', calculadoraDeGoles4);
@@ -349,13 +362,15 @@ if (parseInt(goles3.value) > parseInt(goles4.value)) {
         qatar.golesContra = qatar.golesContra + parseInt(goles6.value);
     }
 }
+
 }
+
 
     function puntuacionC () {
 goles5.addEventListener('input', goles6.addEventListener('input', () => {
    
     if (parseInt(goles5.value) > parseInt(goles6.value)) {
-                qatar.puntos = qatar.puntos + 3
+                qatar.puntos = puntosParcialesAF1.qatar.puntos + 3
                 senegal.puntos = senegal.puntos + 0
             } else if (parseInt(goles5.value) == parseInt(goles6.value)) {
                 qatar.puntos = qatar.puntos + 1
@@ -407,7 +422,7 @@ goles7.addEventListener('input', goles8.addEventListener('input', () => {
 
 function partido5 () {
 
-    goles9.addEventListener('input', calculadoraDeGoles8);
+goles9.addEventListener('input', calculadoraDeGoles8);
 goles10.addEventListener('input', calculadoraDeGoles9);
 function calculadoraDeGoles8 () {
 if (parseInt(goles9.value) >= 0) {
@@ -460,7 +475,7 @@ function partido6 () {
     }   
 }}
 
-function puntuacionF () {
+function puntuacionF() {
 goles11.addEventListener('input', goles12.addEventListener('input', () => {
    
     if (parseInt(goles11.value) > parseInt(goles12.value)) {
@@ -486,7 +501,27 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
             }
             return b.puntos > a.puntos ? 1 : -1;
     })
+    
+}   
 
+))
+
+}
+
+partido1 ();
+puntuacionA ();
+partido2 ();
+puntuacionB ();
+partido3();
+puntuacionC();
+partido4();
+puntuacionD();
+partido5();
+puntuacionE();
+partido6();
+puntuacionF();
+
+document.getElementById(`cargaData`).addEventListener(`click`, function(){
     let clasificado1 = document.getElementById("clasi1")
     clasificado1.innerText = grupoA[0].pais;
     let clasificado2 = document.getElementById("clasi2")
@@ -527,43 +562,37 @@ goles11.addEventListener('input', goles12.addEventListener('input', () => {
     difGol3.innerText = grupoA[2].diferencia;
     let difGol4 = document.getElementById("df4")
     difGol4.innerText = grupoA[3].diferencia;
-    }   
-))
-   
-}
+})
 
-// let organizador = document.getElementById("cargaData");
-// organizador.addEventListener("click", clasificadorA);
 
-//     partido1 ();
-//     puntuacionA ();
-//     partido2 ();
-//     puntuacionB ();
-//     partido3();
-//     puntuacionC();
-//     partido4();
-//     puntuacionD();
-//     partido5();
-//     puntuacionE();
-//     partido6();
-//     puntuacionF();
-//     console.log(grupoA);
+    // partido1 ();
+    // puntuacionA ();
+    // partido2 ();
+    // puntuacionB ();
+    // partido3();
+    // puntuacionC();
+    // partido4();
+    // puntuacionD();
+    // partido5();
+    // puntuacionE();
+    // partido6();
+    // puntuacionF();
+    // console.log(grupoA);
 
 
 // document.getElementById(`cargaData`).addEventListener(`click`, function(){
-    partido1 ();
-    puntuacionA ();
-    partido2 ();
-    puntuacionB ();
-    partido3();
-    puntuacionC();
-    partido4();
-    puntuacionD();
-    partido5();
-    puntuacionE();
-    partido6();
-    puntuacionF();
-//     console.log(grupoA)
+    // partido1 ();
+    // puntuacionA ();
+    // partido2 ();
+    // puntuacionB ();
+    // partido3();
+    // puntuacionC();
+    // partido4();
+    // puntuacionD();
+    // partido5();
+    // puntuacionE();
+    // partido6();
+    // puntuacionF();
 // });
 
 
