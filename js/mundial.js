@@ -272,18 +272,7 @@ const grupoH = [
         }
         
     }
-    function borrado () {
-        if (parseInt(goles1.value) >= 0) {
-            qatar.golesFavor = 0 + parseInt(goles1.value);
-            ecuador.golesContra = 0 + parseInt(goles1.value);
-        }
-    }
-    function borrado1 () {
-        if (parseInt(goles2.value) >= 0 ) {
-            ecuador.golesFavor = 0 + parseInt(goles2.value);
-            qatar.golesContra = 0 + parseInt(goles2.value);
-        }
-    }
+    
 }
 
     function puntuacionA () {
