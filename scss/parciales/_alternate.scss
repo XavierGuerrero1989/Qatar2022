@@ -1,0 +1,68 @@
+@import "./responsive";
+@import "./variables";
+
+.heroealternativo{
+    background-image: url("../../assets/img/heropronosticonormal.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.subtituloSeccion{
+    font-family: $font-bold;
+    color: $color-qatar;
+    font-size: 3rem;
+}
+
+.textoSeccion{
+    font-family: $font-bold;
+    color: $color-qatar;
+    font-size: 1.5rem;
+}
+
+.listaSeccion{
+    font-family: $font-bold;
+    color: $color-qatar;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.contenedorPredictor{
+    background-color: $color-qatar;
+}
+
+.tituloseccion{
+    font-family: $font-bold;
+    color: white;
+    font-size: 2rem;
+}
+
+.listado{
+    width: 50vh;
+}
+
+.listaCandidatos{
+    font-family: $font-bold;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.botonCargaData{
+    background-color: white;
+    color: $color-qatar;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.imagenCampeon{
+    height: 30vh;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+}
+.titulocampeon{
+    font-family: $font-bold;
+    color: white;
+    font-size: 2rem;
+}

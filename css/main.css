@@ -175,3 +175,71 @@
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
+
+@font-face {
+  font-family: qatar1;
+  src: url(../assets/fonts/ArabicMedium.ttf); }
+
+@font-face {
+  font-family: qatar2;
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+
+@font-face {
+  font-family: qatar3;
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+
+.heroealternativo {
+  background-image: url("../../assets/img/heropronosticonormal.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+.subtituloSeccion {
+  font-family: qatar2;
+  color: #56042C;
+  font-size: 3rem; }
+
+.textoSeccion {
+  font-family: qatar2;
+  color: #56042C;
+  font-size: 1.5rem; }
+
+.listaSeccion {
+  font-family: qatar2;
+  color: #56042C;
+  font-size: 1.5rem;
+  list-style: none; }
+
+.contenedorPredictor {
+  background-color: #56042C; }
+
+.tituloseccion {
+  font-family: qatar2;
+  color: white;
+  font-size: 2rem; }
+
+.listado {
+  width: 50vh; }
+
+.listaCandidatos {
+  font-family: qatar2;
+  color: white;
+  font-size: 1.5rem; }
+
+.botonCargaData {
+  background-color: white;
+  color: #56042C;
+  font-size: 1rem;
+  padding: 5px;
+  margin-top: 20px; }
+
+.imagenCampeon {
+  height: 30vh;
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px; }
+
+.titulocampeon {
+  font-family: qatar2;
+  color: white;
+  font-size: 2rem; }
