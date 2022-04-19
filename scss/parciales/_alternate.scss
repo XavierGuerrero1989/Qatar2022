@@ -64,3 +64,22 @@
     color: white;
     font-size: 2rem;
 }
+
+.textoBorrar{
+    font-family: $font-bold;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.botonBorrar{
+    background-color: white;
+    font-family: $font-bold;
+    color: $color-qatar;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 20px;
+    width: 100px;
+    height: 60px;
+}
