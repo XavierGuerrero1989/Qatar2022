@@ -30,10 +30,7 @@ golesContra: 0,
 diferencia: 0
 }
 
-
 const grupoA = [qatar, ecuador, senegal, paisesBajos]
-
-
 
 let goles1 = document.getElementById("g1");
 let goles2 = document.getElementById("g2");
@@ -47,6 +44,8 @@ let goles9 = document.getElementById("g9");
 let goles10 = document.getElementById("g10");
 let goles11= document.getElementById("g11");
 let goles12 = document.getElementById("g12");
+
+
 
 let botonDeCarga = document.getElementById("cargaData");
 botonDeCarga.addEventListener ("click", function () {
@@ -261,6 +260,46 @@ if (parseInt(goles11.value) > parseInt(goles12.value)) {
     let difGol4 = document.getElementById("df4")
     difGol4.innerText = grupoA[3].diferencia;
 
-    console.log(grupoA);
+
+let vGol1 = parseInt(goles1.value);
+let vGol2 = parseInt(goles2.value);
+let vGol3 = parseInt(goles3.value);
+let vGol4 = parseInt(goles4.value);
+let vGol5 = parseInt(goles5.value);
+let vGol6 = parseInt(goles6.value);
+let vGol7 = parseInt(goles7.value);
+let vGol8 = parseInt(goles8.value);
+let vGol9 = parseInt(goles9.value);
+let vGol10 = parseInt(goles10.value);
+let vGol11 = parseInt(goles11.value);
+let vGol12 = parseInt(goles12.value);
+
+const golesA = { vGol1, vGol2, vGol3, vGol4, vGol5, vGol6, vGol7, vGol8, vGol9, vGol10, vGol11, vGol12 }
+
+const guardaGolesA = JSON.stringify(golesA)
+localStorage.setItem("golesGrupoA", guardaGolesA);
+
+
 })
 
+
+localStorage.hasOwnProperty("golesGrupoA") === true && deployGolesA();
+
+function deployGolesA() {
+    const golesRecuperadosA = JSON.parse(localStorage.getItem("golesGrupoA"))
+
+    goles1.innerText = golesRecuperadosA[0];
+    goles2.innerText = golesRecuperadosA[1];
+    goles3.innerText = golesRecuperadosA[2];
+    goles4.innerText = golesRecuperadosA[3];
+    goles5.innerText = golesRecuperadosA[4];
+    goles6.innerText = golesRecuperadosA[5];
+    goles7.innerText = golesRecuperadosA[6];
+    goles8.innerText = golesRecuperadosA[7];
+    goles9.innerText = golesRecuperadosA[8];
+    goles10.innerText = golesRecuperadosA[9];
+    goles11.innerText = golesRecuperadosA[10];
+    goles12.innerText = golesRecuperadosA[11];
+
+    console.log(golesRecuperadosA);
+}
