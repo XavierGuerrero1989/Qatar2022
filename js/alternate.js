@@ -92,4 +92,27 @@ let tituloFigura = document.getElementById("figuraTitle")
 imagenFigura.src = "../assets/img/"+valorRecuperadoFigura+".jpg"
 tituloFigura.innerText = valorRecuperadoFigura.toUpperCase();
 
-document.getElementById(`botonFigura`).addEventListener(`click`, localStorage.clear())
+document.getElementById(`botonBorrar`).addEventListener(`click`, () =>  {
+    localStorage.clear();
+    imagen.src = "";
+    tituloCamp.innerText = "";
+    imagenSub.src = "";
+    tituloSubCamp.innerText = "";
+    imagenTercero.src = "";
+    titulotercero.innerText = "";
+    imagenSorpresa.src = "";
+    titulosorpresa.innerText = "";
+    imagenDecepcion.src = "";
+    tituloDecepcion.innerText = "";
+    imagenFigura.src = "";
+    tituloFigura.innerText = "";
+    Toastify({
+
+        text: "Borraste tus elecciones con exito",
+        
+        duration: 3000
+        
+        }).showToast();
+})
+
+

@@ -21,5 +21,8 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "toastify-js": "^1.11.2"
   }
 }
