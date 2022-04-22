@@ -45,41 +45,6 @@ let goles10 = document.getElementById("g10");
 let goles11= document.getElementById("g11");
 let goles12 = document.getElementById("g12");
 
-localStorage.hasOwnProperty("golesGrupoA") === true && deployGolesA();
-
-function deployGolesA() {
-    const golesRecuperadosA = JSON.parse(localStorage.getItem("golesGrupoA"))
-
-    let goles1 = document.getElementById("g1");
-    let goles2 = document.getElementById("g2");
-    let goles3 = document.getElementById("g3");
-    let goles4 = document.getElementById("g4");
-    let goles5 = document.getElementById("g5");
-    let goles6 = document.getElementById("g6");
-    let goles7 = document.getElementById("g7");
-    let goles8 = document.getElementById("g8");
-    let goles9 = document.getElementById("g9");
-    let goles10 = document.getElementById("g10");
-    let goles11= document.getElementById("g11");
-    let goles12 = document.getElementById("g12");
-
-    console.log(goles1);
-
-    goles1.value = golesRecuperadosA.vGol1;
-    goles2.value = golesRecuperadosA.vGol2;
-    goles3.value = golesRecuperadosA.vGol3;
-    goles4.value = golesRecuperadosA.vGol4;
-    goles5.value = golesRecuperadosA.vGol5;
-    goles6.value = golesRecuperadosA.vGol6;
-    goles7.value = golesRecuperadosA.vGol7;
-    goles8.value = golesRecuperadosA.vGol8;
-    goles9.value = golesRecuperadosA.vGol9;
-    goles10.value = golesRecuperadosA.vGol10
-    goles11.value = golesRecuperadosA.vGol11;
-    goles12.value = golesRecuperadosA.vGol12;
-
-    
-}
 
 let botonDeCarga = document.getElementById("cargaData");
 botonDeCarga.addEventListener ("click", function () {
@@ -333,8 +298,6 @@ localStorage.hasOwnProperty("golesGrupoA") === true && deployArrayA();
 function deployGolesA() {
     const golesRecuperadosA = JSON.parse(localStorage.getItem("golesGrupoA"))
 
-    console.log(goles1);
-
     goles1.value = golesRecuperadosA.vGol1;
     goles2.value = golesRecuperadosA.vGol2;
     goles3.value = golesRecuperadosA.vGol3;
@@ -353,8 +316,6 @@ function deployGolesA() {
 
 function deployArrayA() {
     const grupoArecuperado = JSON.parse(localStorage.getItem("grupoAresultados"))
-
-    console.log(grupoArecuperado);
 
     let clasificado1 = document.getElementById("clasi1")
     clasificado1.innerText = grupoArecuperado[0].pais;
