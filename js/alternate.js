@@ -193,7 +193,7 @@ document.getElementById(`botonBorrar`).addEventListener(`click`, () =>  {
         text: "No vas a poder recuperarlas si las borras!",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonText: 'Si, deseo Borrarlas!',
+        confirmButtonText: 'Si, Borrar!',
         cancelButtonText: 'No, cancelar!',
         reverseButtons: true
       }).then((result) => {
