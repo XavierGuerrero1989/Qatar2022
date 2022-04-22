@@ -60,3 +60,18 @@
     grid-row-gap: 10px;    
 
 }
+
+.btnCtn{
+    background-color: $color-qatar;
+}
+
+.btnGrupo{
+    background-color: white;
+    font-family: $font-bold;
+    color: $color-qatar;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 20px;
+    width: 30vh;
+    height: 7vh;
+}

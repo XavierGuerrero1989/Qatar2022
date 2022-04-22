@@ -176,6 +176,19 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
 
+.btnCtn {
+  background-color: #56042C; }
+
+.btnGrupo {
+  background-color: white;
+  font-family: qatar2;
+  color: #56042C;
+  font-size: 1rem;
+  padding: 5px;
+  margin-top: 20px;
+  width: 30vh;
+  height: 7vh; }
+
 @font-face {
   font-family: qatar1;
   src: url(../assets/fonts/ArabicMedium.ttf); }

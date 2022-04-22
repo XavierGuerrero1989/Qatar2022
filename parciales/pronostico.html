@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>QATAR 2022</title>
 </head>
 <body>
@@ -60,28 +61,28 @@
           <section class="row grupo__fila">
               <div class="col-md-6 grupo">
                 <p id="pais1">Qatar</p>
-                <input type="number" id="g1" class="indicador" >
-                <input type="number" id="g2" class="indicador" >
+                <input type="number" id="g1" class="indicador" value="">
+                <input type="number" id="g2" class="indicador" value="">
                 <p id="pais2">Ecuador</p>
                 <p id="pais3">Senegal</p>
-                <input type="number" id="g3" class="indicador">
-                <input type="number" id="g4" class="indicador">
+                <input type="number" id="g3" class="indicador" value="">
+                <input type="number" id="g4" class="indicador" value="">
                 <p id="pais4">Paises Bajos</p>
                 <p id="pais5">Qatar</p>
-                <input type="number" id="g5" class="indicador">
-                <input type="number" id="g6" class="indicador">
+                <input type="number" id="g5" class="indicador" value="">
+                <input type="number" id="g6" class="indicador" value="">
                 <p id="pais6">Senegal</p>
                 <p id="pais7">Ecuador</p>
-                <input type="number" id="g7" class="indicador">
-                <input type="number" id="g8" class="indicador">
+                <input type="number" id="g7" class="indicador" value="">
+                <input type="number" id="g8" class="indicador" value="">
                 <p id="pais8">Paises Bajos</p>
                 <p id="pais9">Qatar</p>
-                <input type="number" id="g9" class="indicador">
-                <input type="number" id="g10" class="indicador">
+                <input type="number" id="g9" class="indicador" value="">
+                <input type="number" id="g10" class="indicador" value="">
                 <p id="pais10">Paises Bajos</p>
                 <p id="pais11">Ecuador</p>
-                <input type="number" id="g11" class="indicador">
-                <input type="number" id="g12" class="indicador">
+                <input type="number" id="g11" class="indicador" value="">
+                <input type="number" id="g12" class="indicador" value="">
                 <p id="pais12">Senegal</p>
               </div>
               <div class="col-md-6 orden">
@@ -111,8 +112,15 @@
                 <p id="gc4">0</p>
                 <p id="df4">0</p>
               </div>
-              <button type="button"  id="cargaData">Carga los resultados</button>
             </section>
+            <div class="row d-flex justify-content-center btnCtn">
+              <div class="col-md-2">
+                <button type="button"  id="cargaData" class="btnGrupo">Carga los resultados</button>
+              </div>
+              <div class="col-md-2">
+                <button type="button" id="borrarData" class="btnGrupo">Borra los resultados</button>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -205,7 +213,8 @@
 
 
   <script src="../js/grupoA.js"></script>
-  <script src="../js/mundialAlternativo.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
