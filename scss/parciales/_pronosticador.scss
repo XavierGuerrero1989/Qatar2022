@@ -75,3 +75,75 @@
     width: 30vh;
     height: 7vh;
 }
+
+.grupoB {
+    display: grid;
+    grid-template-areas:
+     "pais13 g13 g14 pais14"
+     "pais15 g15 g16 pais16"
+     "pais17 g17 g18 pais18"
+     "pais19 g19 g20 pais20"
+     "pais21 g21 g22 pais22"
+     "pais23 g23 g24 pais24";
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+
+    &__fila {
+        background-color: $color-qatar;
+        font-family: $font-normal;
+        color: white;
+    }
+    }
+
+.ordenB {
+        display: grid;
+        grid-template-areas:
+            "cabezaB ptsB gfsB gcsB dfB"
+            "clasi1B pts1B gf1B gc1B df1B"
+            "clasi2B pts2B gf2B gc2B df2B"
+            "terB pts3B gf3B gc3B df3B"
+            "cuarB pts4B gf4B gc4B df4B";
+        grid-template-columns: 1fr repeat(4, 0.5fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;    
+    
+    }
+
+.grupoC {
+        display: grid;
+        grid-template-areas:
+         "pais13 g13 g14 pais14"
+         "pais15 g15 g16 pais16"
+         "pais17 g17 g18 pais18"
+         "pais19 g19 g20 pais20"
+         "pais21 g21 g22 pais22"
+         "pais23 g23 g24 pais24";
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    
+        &__fila {
+            background-color: $color-qatar;
+            font-family: $font-normal;
+            color: white;
+        }
+        }
+
+.ordenC {
+            display: grid;
+            grid-template-areas:
+                "cabezaB ptsB gfsB gcsB dfB"
+                "clasi1B pts1B gf1B gc1B df1B"
+                "clasi2B pts2B gf2B gc2B df2B"
+                "terB pts3B gf3B gc3B df3B"
+                "cuarB pts4B gf4B gc4B df4B";
+            grid-template-columns: 1fr repeat(4, 0.5fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;    
+        
+        }
