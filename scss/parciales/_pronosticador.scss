@@ -147,3 +147,39 @@
             grid-row-gap: 10px;    
         
         }
+
+.grupoD {
+            display: grid;
+            grid-template-areas:
+             "pais37 g37 g38 pais38"
+             "pais39 g39 g40 pais40"
+             "pais41 g41 g42 pais42"
+             "pais43 g43 g44 pais44"
+             "pais45 g45 g46 pais46"
+             "pais47 g47 g48 pais48";
+            grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+        
+            &__fila {
+                background-color: $color-qatar;
+                font-family: $font-normal;
+                color: white;
+            }
+            }
+    
+.ordenD {
+                display: grid;
+                grid-template-areas:
+                    "cabezaD ptsD gfsD gcsD dfD"
+                    "clasi1D pts1D gf1D gc1D df1D"
+                    "clasi2D pts2D gf2D gc2D df2D"
+                    "terD pts3D gf3D gc3D df3D"
+                    "cuarD pts4D gf4D gc4D df4D";
+                grid-template-columns: 1fr repeat(4, 0.5fr);
+                grid-template-rows: repeat(5, 1fr);
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;    
+            
+            }
