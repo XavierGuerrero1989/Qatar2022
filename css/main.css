@@ -269,6 +269,26 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
 
+.grupoF {
+  display: grid;
+  grid-template-areas: "pais61 g61 g62 pais62" "pais63 g63 g64 pais64" "pais65 g65 g66 pais66" "pais67 g67 g68 pais68" "pais69 g69 g70 pais70" "pais71 g71 g72 pais72";
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px; }
+  .grupoF__fila {
+    background-color: #56042C;
+    font-family: qatar1;
+    color: white; }
+
+.ordenF {
+  display: grid;
+  grid-template-areas: "cabezaF ptsF gfsF gcsF dfF" "clasi1F pts1F gf1F gc1F df1F" "clasi2F pts2F gf2F gc2F df2F" "terF pts3F gf3F gc3F df3F" "cuarF pts4F gf4F gc4F df4F";
+  grid-template-columns: 1fr repeat(4, 0.5fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
 @font-face {
   font-family: qatar1;
   src: url(../assets/fonts/ArabicMedium.ttf); }
