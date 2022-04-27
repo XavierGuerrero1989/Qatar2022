@@ -289,6 +289,46 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
 
+.grupoG {
+  display: grid;
+  grid-template-areas: "pais73 g73 g74 pais74" "pais75 g75 g76 pais76" "pais77 g77 g78 pais78" "pais79 g79 g80 pais80" "pais81 g81 g82 pais82" "pais83 g83 g84 pais84";
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px; }
+  .grupoG__fila {
+    background-color: #56042C;
+    font-family: qatar1;
+    color: white; }
+
+.ordenG {
+  display: grid;
+  grid-template-areas: "cabezaG ptsG gfsG gcsG dfG" "clasi1G pts1G gf1G gc1G df1G" "clasi2G pts2G gf2G gc2G df2G" "terG pts3G gf3G gc3G df3G" "cuarG pts4G gf4G gc4G df4G";
+  grid-template-columns: 1fr repeat(4, 0.5fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.grupoH {
+  display: grid;
+  grid-template-areas: "pais85 g85 g86 pais86" "pais87 g87 g88 pais88" "pais89 g89 g90 pais90" "pais91 g91 g92 pais92" "pais93 g93 g94 pais94" "pais95 g95 g96 pais96";
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px; }
+  .grupoH__fila {
+    background-color: #56042C;
+    font-family: qatar1;
+    color: white; }
+
+.ordenH {
+  display: grid;
+  grid-template-areas: "cabezaH ptsH gfsH gcsH dfH" "clasi1H pts1H gf1H gc1H df1H" "clasi2H pts2H gf2H gc2H df2H" "terH pts3H gf3H gc3H df3H" "cuarH pts4H gf4H gc4H df4H";
+  grid-template-columns: 1fr repeat(4, 0.5fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
 @font-face {
   font-family: qatar1;
   src: url(../assets/fonts/ArabicMedium.ttf); }
