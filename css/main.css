@@ -410,3 +410,37 @@
   margin-top: 20px;
   width: 100px;
   height: 60px; }
+
+@font-face {
+  font-family: qatar1;
+  src: url(../assets/fonts/ArabicMedium.ttf); }
+
+@font-face {
+  font-family: qatar2;
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+
+@font-face {
+  font-family: qatar3;
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+
+.estadistica__hero {
+  background-image: url("../../assets/img/estHero.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 40vh; }
+
+.estadistica__titulo {
+  font-family: qatar2;
+  color: #56042C; }
+  .estadistica__titulo--t {
+    font-size: 3rem; }
+  .estadistica__titulo--s {
+    font-size: 1.5rem; }
+
+.escudo {
+  height: 60vh;
+  padding: 20px; }
+
+.plantel {
+  height: 50vh; }

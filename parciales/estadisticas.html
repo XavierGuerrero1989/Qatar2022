@@ -41,8 +41,132 @@
       </div>
     </div>
 </nav>
+<main class="estadistica">
+  <section class="container-fluid estadistica__hero"></section>
+  <section class="container-fluid estadistica__titutloctn">
+    <div class="row d-flex justify-content-center text-center">
+      <div class="col-md-9 estadistica__titulo">
+        <h1 class="estadistica__titulo--t">LA CENTRAL DE DATOS</h1>
+        <p class="estadistica__titulo--s">Esta es la base de datos de estadistica de los 32 paises que jugaran el Mundial. Podras acceder a datos historicos como tambien a los ultimos resultados de cada seleccion para poder analizarlas y ver quien tiene mas chances de levantar la copa. <br> Elegi el pais deseado y hace click en cargar.</p>
+          <select class="form-select listado text-center" aria-label="Default select example" name="campeones" id="listaDePaises">
+              <option selected value="1">Qatar</option>
+              <option value="2">Ecuador</option>
+              <option value="3">Senegal</option>
+              <option value="4">Paises Bajos</option>
+              <option value="5">Inglaterra</option>
+              <option value="6">iran</option>
+              <option value="7">Estados Unidos</option>
+              <option value="8">Escocia</option>
+              <option value="9">Argentina</option>
+              <option value="10">Arabia Saudita</option>
+              <option value="11">Mexico</option>
+              <option value="12">Polonia</option>
+              <option value="13">Francia</option>
+              <option value="14">Peru</option>
+              <option value="15">Dinamarca</option>
+              <option value="16">Tunez</option>
+              <option value="17">España</option>
+              <option value="18">Costa Rica</option>
+              <option value="19">Alemania</option>
+              <option value="20">Japon</option>
+              <option value="21">Belgica</option>
+              <option value="22">Canada</option>
+              <option value="23">Marruecos</option>
+              <option value="24">Croacia</option>
+              <option value="25">Brasil</option>
+              <option value="26">Serbia</option>
+              <option value="27">Suiza</option>
+              <option value="28">Camerun</option>
+              <option value="29">Portugal</option>
+              <option value="30">Ghana</option>
+              <option value="31">Uruguay</option>
+              <option value="32">Corea del Sur</option>
+            </select>
+            <button id="cargarHistorico" class="botonCargaData">Cargar</button>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid resultados">
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-6">
+        <img src="" alt="" id="escudo" class="escudo">
+      </div>
+      <div class="col-md-6">
+        <img src="" alt="" id="plantel" class="plantel">
+      </div>
+    </div>
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-6">
+        <h3>Mejor puesto obtenido</h3>
+        <p class="resultados__mp" id="mejorPuesto"></p>
+      </div>
+      <div class="col-md-6">
+        <h3>Mundial en cual se obtuvo</h3>
+        <p class="resultados__mp" id="mundialMp"></p>
+      </div>
+    </div>
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-4">
+        <h3>Ultimo Mundial</h3>
+        <p class="resultados__um" id="ultimoMundial"></p>
+      </div>
+      <div class="col-md-4">
+        <h3>Posicion</h3>
+        <p class="resultados__um" id="posicionUm"></p>
+      </div>
+      <div class="col-md-4">
+        <h3>Cantidad de participaciones</h3>
+        <p class="resultados__um" id="participaciones"></p>
+      </div>
+    </div>
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-3">
+        <h3>Partidos Jugados</h3>
+        <p class="resultados__ph" id="pj"></p>
+      </div>
+      <div class="col-md-3">
+        <h3>Partidos Ganados</h3>
+        <p class="resultados__ph" id="pg"></p>
+      </div>
+      <div class="col-md-3">
+        <h3>Partidos Empatados</h3>
+        <p class="resultados__ph" id="pe"></p>
+      </div>
+      <div class="col-md-3">
+        <h3>Partidos Perdidos</h3>
+        <p class="resultados__ph" id="pp"></p>
+      </div>
+    </div>
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-4">
+        <h3>Goles a favor</h3>
+        <p class="resultados__gh" id="gf"></p>
+      </div>
+      <div class="col-md-4">
+        <h3>Goles en Contra</h3>
+        <p class="resultados__gh" id="gc"></p>
+      </div>
+      <div class="col-md-4">
+        <h3>Diferencia de Gol</h3>
+        <p class="resultados__gh" id="dg"></p>
+      </div>
+    </div>
+    <div class="row text-center d-flex justify-content-center">
+      <div class="col-md-6">
+        <h3>Ultimos partidos</h3>
+        <p class="resultados__up" id="rachap"></p>
+      </div>
+      <div class="col-md-6">
+        <h3>Goles de los ultimos partidos</h3>
+        <p class="resultados__up" id="rachag"></p>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <script src="../js/estadisticas.js"></script>
+
+  <script src="../js/estadisticas.js" type="module"></script>
+  <script src="../js/getHistorical.js" type="module"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
