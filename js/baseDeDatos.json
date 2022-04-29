@@ -13,7 +13,9 @@
     "p":"0",
     "gf":"0",
     "gc":"0",
-    "dg":"0"
+    "dg":"0",
+    "ultimos":"4g - 2e - 1p",
+    "ultimosGoles":"13gf - 4gc"
 },
 
 {
@@ -30,7 +32,9 @@
     "p":"5",
     "gf":"10",
     "gc":"11",
-    "dg":"-1"
+    "dg":"-1",
+    "ultimos":"3g - 4e - 1p",
+    "ultimosGoles":"11gf - 9gc"
 },
 
 {
@@ -47,7 +51,9 @@
     "p":"2",
     "gf":"11",
     "gc":"10",
-    "dg":"1"
+    "dg":"1",
+    "ultimos":"7g - 4e - 1p",
+    "ultimosGoles":"17gf - 6gc"
 },
 
 {
@@ -64,38 +70,547 @@
     "p":"11",
     "gf":"86",
     "gc":"48",
-    "dg":"38"
+    "dg":"38",
+    "ultimos":"2g - 1e - 0p",
+    "ultimosGoles":"7gf - 3gc"
+},
+
+{
+    "id":"5",
+    "pais":"Inglaterra",
+    "mejorParticipacion":"1°",
+    "anioMejor":"1966",
+    "ultima":"2018",
+    "posicionUltima":"4°",
+    "participacionesTotales":"15",
+    "partidosTotales":"68",
+    "g":"29",
+    "e":"21",
+    "p":"18",
+    "gf":"90",
+    "gc":"62",
+    "dg":"28",
+    "ultimos":"2g - 0e - 0p",
+    "ultimosGoles":"5gf - 1gc"
+},
+
+{
+    "id":"6",
+    "pais":"Iran",
+    "mejorParticipacion":"14°",
+    "anioMejor":"1978",
+    "ultima":"2018",
+    "posicionUltima":"18°",
+    "participacionesTotales":"5",
+    "partidosTotales":"15",
+    "g":"2",
+    "e":"4",
+    "p":"9",
+    "gf":"9",
+    "gc":"24",
+    "dg":"-15",
+    "ultimos":"3g - 0e - 1p",
+    "ultimosGoles":"4gf - 2gc"
+},
+
+{
+    "id":"7",
+    "pais":"Estados Unidos",
+    "mejorParticipacion":"3°",
+    "anioMejor":"1930",
+    "ultima":"2014",
+    "posicionUltima":"15°",
+    "participacionesTotales":"10",
+    "partidosTotales":"33",
+    "g":"8",
+    "e":"6",
+    "p":"19",
+    "gf":"37",
+    "gc":"62",
+    "dg":"-25",
+    "ultimos":"6g - 2e - 2p",
+    "ultimosGoles":"15gf - 5gc"
+},
+
+{
+    "id":"8",
+    "pais":"Escocia",
+    "mejorParticipacion":"9°",
+    "anioMejor":"1974",
+    "ultima":"1998",
+    "posicionUltima":"27°",
+    "participacionesTotales":"8",
+    "partidosTotales":"23",
+    "g":"4",
+    "e":"7",
+    "p":"12",
+    "gf":"25",
+    "gc":"41",
+    "dg":"-16",
+    "ultimos":"5g - 1e - 1p",
+    "ultimosGoles":"10gf - 6gc"
+},
+
+{
+    "id":"9",
+    "pais":"Argentina",
+    "mejorParticipacion":"1°",
+    "anioMejor":"1978, 1986",
+    "ultima":"2018",
+    "posicionUltima":"16°",
+    "participacionesTotales":"17",
+    "partidosTotales":"81",
+    "g":"43",
+    "e":"15",
+    "p":"23",
+    "gf":"137",
+    "gc":"93",
+    "dg":"44",
+    "ultimos":"9g - 3e - 0p",
+    "ultimosGoles":"19gf - 3gc"
+},
+
+{
+    "id":"10",
+    "pais":"Arabia Saudita",
+    "mejorParticipacion":"12°",
+    "anioMejor":"1994",
+    "ultima":"2018",
+    "posicionUltima":"26°",
+    "participacionesTotales":"5",
+    "partidosTotales":"16",
+    "g":"3",
+    "e":"2",
+    "p":"11",
+    "gf":"11",
+    "gc":"39",
+    "dg":"-28",
+    "ultimos":"2g - 2e - 3p",
+    "ultimosGoles":"4gf - 6gc"
+},
+
+{
+    "id":"11",
+    "pais":"Mexico",
+    "mejorParticipacion":"6°",
+    "anioMejor":"1970, 1986",
+    "ultima":"2018",
+    "posicionUltima":"12°",
+    "participacionesTotales":"16",
+    "partidosTotales":"57",
+    "g":"16",
+    "e":"14",
+    "p":"27",
+    "gf":"60",
+    "gc":"98",
+    "dg":"-38",
+    "ultimos":"4g - 3e - 0p",
+    "ultimosGoles":"6gf - 1gc"
+},
+
+{
+    "id":"12",
+    "pais":"Polonia",
+    "mejorParticipacion":"3°",
+    "anioMejor":"1974, 1982",
+    "ultima":"2018",
+    "posicionUltima":"25°",
+    "participacionesTotales":"8",
+    "partidosTotales":"34",
+    "g":"16",
+    "e":"5",
+    "p":"13",
+    "gf":"46",
+    "gc":"45",
+    "dg":"1",
+    "ultimos":"1g - 1e - 0p",
+    "ultimosGoles":"3gf - 1gc"
+},
+
+{
+    "id":"13",
+    "pais":"Francia",
+    "mejorParticipacion":"1°",
+    "anioMejor":"1998, 2018",
+    "ultima":"2018",
+    "posicionUltima":"1°",
+    "participacionesTotales":"15",
+    "partidosTotales":"66",
+    "g":"34",
+    "e":"13",
+    "p":"19",
+    "gf":"120",
+    "gc":"77",
+    "dg":"43",
+    "ultimos":"6g - 1e - 0p",
+    "ultimosGoles":"22gf - 4gc"
+},
+
+{
+    "id":"14",
+    "pais":"Peru",
+    "mejorParticipacion":"7°",
+    "anioMejor":"1970",
+    "ultima":"2018",
+    "posicionUltima":"20°",
+    "participacionesTotales":"5",
+    "partidosTotales":"18",
+    "g":"5",
+    "e":"3",
+    "p":"10",
+    "gf":"21",
+    "gc":"33",
+    "dg":"-12",
+    "ultimos":"5g - 2e - 3p",
+    "ultimosGoles":"13gf - 6gc"
+},
+
+{
+    "id":"15",
+    "pais":"Dinamarca",
+    "mejorParticipacion":"8°",
+    "anioMejor":"1998",
+    "ultima":"2018",
+    "posicionUltima":"11°",
+    "participacionesTotales":"5",
+    "partidosTotales":"20",
+    "g":"9",
+    "e":"5",
+    "p":"6",
+    "gf":"30",
+    "gc":"26",
+    "dg":"4",
+    "ultimos":"7g - 0e - 3p",
+    "ultimosGoles":"22gf - 9gc"
+},
+
+{
+    "id":"16",
+    "pais":"Tunez",
+    "mejorParticipacion":"9°",
+    "anioMejor":"1978",
+    "ultima":"2018",
+    "posicionUltima":"24°",
+    "participacionesTotales":"5",
+    "partidosTotales":"15",
+    "g":"2",
+    "e":"4",
+    "p":"9",
+    "gf":"13",
+    "gc":"25",
+    "dg":"-12",
+    "ultimos":"6g - 0e - 3p",
+    "ultimosGoles":"13gf - 8gc"
+},
+
+{
+    "id":"17",
+    "pais":"España",
+    "mejorParticipacion":"1°",
+    "anioMejor":"2010",
+    "ultima":"2018",
+    "posicionUltima":"10°",
+    "participacionesTotales":"15",
+    "partidosTotales":"63",
+    "g":"30",
+    "e":"15",
+    "p":"18",
+    "gf":"99",
+    "gc":"72",
+    "dg":"27",
+    "ultimos":"12g - 6e - 2p",
+    "ultimosGoles":"42gf - 15gc"
+},
+
+{
+    "id":"18",
+    "pais":"Costa Rica",
+    "mejorParticipacion":"8°",
+    "anioMejor":"2014",
+    "ultima":"2018",
+    "posicionUltima":"29°",
+    "participacionesTotales":"5",
+    "partidosTotales":"18",
+    "g":"5",
+    "e":"5",
+    "p":"8",
+    "gf":"19",
+    "gc":"28",
+    "dg":"-9",
+    "ultimos":"4g - 1e - 0p",
+    "ultimosGoles":"6gf - 1gc"
+},
+
+{
+    "id":"19",
+    "pais":"Alemania",
+    "mejorParticipacion":"1°",
+    "anioMejor":"1954, 1974, 1990, 2014",
+    "ultima":"2018",
+    "posicionUltima":"22°",
+    "participacionesTotales":"19",
+    "partidosTotales":"109",
+    "g":"67",
+    "e":"20",
+    "p":"22",
+    "gf":"226",
+    "gc":"125",
+    "dg":"101",
+    "ultimos":"5g - 1e - 0p",
+    "ultimosGoles":"22gf - 3gc"
+},
+
+{
+    "id":"20",
+    "pais":"Japon",
+    "mejorParticipacion":"9°",
+    "anioMejor":"2002, 2010",
+    "ultima":"2018",
+    "posicionUltima":"15°",
+    "participacionesTotales":"6",
+    "partidosTotales":"21",
+    "g":"5",
+    "e":"5",
+    "p":"11",
+    "gf":"20",
+    "gc":"29",
+    "dg":"-9",
+    "ultimos":"3g - 1e - 0p",
+    "ultimosGoles":"7gf - 1gc"
+},
+
+{
+    "id":"21",
+    "pais":"Belgica",
+    "mejorParticipacion":"3°",
+    "anioMejor":"2018",
+    "ultima":"2018",
+    "posicionUltima":"3°",
+    "participacionesTotales":"13",
+    "partidosTotales":"48",
+    "g":"20",
+    "e":"9",
+    "p":"19",
+    "gf":"68",
+    "gc":"72",
+    "dg":"-4",
+    "ultimos":"2g - 2e - 2p",
+    "ultimosGoles":"12gf - 9gc"
+},
+
+{
+    "id":"22",
+    "pais":"Canada",
+    "mejorParticipacion":"24°",
+    "anioMejor":"1986",
+    "ultima":"1986",
+    "posicionUltima":"24°",
+    "participacionesTotales":"1",
+    "partidosTotales":"3",
+    "g":"0",
+    "e":"0",
+    "p":"3",
+    "gf":"0",
+    "gc":"5",
+    "dg":"-5",
+    "ultimos":"5g - 0e - 2p",
+    "ultimosGoles":"12gf - 3gc"
+},
+
+{
+    "id":"23",
+    "pais":"Marruecos",
+    "mejorParticipacion":"11°",
+    "anioMejor":"1986",
+    "ultima":"2018",
+    "posicionUltima":"27°",
+    "participacionesTotales":"5",
+    "partidosTotales":"16",
+    "g":"2",
+    "e":"5",
+    "p":"9",
+    "gf":"14",
+    "gc":"22",
+    "dg":"-8",
+    "ultimos":"6g - 3e - 1p",
+    "ultimosGoles":"20gf - 9gc"
+},
+
+{
+    "id":"24",
+    "pais":"Croacia",
+    "mejorParticipacion":"2°",
+    "anioMejor":"2018",
+    "ultima":"2018",
+    "posicionUltima":"2°",
+    "participacionesTotales":"5",
+    "partidosTotales":"23",
+    "g":"11",
+    "e":"4",
+    "p":"8",
+    "gf":"35",
+    "gc":"26",
+    "dg":"9",
+    "ultimos":"6g - 3e - 4p",
+    "ultimosGoles":"26gf - 16gc"
+},
+
+{
+    "id":"25",
+    "pais":"Brasil",
+    "mejorParticipacion":"1°",
+    "anioMejor":"1958, 1962, 1970, 1994, 2002",
+    "ultima":"2018",
+    "posicionUltima":"6°",
+    "participacionesTotales":"21",
+    "partidosTotales":"109",
+    "g":"73",
+    "e":"18",
+    "p":"18",
+    "gf":"229",
+    "gc":"105",
+    "dg":"124",
+    "ultimos":"8g - 3e - 1p",
+    "ultimosGoles":"24gf - 4gc"
+},
+
+{
+    "id":"26",
+    "pais":"Serbia",
+    "mejorParticipacion":"4°",
+    "anioMejor":"1930, 1962",
+    "ultima":"2018",
+    "posicionUltima":"23°",
+    "participacionesTotales":"12",
+    "partidosTotales":"46",
+    "g":"18",
+    "e":"8",
+    "p":"20",
+    "gf":"66",
+    "gc":"63",
+    "dg":"3",
+    "ultimos":"4g - 0e - 1p",
+    "ultimosGoles":"10gf - 5gc"
+},
+
+{
+    "id":"27",
+    "pais":"Suiza",
+    "mejorParticipacion":"5°",
+    "anioMejor":"1954",
+    "ultima":"2018",
+    "posicionUltima":"14°",
+    "participacionesTotales":"11",
+    "partidosTotales":"37",
+    "g":"12",
+    "e":"8",
+    "p":"17",
+    "gf":"50",
+    "gc":"64",
+    "dg":"-14",
+    "ultimos":"2g - 2e - 1p",
+    "ultimosGoles":"11gf - 4gc"
+},
+
+{
+    "id":"28",
+    "pais":"Camerun",
+    "mejorParticipacion":"7°",
+    "anioMejor":"1990",
+    "ultima":"2014",
+    "posicionUltima":"32°",
+    "participacionesTotales":"7",
+    "partidosTotales":"23",
+    "g":"4",
+    "e":"7",
+    "p":"12",
+    "gf":"18",
+    "gc":"43",
+    "dg":"-25",
+    "ultimos":"7g - 2e - 1p",
+    "ultimosGoles":"17gf - 9gc"
+},
+
+{
+    "id":"29",
+    "pais":"Portugal",
+    "mejorParticipacion":"3°",
+    "anioMejor":"1966",
+    "ultima":"2018",
+    "posicionUltima":"13°",
+    "participacionesTotales":"7",
+    "partidosTotales":"30",
+    "g":"14",
+    "e":"6",
+    "p":"10",
+    "gf":"49",
+    "gc":"35",
+    "dg":"14",
+    "ultimos":"6g - 2e - 3p",
+    "ultimosGoles":"23gf - 11gc"
+},
+
+{
+    "id":"30",
+    "pais":"Ghana",
+    "mejorParticipacion":"7°",
+    "anioMejor":"2010",
+    "ultima":"2014",
+    "posicionUltima":"25°",
+    "participacionesTotales":"3",
+    "partidosTotales":"12",
+    "g":"4",
+    "e":"3",
+    "p":"5",
+    "gf":"13",
+    "gc":"16",
+    "dg":"-3",
+    "ultimos":"1g - 3e - 3p",
+    "ultimosGoles":"5gf - 9gc"
+},
+
+{
+    "id":"31",
+    "pais":"Uruguay",
+    "mejorParticipacion":"1°",
+    "anioMejor":"1930, 1950",
+    "ultima":"2018",
+    "posicionUltima":"5°",
+    "participacionesTotales":"13",
+    "partidosTotales":"56",
+    "g":"24",
+    "e":"12",
+    "p":"20",
+    "gf":"87",
+    "gc":"74",
+    "dg":"13",
+    "ultimos":"4g - 0e - 0p",
+    "ultimosGoles":"8gf - 1gc"
+},
+
+{
+    "id":"32",
+    "pais":"Corea Del Sur",
+    "mejorParticipacion":"4°",
+    "anioMejor":"2002",
+    "ultima":"2018",
+    "posicionUltima":"19°",
+    "participacionesTotales":"10",
+    "partidosTotales":"34",
+    "g":"6",
+    "e":"9",
+    "p":"19",
+    "gf":"34",
+    "gc":"70",
+    "dg":"-36",
+    "ultimos":"7g - 0e - 1p",
+    "ultimosGoles":"18gf - 2gc"
 }
 ]
 
-
-
-              
-                Inglaterra
-                iran
-                Estados Unidos
-                Escocia
-                Argentina
-                Arabia Saudita
-                Mexico
-                Polonia
-                Francia
-                Peru
-                Dinamarca
-                Tunez
-                España
-                Costa Rica
-                Alemania
-                Japon
-                >Belgica
-                Canada
-                Marruecos
-                Croacia
-                Brasil
-                Serbia
-                Suiza
-                Camerun
-                Portugal
-                Ghana
-                Uruguay
-                Corea del Sur
+            
+                
+               
+             
+             
+                
