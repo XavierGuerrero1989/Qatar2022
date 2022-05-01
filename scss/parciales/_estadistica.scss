@@ -5,7 +5,7 @@
 
 
     &__hero{
-    background-image: url("../../assets/img/estHero.jpg");
+    background-image: url("../assets/img/estHero.jpg");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -34,4 +34,42 @@
 
 .plantel {
     height: 50vh;
+}
+
+.resultados{
+    font-family: $font-bold;
+
+    &__1{
+        background-color: $color-qatar;
+        color: white;
+    }
+
+    &__2{
+        color: $color-qatar;
+    }
+
+    &__3{
+        background-color: $color-qatar;
+        color: white;
+    }
+
+    &__4{
+        color: $color-qatar;
+    }
+
+    &__5{
+        background-color: $color-qatar;
+        color: white;
+    }
+
+    &__minititulo{
+        font-size: 3rem;
+    }
+
+
+
+    &__est{
+        font-size: 2rem;
+    }
+
 }

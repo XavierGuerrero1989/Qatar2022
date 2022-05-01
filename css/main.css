@@ -342,7 +342,7 @@
   src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
 .heroealternativo {
-  background-image: url("../../assets/img/heropronosticonormal.jpg");
+  background-image: url("../assets/img/heropronosticonormal.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -424,7 +424,7 @@
   src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
 .estadistica__hero {
-  background-image: url("../../assets/img/estHero.jpg");
+  background-image: url("../assets/img/estHero.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -444,3 +444,23 @@
 
 .plantel {
   height: 50vh; }
+
+.resultados {
+  font-family: qatar2; }
+  .resultados__1 {
+    background-color: #56042C;
+    color: white; }
+  .resultados__2 {
+    color: #56042C; }
+  .resultados__3 {
+    background-color: #56042C;
+    color: white; }
+  .resultados__4 {
+    color: #56042C; }
+  .resultados__5 {
+    background-color: #56042C;
+    color: white; }
+  .resultados__minititulo {
+    font-size: 3rem; }
+  .resultados__est {
+    font-size: 2rem; }
