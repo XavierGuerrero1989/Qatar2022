@@ -439,11 +439,12 @@
     font-size: 1.5rem; }
 
 .escudo {
-  height: 60vh;
+  width: 50%;
   padding: 20px; }
 
 .plantel {
-  height: 50vh; }
+  width: 80%;
+  padding: 20px; }
 
 .resultados {
   font-family: qatar2; }
