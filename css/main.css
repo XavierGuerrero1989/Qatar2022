@@ -473,3 +473,25 @@
 
 .imgPo {
   width: 100%; }
+
+@font-face {
+  font-family: qatar1;
+  src: url(../assets/fonts/ArabicMedium.ttf); }
+
+@font-face {
+  font-family: qatar2;
+  src: url(../assets/fonts/Qatar2022Arabic-Bold.ttf); }
+
+@font-face {
+  font-family: qatar3;
+  src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
+
+.rowDeOctavos {
+  color: #56042C;
+  font-family: qatar2; }
+
+#2bG90 {
+  width: 50% !important; }
+
+#2bGP {
+  width: 50% !important; }
