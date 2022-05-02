@@ -453,3 +453,5 @@ document.getElementById(`borrarDataC`).addEventListener(`click`, () =>  {
         }
       })
 })
+
+export { grupoC }

@@ -387,3 +387,5 @@ document.getElementById(`borrarDataG`).addEventListener(`click`, () =>  {
         }
       })
 })
+
+export { grupoG }

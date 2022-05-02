@@ -453,3 +453,7 @@ document.getElementById(`borrarData`).addEventListener(`click`, () =>  {
         }
       })
 })
+
+const grupoArecuperado = JSON.parse(localStorage.getItem("grupoAresultados"))
+
+export { grupoArecuperado }

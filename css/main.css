@@ -329,6 +329,10 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
 
+.rowDeOctavos {
+  border: solid #56042C;
+  padding: 10px; }
+
 @font-face {
   font-family: qatar1;
   src: url(../assets/fonts/ArabicMedium.ttf); }
@@ -444,7 +448,8 @@
 
 .plantel {
   width: 80%;
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 35px 35px 35px 35px !important; }
 
 .resultados {
   font-family: qatar2; }
