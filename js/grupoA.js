@@ -1,4 +1,5 @@
 const qatar = {
+    id: 1,
     pais: "Qatar",
     puntos: 0,
     golesFavor: 0,
@@ -7,6 +8,7 @@ const qatar = {
 }
 
 const ecuador = {
+    id: 2,
     pais: "Ecuador",
     puntos: 0,
     golesFavor: 0,
@@ -15,6 +17,7 @@ const ecuador = {
 }
 
 const senegal = {
+    id: 3,
 pais: "Senegal",
 puntos: 0,
 golesFavor: 0,
@@ -23,6 +26,7 @@ diferencia: 0
 }
 
 const paisesBajos = {
+    id: 4,
 pais: "Paises Bajos",
 puntos: 0,
 golesFavor: 0,

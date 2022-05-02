@@ -1,4 +1,5 @@
 const inglaterra = {
+    id: 5,
     pais: "Inglaterra",
     puntos: 0,
     golesFavor: 0,
@@ -7,6 +8,7 @@ const inglaterra = {
 }
 
 const iran = {
+    id: 6,
     pais: "Iran",
     puntos: 0,
     golesFavor: 0,
@@ -15,6 +17,7 @@ const iran = {
 }
 
 const eeuu = {
+    id: 7,
     pais: "Estados Unidos",
     puntos: 0,
     golesFavor: 0,
@@ -23,6 +26,7 @@ const eeuu = {
 }
 
 const escocia = {
+    id: 8,
     pais: "Escocia",
     puntos: 0,
     golesFavor: 0,
@@ -170,13 +174,13 @@ if (parseInt(goles17.value) > parseInt(goles18.value)) {
                                    
 if (parseInt(goles19.value) > parseInt(goles20.value)) {
             iran.puntos = iran.puntos + 3
-            escocia.puntos = paisesBajos.puntos + 0
+            escocia.puntos = escocia.puntos + 0
 } else if (parseInt(goles19.value) == parseInt(goles20.value)) {
     iran.puntos = iran.puntos + 1
-    escocia.puntos = paisesBajos.puntos + 1
+    escocia.puntos = escocia.puntos + 1
 } else {
     iran.puntos = iran.puntos + 0
-    escocia.puntos = paisesBajos.puntos + 3
+    escocia.puntos = escocia.puntos + 3
 }
                         
 if (parseInt(goles21.value) > parseInt(goles22.value)) {
@@ -456,4 +460,6 @@ document.getElementById(`borrarDataB`).addEventListener(`click`, () =>  {
       })
 })
 
-export { grupoB }
+const grupoBrecuperado = JSON.parse(localStorage.getItem("grupoBresultados"))
+
+export { grupoBrecuperado }

@@ -1,4 +1,5 @@
 const belgica = {
+    id: 21,
     pais: "Belgica",
     puntos: 0,
     golesFavor: 0,
@@ -7,6 +8,7 @@ const belgica = {
 }
 
 const canada = {
+    id: 22,
     pais: "Canada",
     puntos: 0,
     golesFavor: 0,
@@ -15,6 +17,7 @@ const canada = {
 }
 
 const marruecos = {
+    id: 23,
     pais: "Marruecos",
     puntos: 0,
     golesFavor: 0,
@@ -23,6 +26,7 @@ const marruecos = {
 }
 
 const croacia = {
+    id: 24,
     pais: "Croacia",
     puntos: 0,
     golesFavor: 0,
@@ -388,4 +392,6 @@ document.getElementById(`borrarDataF`).addEventListener(`click`, () =>  {
       })
 })
 
-export { grupoF }
+const grupoFrecuperado = JSON.parse(localStorage.getItem("grupoFresultados"))
+
+export { grupoFrecuperado }

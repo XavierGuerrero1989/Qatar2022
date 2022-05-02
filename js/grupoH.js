@@ -1,4 +1,5 @@
 const portugal = {
+    id: 29,
     pais: "Portugal",
     puntos: 0,
     golesFavor: 0,
@@ -7,6 +8,7 @@ const portugal = {
 }
 
 const ghana = {
+    id: 30,
     pais: "Ghana",
     puntos: 0,
     golesFavor: 0,
@@ -15,6 +17,7 @@ const ghana = {
 }
 
 const uruguay = {
+    id: 31,
     pais: "Uruguay",
     puntos: 0,
     golesFavor: 0,
@@ -23,6 +26,7 @@ const uruguay = {
 }
 
 const corea = {
+    id: 32,
     pais: "Corea del Sur",
     puntos: 0,
     golesFavor: 0,
@@ -139,7 +143,7 @@ if (parseInt(goles95.value) > parseInt(goles96.value)) {
         grupoH[index].diferencia = grupoH[index].golesFavor - grupoH[index].golesContra;  
     }
 
-    console.log(grupoH);
+    
 
     grupoH.sort(
         function(a,b) {
@@ -386,4 +390,6 @@ document.getElementById(`borrarDataH`).addEventListener(`click`, () =>  {
       })
 })
 
-export { grupoH }
+const grupoHrecuperado = JSON.parse(localStorage.getItem("grupoHresultados"))
+
+export { grupoHrecuperado }

@@ -1,4 +1,5 @@
 const espana = {
+    id: 17,
     pais: "España",
     puntos: 0,
     golesFavor: 0,
@@ -7,6 +8,7 @@ const espana = {
 }
 
 const costaRica = {
+    id: 18,
     pais: "Costa Rica",
     puntos: 0,
     golesFavor: 0,
@@ -15,6 +17,7 @@ const costaRica = {
 }
 
 const alemania = {
+    id: 19,
     pais: "Alemania",
     puntos: 0,
     golesFavor: 0,
@@ -23,6 +26,7 @@ const alemania = {
 }
 
 const japon = {
+    id: 20,
     pais: "Japon",
     puntos: 0,
     golesFavor: 0,
@@ -388,4 +392,6 @@ document.getElementById(`borrarDataE`).addEventListener(`click`, () =>  {
       })
 })
 
-export { grupoE }
+const grupoErecuperado = JSON.parse(localStorage.getItem("grupoEresultados"))
+
+export { grupoErecuperado }
