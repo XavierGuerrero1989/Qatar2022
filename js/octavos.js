@@ -92,4 +92,105 @@ Toastify({
     }).showToast();
 
 })
+
+
+const octavos1 = [grupoArecuperado[0], grupoBrecuperado[1]]
+const octavos2 = [grupoCrecuperado[0], grupoDrecuperado[1]]
+const octavos3 = [grupoErecuperado[0], grupoFrecuperado[1]]
+const octavos4 = [grupoGrecuperado[0], grupoHrecuperado[1]]
+const octavos5 = [grupoBrecuperado[0], grupoArecuperado[1]]
+const octavos6 = [grupoDrecuperado[0], grupoCrecuperado[1]]
+const octavos7 = [grupoFrecuperado[0], grupoErecuperado[1]]
+const octavos8 = [grupoHrecuperado[0], grupoGrecuperado[1]]
+
+let gol1a = document.getElementById("1aG90")
+let pen1a = document.getElementById("1aGP")
+pen1a.disabled = true;
+let gol2a = document.getElementById("2aG90")
+let pen2a = document.getElementById("2aGP")
+pen2a.disabled = true;
+let gol1b = document.getElementById("1bG90")
+let pen1b = document.getElementById("1bGP")
+pen1b.disabled = true;
+let gol2b = document.getElementById("2bG90")
+let pen2b = document.getElementById("2bGP")
+pen2b.disabled = true;
+let gol1c = document.getElementById("1cG90")
+let pen1c = document.getElementById("1cGP")
+pen1c.disabled = true;
+let gol2c = document.getElementById("2cG90")
+let pen2c = document.getElementById("2cGP")
+pen2c.disabled = true;
+let gol1d = document.getElementById("1dG90")
+let pen1d = document.getElementById("1dGP")
+pen1d.disabled = true;
+let gol2d = document.getElementById("2dG90")
+let pen2d = document.getElementById("2dGP")
+pen2d.disabled = true;
+let gol1e = document.getElementById("1eG90")
+let pen1e = document.getElementById("1eGP")
+pen1e.disabled = true;
+let gol2e = document.getElementById("2eG90")
+let pen2e = document.getElementById("2eGP")
+pen2e.disabled = true;
+let gol1f = document.getElementById("1fG90")
+let pen1f = document.getElementById("1fGP")
+pen1f.disabled = true;
+let gol2f = document.getElementById("2fG90")
+let pen2f = document.getElementById("2fGP")
+pen2f.disabled = true;
+let gol1g = document.getElementById("1gG90")
+let pen1g = document.getElementById("1gGP")
+pen1g.disabled = true;
+let gol2g = document.getElementById("2gG90")
+let pen2g = document.getElementById("2gGP")
+pen2g.disabled = true;
+let gol1h = document.getElementById("1hG90")
+let pen1h = document.getElementById("1hGP")
+pen1h.disabled = true;
+let gol2h = document.getElementById("2hG90")
+let pen2h = document.getElementById("2hGP")
+pen2h.disabled = true;
+
+gol1a.addEventListener("change", revision() )
+gol2b.addEventListener("change", revision())
+
+function revision () {
+        gol1a.addEventListener("input", function () {
+            gol2b.addEventListener("input", function () {
+                if (parseInt(gol1a.value) == parseInt(gol2b.value)) {
+                    pen1a.disabled = false;
+                    pen2b.disabled = false;
+                } else {
+                    pen1a.disabled = true;
+                    pen2b.disabled = true;
+                }
+            } )
+        })
+}
+
+
+        
+
+
+
+
+document.getElementById(`boton8vos`).addEventListener(`click`, () =>  { 
+    if (parseInt(gol1a.value)>parseInt(gol2b.value)) {
+        octavos1[0].puntos = 3
+        octavos1[1].puntos = 0
+    } else if (parseInt(gol1a.value) < parseInt(gol2b.value)) {
+        octavos1[0].puntos = 0
+        octavos1[1].puntos = 3
+    } else if (parseInt(pen1a.value)>parseInt(pen2b.value)) {
+        octavos1[0].puntos = 3
+        octavos1[1].puntos = 0
+    } else {
+        octavos1[0].puntos = 0
+        octavos1[1].puntos = 3
+    }
+    console.log(parseInt(gol1a.value));
+    console.log(parseInt(gol2b.value));
+    console.log(octavos1);
+})
   

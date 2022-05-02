@@ -2,7 +2,19 @@
 @import "./variables";
 
 
+.divisor{
+    color: $color-qatar;
+    font-family: $font-bold;
 
+    &__titulo{
+        font-size: 2.5rem;
+    }
+
+    &__texto{
+        font-size: 1.5rem;
+    }
+
+}
 
 
 .rowDeOctavos{
@@ -10,10 +22,3 @@
     font-family: $font-bold;
 }
 
-#2bG90{
-    width: 50% !important;
-}
-
-#2bGP{
-    width: 50% !important;
-}

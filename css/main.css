@@ -486,12 +486,14 @@
   font-family: qatar3;
   src: url(../assets/fonts/Qatar2022Arabic-Heavy.ttf); }
 
+.divisor {
+  color: #56042C;
+  font-family: qatar2; }
+  .divisor__titulo {
+    font-size: 2.5rem; }
+  .divisor__texto {
+    font-size: 1.5rem; }
+
 .rowDeOctavos {
   color: #56042C;
   font-family: qatar2; }
-
-#2bG90 {
-  width: 50% !important; }
-
-#2bGP {
-  width: 50% !important; }
