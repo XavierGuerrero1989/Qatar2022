@@ -246,7 +246,6 @@ function deployGolesH() {
     goles95.value = golesRecuperadosH.vGol95;
     goles96.value = golesRecuperadosH.vGol96;
 
-    
 }
 
 function deployArrayH() {
