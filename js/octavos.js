@@ -491,25 +491,40 @@ document.getElementById(`boton8vos`).addEventListener(`click`, () =>  {
 
 
     let valorg1a = parseInt(gol1a.value)
+    let valorpen1a = parseInt(pen1a.value)
     let valorg2a = parseInt(gol2a.value)
+    let valorpen2a = parseInt(pen2a.value)
     let valorg1b = parseInt(gol1b.value)
+    let valorpen1b = parseInt(pen1b.value)
     let valorg2b = parseInt(gol2b.value)
+    let valorpen2b = parseInt(pen2b.value)
     let valorg1c = parseInt(gol1c.value)
+    let valorpen1c = parseInt(pen1c.value)
     let valorg2c = parseInt(gol2c.value)
+    let valorpen2c = parseInt(pen2c.value)
     let valorg1d = parseInt(gol1d.value)
+    let valorpen1d = parseInt(pen1d.value)
     let valorg2d = parseInt(gol2d.value)
+    let valorpen2d = parseInt(pen2d.value)
     let valorg1e = parseInt(gol1e.value)
+    let valorpen1e = parseInt(pen1e.value)
     let valorg2e = parseInt(gol2e.value)
+    let valorpen2e = parseInt(pen2e.value)
     let valorg1f = parseInt(gol1f.value)
+    let valorpen1f = parseInt(pen1f.value)
     let valorg2f = parseInt(gol2f.value)
+    let valorpen2f = parseInt(pen2f.value)
     let valorg1g = parseInt(gol1g.value)
+    let valorpen1g = parseInt(pen1g.value)
     let valorg2g = parseInt(gol2g.value)
+    let valorpen2g = parseInt(pen2g.value)
     let valorg1h = parseInt(gol1h.value)
+    let valorpen1h = parseInt(pen1h.value)
     let valorg2h = parseInt(gol2h.value)
-    
+    let valorpen2h = parseInt(pen2h.value)
 
 
-    const goles8vos = [valorg1a, valorg2a, valorg1b, valorg2b, valorg1c, valorg2c, valorg1d, valorg2d, valorg1e, valorg2e, valorg1f, valorg2f, valorg1g, valorg2g, valorg1h, valorg2h]
+    const goles8vos = [valorg1a, valorpen1a, valorg2a, valorpen2a, valorg1b, valorpen1b, valorg2b, valorpen2b, valorg1c, valorpen1c, valorg2c, valorpen2c, valorg1d, valorpen1d, valorg2d, valorpen2d, valorg1e, valorpen1e, valorg2e, valorpen2e, valorg1f, valorpen1f, valorg2f, valorpen2f, valorg1g, valorpen1g, valorg2g, valorpen2g, valorg1h, valorpen1h, valorg2h, valorpen2h]
 
     const guardaGoles8vos = JSON.stringify(goles8vos)
     localStorage.setItem("goles8vos", guardaGoles8vos);
@@ -528,25 +543,40 @@ localStorage.hasOwnProperty("goles8vos") === true && deployGoles8vos();
 
 function deployGoles8vos() {
     const goles8vosRecuperados = JSON.parse(localStorage.getItem("goles8vos"))
-    console.log(goles8vosRecuperados);
 
     gol1a.value = goles8vosRecuperados[0]
-    gol2a.value = goles8vosRecuperados[1]
-    gol1b.value = goles8vosRecuperados[2]
-    gol2b.value = goles8vosRecuperados[3]
-    gol1c.value = goles8vosRecuperados[4]
-    gol2c.value = goles8vosRecuperados[5]
-    gol1d.value = goles8vosRecuperados[6]
-    gol2d.value = goles8vosRecuperados[7]
-    gol1e.value = goles8vosRecuperados[8]
-    gol2e.value = goles8vosRecuperados[9]
-    gol1f.value = goles8vosRecuperados[10]
-    gol2f.value = goles8vosRecuperados[11]
-    gol1g.value = goles8vosRecuperados[12]
-    gol2g.value = goles8vosRecuperados[13]
-    gol1h.value = goles8vosRecuperados[14]
-    gol2h.value = goles8vosRecuperados[15]
-  
+    pen1a.value = goles8vosRecuperados[1]
+    gol2a.value = goles8vosRecuperados[2]
+    pen2a.value = goles8vosRecuperados[3]
+    gol1b.value = goles8vosRecuperados[4]
+    pen1b.value = goles8vosRecuperados[5]
+    gol2b.value = goles8vosRecuperados[6]
+    pen2b.value = goles8vosRecuperados[7]
+    gol1c.value = goles8vosRecuperados[8]
+    pen1c.value = goles8vosRecuperados[9]
+    gol2c.value = goles8vosRecuperados[10]
+    pen2c.value = goles8vosRecuperados[11]
+    gol1d.value = goles8vosRecuperados[12]
+    pen1d.value = goles8vosRecuperados[13]
+    gol2d.value = goles8vosRecuperados[14]
+    pen2d.value = goles8vosRecuperados[15]
+    gol1e.value = goles8vosRecuperados[16]
+    pen1e.value = goles8vosRecuperados[17]
+    gol2e.value = goles8vosRecuperados[18]
+    pen2e.value = goles8vosRecuperados[19]
+    gol1f.value = goles8vosRecuperados[20]
+    pen1f.value = goles8vosRecuperados[21]
+    gol2f.value = goles8vosRecuperados[22]
+    pen2f.value = goles8vosRecuperados[23]
+    gol1g.value = goles8vosRecuperados[24]
+    pen1g.value = goles8vosRecuperados[25]
+    gol2g.value = goles8vosRecuperados[26]
+    pen2g.value = goles8vosRecuperados[27]
+    gol1h.value = goles8vosRecuperados[28]
+    pen1h.value = goles8vosRecuperados[29]
+    gol2h.value = goles8vosRecuperados[30]
+    pen2h.value = goles8vosRecuperados[31]
+    
 
     img1a.src = "../assets/img/escudos/"+grupoArecuperado[0].id+".png"
     img2a.src = "../assets/img/escudos/"+grupoArecuperado[1].id+".png"
@@ -606,21 +636,37 @@ document.getElementById(`botonReset8vos`).addEventListener(`click`, () =>  {
                 if (result.isConfirmed) {
                         localStorage.removeItem("goles8vos");
                         gol1a.value = 0
+                        pen1a.value = 0
                         gol2a.value = 0
+                        pen2a.value = 0
                         gol1b.value = 0
+                        pen1b.value = 0
                         gol2b.value = 0
+                        pen2b.value = 0
                         gol1c.value = 0
+                        pen1c.value = 0
                         gol2c.value = 0
+                        pen2c.value = 0
                         gol1d.value = 0
+                        pen1d.value = 0
                         gol2d.value = 0
+                        pen2d.value = 0
                         gol1e.value = 0
+                        pen1e.value = 0
                         gol2e.value = 0
+                        pen2e.value = 0
                         gol1f.value = 0
+                        pen1f.value = 0
                         gol2f.value = 0
+                        pen2f.value = 0
                         gol1g.value = 0
+                        pen1g.value = 0
                         gol2g.value = 0
+                        pen2g.value = 0
                         gol1h.value = 0
+                        pen1h.value = 0
                         gol2h.value = 0
+                        pen2h.value = 0
           swalWithBootstrapButtons.fire(
             'Borrado!',
             'Tus predicciones fueron borradas!',
@@ -637,3 +683,7 @@ document.getElementById(`botonReset8vos`).addEventListener(`click`, () =>  {
         }
       })
 })
+
+const guardaGanadores8vos = JSON.parse(localStorage.getItem("ganadores8vos"))
+
+export { guardaGanadores8vos }
