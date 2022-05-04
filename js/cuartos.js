@@ -151,6 +151,14 @@ function revision4_4 () {
 }
 
 document.getElementById(`boton4tos`).addEventListener(`click`, () =>  { 
+
+    for (let index = 0; index <2; index++) {
+        cuartos1[index].puntos = 0;
+        cuartos2[index].puntos = 0;
+        cuartos3[index].puntos = 0;
+        cuartos4[index].puntos = 0;
+    }
+
     if (parseInt(gol4_1.value)>parseInt(gol4_2.value)) {
         cuartos1[0].puntos = 3
         cuartos1[1].puntos = 0

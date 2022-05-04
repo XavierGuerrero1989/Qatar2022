@@ -290,6 +290,18 @@ function revision8 () {
 }
 
 document.getElementById(`boton8vos`).addEventListener(`click`, () =>  { 
+    for (let index = 0; index <2; index++) {
+        octavos1[index].puntos = 0;
+        octavos2[index].puntos = 0;
+        octavos3[index].puntos = 0;
+        octavos4[index].puntos = 0;
+        octavos5[index].puntos = 0;
+        octavos6[index].puntos = 0;
+        octavos7[index].puntos = 0;
+        octavos8[index].puntos = 0;
+    }
+
+
     if (parseInt(gol1a.value)>parseInt(gol2b.value)) {
         octavos1[0].puntos = 3
         octavos1[1].puntos = 0
@@ -304,7 +316,7 @@ document.getElementById(`boton8vos`).addEventListener(`click`, () =>  {
         octavos1[1].puntos = 3
     }
 
-    if (parseInt(gol1c.value)>parseInt(gol2d.value)) {
+    if (parseInt(gol1c.value) > parseInt(gol2d.value)) {
         octavos2[0].puntos = 3
         octavos2[1].puntos = 0
     } else if (parseInt(gol1c.value) < parseInt(gol2d.value)) {
@@ -485,6 +497,8 @@ document.getElementById(`boton8vos`).addEventListener(`click`, () =>  {
 
 
     const ganadores8vos = [octavos1[0], octavos2[0], octavos3[0], octavos4[0], octavos5[0], octavos6[0], octavos7[0], octavos8[0]]
+
+    console.log(ganadores8vos);
 
     const guardaGanadores8vos = JSON.stringify(ganadores8vos)
     localStorage.setItem("ganadores8vos", guardaGanadores8vos);

@@ -333,6 +333,9 @@
   border: solid #56042C;
   padding: 10px; }
 
+.copaDelMundo {
+  height: 30vh; }
+
 @font-face {
   font-family: qatar1;
   src: url(../assets/fonts/ArabicMedium.ttf); }
