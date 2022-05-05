@@ -60,82 +60,17 @@ botonDeCarga.addEventListener ("click", function () {
         grupoA[index].diferencia = 0;
     }
 
-    if (parseInt(goles1.value) >= 0) {
-        qatar.golesFavor = qatar.golesFavor + parseInt(goles1.value);
-        ecuador.golesContra = ecuador.golesContra + parseInt(goles1.value);
-    }
+    qatar.golesFavor = qatar.golesFavor + parseInt(goles1.value) + parseInt(goles5.value) + parseInt(goles9.value);
+    qatar.golesContra = qatar.golesContra + parseInt(goles2.value) + parseInt(goles6.value) + parseInt(goles10.value);
 
+    ecuador.golesFavor = ecuador.golesFavor + parseInt(goles2.value) + parseInt(goles7.value) + parseInt(goles11.value);
+    ecuador.golesContra = ecuador.golesContra + parseInt(goles1.value) + parseInt(goles8.value) + parseInt(goles12.value);
 
-
-    if (parseInt(goles2.value) >= 0 ) {
-        ecuador.golesFavor = ecuador.golesFavor + parseInt(goles2.value);
-        qatar.golesContra = qatar.golesContra + parseInt(goles2.value);
-    }
+    senegal.golesFavor = senegal.golesFavor + parseInt(goles3.value) + parseInt(goles6.value) + parseInt(goles12.value);
+    senegal.golesContra = senegal.golesContra + parseInt(goles4.value) + parseInt(goles5.value) + parseInt(goles11.value);
     
-
-
-    if (parseInt(goles3.value) >= 0) {
-        senegal.golesFavor = senegal.golesFavor + parseInt(goles3.value);
-        paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles3.value)
-    }     
-
-
-
-    if (parseInt(goles4.value) >= 0 ) {
-        paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles4.value);
-        senegal.golesContra = senegal.golesContra + parseInt(goles4.value);
-    }
-    
-
-
-    if (parseInt(goles5.value) >= 0) {
-        qatar.golesFavor = qatar.golesFavor + parseInt(goles5.value);
-        senegal.golesContra = senegal.golesContra + parseInt(goles5.value)
-    }     
-
-    
-    if (parseInt(goles6.value) >= 0 ) {
-        senegal.golesFavor = senegal.golesFavor + parseInt(goles6.value);
-        qatar.golesContra = qatar.golesContra + parseInt(goles6.value);
-    }
-
-
-    if (parseInt(goles7.value) >= 0) {
-        ecuador.golesFavor = ecuador.golesFavor + parseInt(goles7.value);
-        paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles7.value)
-    }     
-
-
-    
-    if (parseInt(goles8.value) >= 0 ) {
-        paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles8.value);
-        ecuador.golesContra = ecuador.golesContra + parseInt(goles8.value);
-    }   
-
-
-
-    if (parseInt(goles9.value) >= 0) {
-        qatar.golesFavor = qatar.golesFavor + parseInt(goles9.value);
-        paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles9.value)
-    }     
-    
-    
-
-    if (parseInt(goles10.value) >= 0 ) {
-        paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles10.value);
-        qatar.golesContra = qatar.golesContra + parseInt(goles10.value);
-    }
-    
-    
-    if (parseInt(goles11.value) >= 0) {
-            ecuador.golesFavor = ecuador.golesFavor + parseInt(goles11.value);
-            senegal.golesContra = senegal.golesContra + parseInt(goles11.value)
-    }       
-    
-    if (parseInt(goles12.value) >= 0 ) {
-            senegal.golesFavor = senegal.golesFavor + parseInt(goles12.value);
-            ecuador.golesContra = ecuador.golesContra + parseInt(goles12.value);
-    }   
+    paisesBajos.golesFavor = paisesBajos.golesFavor + parseInt(goles4.value) + parseInt(goles8.value) + parseInt(goles10.value);
+    paisesBajos.golesContra = paisesBajos.golesContra + parseInt(goles3.value) + parseInt(goles7.value) + parseInt(goles9.value);
    
     if (parseInt(goles1.value) > parseInt(goles2.value)) {
                 
@@ -205,10 +140,9 @@ if (parseInt(goles11.value) > parseInt(goles12.value)) {
 }
 
 
-    qatar.diferencia = qatar.golesFavor - qatar.golesContra
-    ecuador.diferencia = ecuador.golesFavor - ecuador.golesContra
-    senegal.diferencia = senegal.golesFavor - senegal.golesContra
-    paisesBajos.diferencia = paisesBajos.golesFavor - paisesBajos.golesContra
+for (let index = 0; index <4; index++) {
+    grupoA[index].diferencia = grupoA[index].golesFavor - grupoA[index].golesContra;  
+}
 
 
 
@@ -219,7 +153,6 @@ if (parseInt(goles11.value) > parseInt(goles12.value)) {
             }
             return b.puntos > a.puntos ? 1 : -1;
     })
-
 
 
     let clasificado1 = document.getElementById("clasi1")
@@ -263,6 +196,18 @@ if (parseInt(goles11.value) > parseInt(goles12.value)) {
     let difGol4 = document.getElementById("df4")
     difGol4.innerText = grupoA[3].diferencia;
 
+
+    let img1a = document.getElementById("img1a");
+    let img2a = document.getElementById("img2a");
+
+    let nombre1a = document.getElementById("1a");
+    let nombre2a = document.getElementById("2a");
+
+    img1a.src = "../assets/img/escudos/"+grupoA[0].id+".png"
+    img2a.src = "../assets/img/escudos/"+grupoA[1].id+".png"
+
+    nombre1a.innerText = grupoA[0].pais
+    nombre2a.innerText = grupoA[1].pais
 
 let vGol1 = parseInt(goles1.value);
 let vGol2 = parseInt(goles2.value);
@@ -457,6 +402,8 @@ document.getElementById(`borrarData`).addEventListener(`click`, () =>  {
         }
       })
 })
+
+
 
 const grupoArecuperado = JSON.parse(localStorage.getItem("grupoAresultados"))
 

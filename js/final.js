@@ -11,6 +11,14 @@ let tercer2 = document.getElementById("3_2")
 let final1 = document.getElementById("f1")
 let final2 = document.getElementById("f2")
 
+let titulo3ro = document.getElementById("tituloTercerPuesto")
+let titulo2do = document.getElementById("tituloSegundoPuesto")
+let titulo1ro = document.getElementById("tituloCampeon")
+
+let img3ro = document.getElementById("imgTercerPuesto")
+let img2do = document.getElementById("imgSegundoPuesto")
+let img1ro = document.getElementById("imgCampeon")
+
 let botonGeneradorFinal = document.getElementById ("botonGeneradorFinal");
 botonGeneradorFinal.addEventListener ("click", function (){
 
@@ -161,7 +169,17 @@ document.getElementById(`botonSemis`).addEventListener(`click`, () =>  {
     const golesFinales =[ valorg3_1, valorg3_1p, valorg3_2, valorg3_2p, valorFinal1, valorFinal1p, valorFinal2, valorFinal2p]
 
     const guardaGolesFinales = JSON.stringify(golesFinales)
-    localStorage.setItem("golesSemis", guardaGolesSemis);
+    localStorage.setItem("golesSemis", guardaGolesFinales);
+
+
+    img3ro.src = "../assets/img/escudos/"+finalResultados[2].id+".png"
+    img2do.src = "../assets/img/escudos/"+finalResultados[1].id+".png"
+    img1ro.src = "../assets/img/escudos/"+finalResultados[0].id+".png"
+
+    titulo1ro.innerText = finalResultados[0].pais
+    titulo2do.innerText = finalResultados[1].pais
+    titulo3ro.innerText = finalResultados[0].pais
+
 
     Toastify({
 
@@ -170,5 +188,4 @@ document.getElementById(`botonSemis`).addEventListener(`click`, () =>  {
         duration: 3000
         
         }).showToast();    
-
 })
