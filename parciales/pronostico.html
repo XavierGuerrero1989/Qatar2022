@@ -646,8 +646,13 @@
   <article class="container-fluid divisor">
     <div class="row d-flex justify-content-center">
       <h1 class="divisor__titulo text-center">Octavos de FINAL!</h1>
-      <p class="divisor__texto text-center">A partir de aca, podras observar como quedo conformado el cuadro de octavos de final (Eliminacion directa) de acuerdo a tus predicciones en la fase de grupos. Desde aqui podras seguir eligiendo tus favoritos de cara a la Gran FINAL!</p>
-      <button id="botonGenerador" class="btnGrupo text-center">Generar 8vos de Final</button>
+      <p class="divisor__texto text-center">A partir de aca, podras observar como quedo conformado el cuadro de octavos de final (Eliminacion directa) de acuerdo a tus predicciones en la fase de grupos. Desde aqui podras seguir eligiendo tus favoritos de cara a la Gran FINAL! <br> Con el boton "Generar 8vos de final" vas a poder cargar tus predicciones al sistema, mientras que con el boton de "Resetear 8vos de final" podras borrar tus predicciones de 8vos, y volver a cargarlas. Si ya habias completado tus datos en fases anteriores y los habias guardados, podes recuperar tus predicciones con el boton "Recuperar 8vos de final". </p>
+      <div class="row d-flex justify-content-center">
+        <button id="boton8vos" class="col-md-2 botonCargaData">Cargar 8vos de final</button>
+        <button id="botonReset8vos" class="col-md-2 botonCargaData">Resetear 8vos de final</button>
+        <button id="botonGenerador" class="btnGrupo text-center">Recuperar 8vos de Final</button>
+      </div>   
+      
     </div>
   </article>
   <div class="accordion" id="accordionExample">
@@ -899,11 +904,7 @@
             <div class="col-md-1">
               <img src="" alt="" id="img2g" class="imgPo">
             </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <button id="boton8vos" class="col-md-2 botonCargaData">Cargar 8vos de final</button>
-            <button id="botonReset8vos" class="col-md-2 botonCargaData">Resetear 8vos de final</button>
-          </div>         
+          </div>        
         </div>
       </div>
     </div>
@@ -912,7 +913,11 @@
     <div class="row d-flex justify-content-center">
       <h1 class="divisor__titulo text-center">Cuartos de FINAL!</h1>
       <p class="divisor__texto text-center">Estamos cada vez mas cerca de la fase mas importante. Elegi quienes pasaran a la semifinal!</p>
-      <button id="botonGenerador4tos" class="btnGrupo text-center">Generar 4tos de Final</button>
+      <div class="row d-flex justify-content-center">
+        <button id="boton4tos" class="col-md-2 botonCargaData">Cargar 4tos de final</button>
+        <button id="botonReset4tos" class="col-md-2 botonCargaData">Resetear 4tos de final</button>
+        <button id="botonGenerador4tos" class="btnGrupo text-center">Recuperar 4tos de Final</button>
+      </div>
     </div>
   </article>
   <div class="accordion" id="accordionExample">

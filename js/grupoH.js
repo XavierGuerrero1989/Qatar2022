@@ -194,6 +194,18 @@ if (parseInt(goles95.value) > parseInt(goles96.value)) {
     let difGol4H = document.getElementById("df4H")
     difGol4H.innerText = grupoH[3].diferencia;
 
+    let img1h = document.getElementById("img1h");
+    let img2h = document.getElementById("img2h");
+
+    let nombre1h = document.getElementById("1h");
+    let nombre2h = document.getElementById("2h");
+
+    img1h.src = "../assets/img/escudos/"+grupoH[0].id+".png"
+    img2h.src = "../assets/img/escudos/"+grupoH[1].id+".png"
+
+    nombre1h.innerText = grupoHrecuperado[0].pais
+    nombre2h.innerText = grupoHrecuperado[1].pais
+
 
 let vGol85 = parseInt(goles85.value);
 let vGol86 = parseInt(goles86.value);

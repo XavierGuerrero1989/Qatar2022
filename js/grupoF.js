@@ -140,10 +140,9 @@ if (parseInt(goles71.value) > parseInt(goles72.value)) {
 }
 
 
-    belgica.diferencia = belgica.golesFavor - belgica.golesContra
-    canada.diferencia = canada.golesFavor - canada.golesContra
-    marruecos.diferencia = marruecos.golesFavor - marruecos.golesContra
-    croacia.diferencia = croacia.golesFavor - croacia.golesContra
+for (let index = 0; index <4; index++) {
+    grupoF[index].diferencia = grupoF[index].golesFavor - grupoF[index].golesContra;  
+}
 
 
 
@@ -196,6 +195,17 @@ if (parseInt(goles71.value) > parseInt(goles72.value)) {
     let difGol4F = document.getElementById("df4F")
     difGol4F.innerText = grupoF[3].diferencia;
 
+    let img1f = document.getElementById("img1f");
+    let img2f = document.getElementById("img2f");
+
+    let nombre1f = document.getElementById("1f");
+    let nombre2f = document.getElementById("2f");
+
+    img1f.src = "../assets/img/escudos/"+grupoF[0].id+".png"
+    img2f.src = "../assets/img/escudos/"+grupoF[1].id+".png"
+
+    nombre1f.innerText = grupoF[0].pais
+    nombre2f.innerText = grupoF[1].pais
 
 let vGol61 = parseInt(goles61.value);
 let vGol62 = parseInt(goles62.value);

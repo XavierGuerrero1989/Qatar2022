@@ -46,7 +46,7 @@ let goles19 = document.getElementById("g19");
 let goles20 = document.getElementById("g20");
 let goles21 = document.getElementById("g21");
 let goles22 = document.getElementById("g22");
-let goles23= document.getElementById("g23");
+let goles23 = document.getElementById("g23");
 let goles24 = document.getElementById("g24");
 
 
@@ -60,82 +60,17 @@ botonDeCargaB.addEventListener ("click", function () {
         grupoB[index].diferencia = 0;
     }
 
-    if (parseInt(goles13.value) >= 0) {
-        inglaterra.golesFavor = inglaterra.golesFavor + parseInt(goles13.value);
-        iran.golesContra = iran.golesContra + parseInt(goles13.value);
-    }
+    inglaterra.golesFavor = inglaterra.golesFavor + parseInt(goles13.value) + parseInt(goles17.value) + parseInt(goles21.value);
+    inglaterra.golesContra = inglaterra.golesContra + parseInt(goles14.value) + parseInt(goles18.value) + parseInt(goles22.value);
 
+    iran.golesFavor = iran.golesFavor + parseInt(goles14.value) + parseInt(goles19.value) + parseInt(goles23.value);
+    iran.golesContra = iran.golesContra + parseInt(goles13.value) + parseInt(goles20.value) + parseInt(goles24.value);
 
-
-    if (parseInt(goles14.value) >= 0 ) {
-        iran.golesFavor = iran.golesFavor + parseInt(goles14.value);
-        inglaterra.golesContra = inglaterra.golesContra + parseInt(goles14.value);
-    }
+    eeuu.golesFavor = eeuu.golesFavor + parseInt(goles15.value) + parseInt(goles18.value) + parseInt(goles24.value);
+    eeuu.golesContra = eeuu.golesContra + parseInt(goles16.value) + parseInt(goles17.value) + parseInt(goles23.value);
     
-
-
-    if (parseInt(goles15.value) >= 0) {
-        eeuu.golesFavor = eeuu.golesFavor + parseInt(goles15.value);
-        escocia.golesContra = escocia.golesContra + parseInt(goles15.value)
-    }     
-
-
-
-    if (parseInt(goles16.value) >= 0 ) {
-        escocia.golesFavor = escocia.golesFavor + parseInt(goles16.value);
-        eeuu.golesContra = eeuu.golesContra + parseInt(goles16.value);
-    }
-    
-
-
-    if (parseInt(goles17.value) >= 0) {
-        inglaterra.golesFavor = inglaterra.golesFavor + parseInt(goles17.value);
-        eeuu.golesContra = eeuu.golesContra + parseInt(goles17.value)
-    }     
-
-    
-    if (parseInt(goles18.value) >= 0 ) {
-        eeuu.golesFavor = eeuu.golesFavor + parseInt(goles18.value);
-        inglaterra.golesContra = inglaterra.golesContra + parseInt(goles18.value);
-    }
-
-
-    if (parseInt(goles19.value) >= 0) {
-        iran.golesFavor = iran.golesFavor + parseInt(goles19.value);
-        escocia.golesContra = escocia.golesContra + parseInt(goles19.value)
-    }     
-
-
-    
-    if (parseInt(goles20.value) >= 0 ) {
-        escocia.golesFavor = escocia.golesFavor + parseInt(goles20.value);
-        iran.golesContra = iran.golesContra + parseInt(goles20.value);
-    }   
-
-
-
-    if (parseInt(goles21.value) >= 0) {
-        inglaterra.golesFavor = inglaterra.golesFavor + parseInt(goles21.value);
-        escocia.golesContra = escocia.golesContra + parseInt(goles21.value)
-    }     
-    
-    
-
-    if (parseInt(goles22.value) >= 0 ) {
-        escocia.golesFavor = escocia.golesFavor + parseInt(goles22.value);
-        inglaterra.golesContra = inglaterra.golesContra + parseInt(goles22.value);
-    }
-    
-    
-    if (parseInt(goles23.value) >= 0) {
-            iran.golesFavor = iran.golesFavor + parseInt(goles23.value);
-            eeuu.golesContra = eeuu.golesContra + parseInt(goles23.value)
-    }       
-    
-    if (parseInt(goles24.value) >= 0 ) {
-            eeuu.golesFavor = eeuu.golesFavor + parseInt(goles24.value);
-            iran.golesContra = iran.golesContra + parseInt(goles24.value);
-    }   
+    escocia.golesFavor = escocia.golesFavor + parseInt(goles16.value) + parseInt(goles20.value) + parseInt(goles22.value);
+    escocia.golesContra = escocia.golesContra + parseInt(goles15.value) + parseInt(goles19.value) + parseInt(goles21.value);
    
     if (parseInt(goles13.value) > parseInt(goles14.value)) {
                 
@@ -206,10 +141,9 @@ if (parseInt(goles23.value) > parseInt(goles24.value)) {
 }
 
 
-    inglaterra.diferencia = inglaterra.golesFavor - inglaterra.golesContra
-    iran.diferencia = iran.golesFavor - iran.golesContra
-    eeuu.diferencia = eeuu.golesFavor - eeuu.golesContra
-    escocia.diferencia = escocia.golesFavor - escocia.golesContra
+for (let index = 0; index <4; index++) {
+    grupoB[index].diferencia = grupoB[index].golesFavor - grupoB[index].golesContra;  
+}
 
 
 
@@ -220,8 +154,6 @@ if (parseInt(goles23.value) > parseInt(goles24.value)) {
             }
             return b.puntos > a.puntos ? 1 : -1;
     })
-
-
 
     let clasificado1B = document.getElementById("clasi1B")
     clasificado1B.innerText = grupoB[0].pais;
@@ -263,6 +195,19 @@ if (parseInt(goles23.value) > parseInt(goles24.value)) {
     difGol3B.innerText = grupoB[2].diferencia;
     let difGol4B = document.getElementById("df4B")
     difGol4B.innerText = grupoB[3].diferencia;
+
+
+    let img1b = document.getElementById("img1b");
+    let img2b = document.getElementById("img2b");
+
+    let nombre1b = document.getElementById("1b");
+    let nombre2b = document.getElementById("2b");
+
+    img1b.src = "../assets/img/escudos/"+grupoB[0].id+".png"
+    img2b.src = "../assets/img/escudos/"+grupoB[1].id+".png"
+
+    nombre1b.innerText = grupoB[0].pais
+    nombre2b.innerText = grupoB[1].pais
 
 
 let vGol13 = parseInt(goles13.value);

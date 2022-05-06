@@ -374,6 +374,7 @@ document.getElementById(`borrarData`).addEventListener(`click`, () =>  {
                         difGol3.innerText = grupoA[2].diferencia;
                         let difGol4 = document.getElementById("df4")
                         difGol4.innerText = grupoA[3].diferencia;
+                        
                         goles1.value = 0;
                         goles2.value = 0;
                         goles3.value = 0;

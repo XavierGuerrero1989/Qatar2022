@@ -60,82 +60,17 @@ botonDeCargaC.addEventListener ("click", function () {
         grupoC[index].diferencia = 0;
     }
 
-    if (parseInt(goles25.value) >= 0) {
-        argentina.golesFavor = argentina.golesFavor + parseInt(goles25.value);
-        arabia.golesContra = arabia.golesContra + parseInt(goles25.value);
-    }
+    argentina.golesFavor = argentina.golesFavor + parseInt(goles25.value) + parseInt(goles29.value) + parseInt(goles33.value);
+    argentina.golesContra = argentina.golesContra + parseInt(goles26.value) + parseInt(goles30.value) + parseInt(goles34.value);
 
+    arabia.golesFavor = arabia.golesFavor + parseInt(goles26.value) + parseInt(goles31.value) + parseInt(goles35.value);
+    arabia.golesContra = arabia.golesContra + parseInt(goles25.value) + parseInt(goles32.value) + parseInt(goles36.value);
 
-
-    if (parseInt(goles26.value) >= 0 ) {
-        arabia.golesFavor = arabia.golesFavor + parseInt(goles26.value);
-        argentina.golesContra = argentina.golesContra + parseInt(goles26.value);
-    }
+    mexico.golesFavor = mexico.golesFavor + parseInt(goles27.value) + parseInt(goles30.value) + parseInt(goles36.value);
+    mexico.golesContra = mexico.golesContra + parseInt(goles28.value) + parseInt(goles29.value) + parseInt(goles35.value);
     
-
-
-    if (parseInt(goles27.value) >= 0) {
-        mexico.golesFavor = mexico.golesFavor + parseInt(goles27.value);
-        polonia.golesContra = polonia.golesContra + parseInt(goles27.value)
-    }     
-
-
-
-    if (parseInt(goles28.value) >= 0 ) {
-        polonia.golesFavor = polonia.golesFavor + parseInt(goles28.value);
-        mexico.golesContra = mexico.golesContra + parseInt(goles28.value);
-    }
-    
-
-
-    if (parseInt(goles29.value) >= 0) {
-        argentina.golesFavor = argentina.golesFavor + parseInt(goles29.value);
-        mexico.golesContra = mexico.golesContra + parseInt(goles29.value)
-    }     
-
-    
-    if (parseInt(goles30.value) >= 0 ) {
-        mexico.golesFavor = mexico.golesFavor + parseInt(goles30.value);
-        argentina.golesContra = argentina.golesContra + parseInt(goles30.value);
-    }
-
-
-    if (parseInt(goles31.value) >= 0) {
-        arabia.golesFavor = arabia.golesFavor + parseInt(goles31.value);
-        polonia.golesContra = polonia.golesContra + parseInt(goles31.value)
-    }     
-
-
-    
-    if (parseInt(goles32.value) >= 0 ) {
-        polonia.golesFavor = polonia.golesFavor + parseInt(goles32.value);
-        arabia.golesContra = arabia.golesContra + parseInt(goles32.value);
-    }   
-
-
-
-    if (parseInt(goles33.value) >= 0) {
-        argentina.golesFavor = argentina.golesFavor + parseInt(goles33.value);
-        polonia.golesContra = polonia.golesContra + parseInt(goles33.value)
-    }     
-    
-    
-
-    if (parseInt(goles34.value) >= 0 ) {
-        polonia.golesFavor = polonia.golesFavor + parseInt(goles34.value);
-        argentina.golesContra = argentina.golesContra + parseInt(goles34.value);
-    }
-    
-    
-    if (parseInt(goles35.value) >= 0) {
-            arabia.golesFavor = arabia.golesFavor + parseInt(goles35.value);
-            mexico.golesContra = mexico.golesContra + parseInt(goles35.value)
-    }       
-    
-    if (parseInt(goles36.value) >= 0 ) {
-            mexico.golesFavor = mexico.golesFavor + parseInt(goles36.value);
-            arabia.golesContra = arabia.golesContra + parseInt(goles36.value);
-    }   
+    polonia.golesFavor = polonia.golesFavor + parseInt(goles28.value) + parseInt(goles32.value) + parseInt(goles34.value);
+    polonia.golesContra = polonia.golesContra + parseInt(goles27.value) + parseInt(goles31.value) + parseInt(goles33.value);
    
     if (parseInt(goles25.value) > parseInt(goles26.value)) {
                 
@@ -206,10 +141,9 @@ if (parseInt(goles35.value) > parseInt(goles36.value)) {
 }
 
 
-    argentina.diferencia = argentina.golesFavor - argentina.golesContra
-    arabia.diferencia = arabia.golesFavor - arabia.golesContra
-    mexico.diferencia = mexico.golesFavor - mexico.golesContra
-    polonia.diferencia = polonia.golesFavor - polonia.golesContra
+for (let index = 0; index <4; index++) {
+    grupoC[index].diferencia = grupoC[index].golesFavor - grupoC[index].golesContra;  
+}
 
 
 
@@ -261,6 +195,18 @@ if (parseInt(goles35.value) > parseInt(goles36.value)) {
     difGol3C.innerText = grupoC[2].diferencia;
     let difGol4C = document.getElementById("df4C")
     difGol4C.innerText = grupoC[3].diferencia;
+
+    let img1c = document.getElementById("img1c");
+    let img2c = document.getElementById("img2c");
+
+    let nombre1c = document.getElementById("1c");
+    let nombre2c = document.getElementById("2c");
+
+    img1c.src = "../assets/img/escudos/"+grupoC[0].id+".png"
+    img2c.src = "../assets/img/escudos/"+grupoC[1].id+".png"
+
+    nombre1c.innerText = grupoC[0].pais
+    nombre2c.innerText = grupoC[1].pais
 
 
 let vGol25 = parseInt(goles25.value);

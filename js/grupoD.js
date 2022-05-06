@@ -60,82 +60,17 @@ botonDeCargaD.addEventListener ("click", function () {
         grupoD[index].diferencia = 0;
     }
 
-    if (parseInt(goles37.value) >= 0) {
-        francia.golesFavor = francia.golesFavor + parseInt(goles37.value);
-        peru.golesContra = peru.golesContra + parseInt(goles37.value);
-    }
+    francia.golesFavor = francia.golesFavor + parseInt(goles37.value) + parseInt(goles41.value) + parseInt(goles45.value);
+    francia.golesContra = francia.golesContra + parseInt(goles38.value) + parseInt(goles42.value) + parseInt(goles46.value);
 
+    peru.golesFavor = peru.golesFavor + parseInt(goles38.value) + parseInt(goles43.value) + parseInt(goles47.value);
+    peru.golesContra = peru.golesContra + parseInt(goles37.value) + parseInt(goles44.value) + parseInt(goles48.value);
 
-
-    if (parseInt(goles38.value) >= 0 ) {
-        peru.golesFavor = peru.golesFavor + parseInt(goles38.value);
-        francia.golesContra = francia.golesContra + parseInt(goles38.value);
-    }
+    dinamarca.golesFavor = dinamarca.golesFavor + parseInt(goles39.value) + parseInt(goles42.value) + parseInt(goles48.value);
+    dinamarca.golesContra = dinamarca.golesContra + parseInt(goles40.value) + parseInt(goles41.value) + parseInt(goles47.value);
     
-
-
-    if (parseInt(goles39.value) >= 0) {
-        dinamarca.golesFavor = dinamarca.golesFavor + parseInt(goles39.value);
-        tunez.golesContra = tunez.golesContra + parseInt(goles39.value)
-    }     
-
-
-
-    if (parseInt(goles40.value) >= 0 ) {
-        tunez.golesFavor = tunez.golesFavor + parseInt(goles40.value);
-        dinamarca.golesContra = dinamarca.golesContra + parseInt(goles40.value);
-    }
-    
-
-
-    if (parseInt(goles41.value) >= 0) {
-        francia.golesFavor = dinamarca.golesFavor + parseInt(goles41.value);
-        dinamarca.golesContra = dinamarca.golesContra + parseInt(goles41.value)
-    }     
-
-    
-    if (parseInt(goles42.value) >= 0 ) {
-        dinamarca.golesFavor = dinamarca.golesFavor + parseInt(goles42.value);
-        francia.golesContra = francia.golesContra + parseInt(goles42.value);
-    }
-
-
-    if (parseInt(goles43.value) >= 0) {
-        peru.golesFavor = peru.golesFavor + parseInt(goles43.value);
-        tunez.golesContra = tunez.golesContra + parseInt(goles43.value)
-    }     
-
-
-    
-    if (parseInt(goles44.value) >= 0 ) {
-        tunez.golesFavor = tunez.golesFavor + parseInt(goles44.value);
-        peru.golesContra = peru.golesContra + parseInt(goles44.value);
-    }   
-
-
-
-    if (parseInt(goles45.value) >= 0) {
-        francia.golesFavor = francia.golesFavor + parseInt(goles45.value);
-        tunez.golesContra = tunez.golesContra + parseInt(goles45.value)
-    }     
-    
-    
-
-    if (parseInt(goles46.value) >= 0 ) {
-        tunez.golesFavor = tunez.golesFavor + parseInt(goles46.value);
-        francia.golesContra = francia.golesContra + parseInt(goles46.value);
-    }
-    
-    
-    if (parseInt(goles47.value) >= 0) {
-            peru.golesFavor = peru.golesFavor + parseInt(goles47.value);
-            dinamarca.golesContra = dinamarca.golesContra + parseInt(goles47.value)
-    }       
-    
-    if (parseInt(goles48.value) >= 0 ) {
-            dinamarca.golesFavor = dinamarca.golesFavor + parseInt(goles48.value);
-            peru.golesContra = peru.golesContra + parseInt(goles48.value);
-    }   
+    tunez.golesFavor = tunez.golesFavor + parseInt(goles40.value) + parseInt(goles44.value) + parseInt(goles46.value);
+    tunez.golesContra = tunez.golesContra + parseInt(goles39.value) + parseInt(goles43.value) + parseInt(goles45.value);
    
     if (parseInt(goles37.value) > parseInt(goles38.value)) {
                 
@@ -206,10 +141,9 @@ if (parseInt(goles47.value) > parseInt(goles48.value)) {
 }
 
 
-    francia.diferencia = francia.golesFavor - francia.golesContra
-    peru.diferencia = peru.golesFavor - peru.golesContra
-    dinamarca.diferencia = dinamarca.golesFavor - dinamarca.golesContra
-    tunez.diferencia = tunez.golesFavor - tunez.golesContra
+for (let index = 0; index <4; index++) {
+    grupoD[index].diferencia = grupoD[index].golesFavor - grupoD[index].golesContra;  
+}
 
 
 
@@ -262,6 +196,17 @@ if (parseInt(goles47.value) > parseInt(goles48.value)) {
     let difGol4D = document.getElementById("df4D")
     difGol4D.innerText = grupoD[3].diferencia;
 
+    let img1d = document.getElementById("img1d");
+    let img2d = document.getElementById("img2d");
+
+    let nombre1d = document.getElementById("1d");
+    let nombre2d = document.getElementById("2d");
+
+    img1d.src = "../assets/img/escudos/"+grupoD[0].id+".png"
+    img2d.src = "../assets/img/escudos/"+grupoD[1].id+".png"
+
+    nombre1d.innerText = grupoD[0].pais
+    nombre2d.innerText = grupoD[1].pais
 
 let vGol37 = parseInt(goles37.value);
 let vGol38 = parseInt(goles38.value);

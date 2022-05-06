@@ -495,10 +495,47 @@ document.getElementById(`boton8vos`).addEventListener(`click`, () =>  {
         return 0;
     })
 
+    
 
     const ganadores8vos = [octavos1[0], octavos2[0], octavos3[0], octavos4[0], octavos5[0], octavos6[0], octavos7[0], octavos8[0]]
 
     console.log(ganadores8vos);
+
+    let img4_1 = document.getElementById("img4_1")
+    let img4_2 = document.getElementById("img4_2")
+    let img4_3 = document.getElementById("img4_3")
+    let img4_4 = document.getElementById("img4_4")
+    let img4_5 = document.getElementById("img4_5")
+    let img4_6 = document.getElementById("img4_6")
+    let img4_7 = document.getElementById("img4_7")
+    let img4_8 = document.getElementById("img4_8")
+
+    let ganador1 = document.getElementById("4_1")
+    let ganador2 = document.getElementById("4_2")
+    let ganador3 = document.getElementById("4_3")
+    let ganador4 = document.getElementById("4_4")
+    let ganador5 = document.getElementById("4_5")
+    let ganador6 = document.getElementById("4_6")
+    let ganador7 = document.getElementById("4_7")
+    let ganador8 = document.getElementById("4_8")
+
+    img4_1.src = "../assets/img/escudos/"+ganadores8vos[0].id+".png"
+    img4_2.src = "../assets/img/escudos/"+ganadores8vos[1].id+".png"
+    img4_3.src = "../assets/img/escudos/"+ganadores8vos[2].id+".png"
+    img4_4.src = "../assets/img/escudos/"+ganadores8vos[3].id+".png"
+    img4_5.src = "../assets/img/escudos/"+ganadores8vos[4].id+".png"
+    img4_6.src = "../assets/img/escudos/"+ganadores8vos[5].id+".png"
+    img4_7.src = "../assets/img/escudos/"+ganadores8vos[6].id+".png"
+    img4_8.src = "../assets/img/escudos/"+ganadores8vos[7].id+".png"
+
+    ganador1.innerText = ganadores8vos[0].pais
+    ganador2.innerText = ganadores8vos[1].pais
+    ganador3.innerText = ganadores8vos[2].pais
+    ganador4.innerText = ganadores8vos[3].pais
+    ganador5.innerText = ganadores8vos[4].pais
+    ganador6.innerText = ganadores8vos[5].pais
+    ganador7.innerText = ganadores8vos[6].pais
+    ganador8.innerText = ganadores8vos[7].pais
 
     const guardaGanadores8vos = JSON.stringify(ganadores8vos)
     localStorage.setItem("ganadores8vos", guardaGanadores8vos);
@@ -681,6 +718,41 @@ document.getElementById(`botonReset8vos`).addEventListener(`click`, () =>  {
                         pen1h.value = 0
                         gol2h.value = 0
                         pen2h.value = 0
+
+                        img1a.src = " "
+                        img2a.src = " "
+                        img1b.src = " "
+                        img2b.src = " "
+                        img1c.src = " "
+                        img2c.src = " "
+                        img1d.src = " "
+                        img2d.src = " "
+                        img1e.src = " "
+                        img2e.src = " "
+                        img1f.src = " "
+                        img2f.src = " "
+                        img1g.src = " "
+                        img2g.src = " "
+                        img1h.src = " "
+                        img2h.src = " "
+                    
+                        nombre1a.innerText = "Primero del Grupo A"
+                        nombre2a.innerText = "Segundo del Grupo A"
+                        nombre1b.innerText = "Primero del Grupo B"
+                        nombre2b.innerText = "Segundo del Grupo B"
+                        nombre1c.innerText = "Primero del Grupo C"
+                        nombre2c.innerText = "Segundo del Grupo C"
+                        nombre1d.innerText = "Primero del Grupo D"
+                        nombre2d.innerText = "Segundo del Grupo D"
+                        nombre1e.innerText = "Primero del Grupo E"
+                        nombre2e.innerText = "Segundo del Grupo E"
+                        nombre1f.innerText = "Primero del Grupo F"
+                        nombre2f.innerText = "Segundo del Grupo F"
+                        nombre1g.innerText = "Primero del Grupo G"
+                        nombre2g.innerText = "Segundo del Grupo G"
+                        nombre1h.innerText = "Primero del Grupo H"
+                        nombre2h.innerText = "Segundo del Grupo H"
+
           swalWithBootstrapButtons.fire(
             'Borrado!',
             'Tus predicciones fueron borradas!',
