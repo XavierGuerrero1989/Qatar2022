@@ -1,5 +1,7 @@
 import { guardaGanadores4tos } from "./cuartos.js";
 
+document.addEventListener("DOMContentLoaded", () => {
+
 let img2_1 = document.getElementById("img2_1")
 let img2_2 = document.getElementById("img2_2")
 let img2_3 = document.getElementById("img2_3")
@@ -148,6 +150,28 @@ document.getElementById(`botonSemis`).addEventListener(`click`, () =>  {
 
     const perdedoresSemis = [semis1[1], semis2[1]]
 
+    let img3_1 = document.getElementById("img3_1")
+    let img3_2 = document.getElementById("img3_2")
+    let imgfinal1 = document.getElementById("imgf1")
+    let imgfinal2 = document.getElementById("imgf2")
+
+    let tercer1 = document.getElementById("3_1")
+    let tercer2 = document.getElementById("3_2")
+    let final1 = document.getElementById("f1")
+    let final2 = document.getElementById("f2")
+
+    img3_1.src = "../assets/img/escudos/"+perdedoresSemis[0].id+".png"
+    img3_2.src = "../assets/img/escudos/"+perdedoresSemis[1].id+".png"
+    imgfinal1.src = "../assets/img/escudos/"+ganadoresSemis[0].id+".png"
+    imgfinal2.src = "../assets/img/escudos/"+ganadoresSemis[1].id+".png"
+
+
+    tercer1.innerText = perdedoresSemis[0].pais
+    tercer2.innerText = perdedoresSemis[1].pais
+    final1.innerText = ganadoresSemis[0].pais
+    final2.innerText = ganadoresSemis[1].pais
+
+
     const guardaGanadoresSemis = JSON.stringify(ganadoresSemis)
     localStorage.setItem("ganadoresSemis", guardaGanadoresSemis);
 
@@ -226,7 +250,7 @@ document.getElementById(`botonResetSemis`).addEventListener(`click`, () =>  {
         reverseButtons: true
       }).then((result) => {
                 if (result.isConfirmed) {
-                        localStorage.removeItem("goles4tos");
+                        localStorage.removeItem("golesSemis");
                         gol2_1.value = 0
                         pen2_1.value = 0
                         gol2_2.value = 0
@@ -235,6 +259,18 @@ document.getElementById(`botonResetSemis`).addEventListener(`click`, () =>  {
                         pen2_3.value = 0
                         gol2_4.value = 0
                         pen2_4.value = 0
+
+                        img2_1.src = " "
+                        img2_2.src = " "
+                        img2_3.src = " "
+                        img2_4.src = " "
+                    
+
+                        semi1.innerText = "Ganador 1 - 4tos de final A"
+                        semi2.innerText = "Ganador 2 - 4tos de final A"
+                        semi3.innerText = "Ganador 1 - 4tos de final B"
+                        semi4.innerText = "Ganador 2 - 4tos de final B"
+
           swalWithBootstrapButtons.fire(
             'Borrado!',
             'Tus predicciones fueron borradas!',
@@ -252,9 +288,12 @@ document.getElementById(`botonResetSemis`).addEventListener(`click`, () =>  {
       })
 })
 
+})
+
 const guardaGanadoresSemis = JSON.parse(localStorage.getItem("ganadoresSemis"))
 
 const guardaPerdedoresSemis = JSON.parse(localStorage.getItem("perdedoresSemis"))
 
 export { guardaGanadoresSemis }
 export { guardaPerdedoresSemis }
+

@@ -336,6 +336,18 @@
 .copaDelMundo {
   height: 30vh; }
 
+.resultados {
+  font-family: qatar2; }
+  .resultados__perdedores {
+    background-color: #56042C;
+    color: white; }
+  .resultados__ganador {
+    color: #56042C; }
+
+.ultimaImagen {
+  height: 80%;
+  width: 80%; }
+
 @font-face {
   font-family: qatar1;
   src: url(../assets/fonts/ArabicMedium.ttf); }

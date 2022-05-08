@@ -336,3 +336,21 @@
 .copaDelMundo{
     height: 30vh;
 }
+
+.resultados{
+    font-family: $font-bold;
+
+    &__perdedores{
+        background-color: $color-qatar;
+        color: white;
+    }
+
+    &__ganador{
+        color: $color-qatar;
+    }
+}
+
+.ultimaImagen {
+    height: 80%;
+    width: 80%;
+}

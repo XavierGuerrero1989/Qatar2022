@@ -7,6 +7,7 @@ import { grupoFrecuperado } from "./grupoF.js";
 import { grupoGrecuperado } from "./grupoG.js";
 import { grupoHrecuperado } from "./grupoH.js";
 
+document.addEventListener("DOMContentLoaded", () => {
 
 let img1a = document.getElementById("img1a");
 let img2a = document.getElementById("img2a");
@@ -768,6 +769,8 @@ document.getElementById(`botonReset8vos`).addEventListener(`click`, () =>  {
           )
         }
       })
+})
+
 })
 
 const guardaGanadores8vos = JSON.parse(localStorage.getItem("ganadores8vos"))

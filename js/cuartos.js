@@ -1,6 +1,6 @@
 import { guardaGanadores8vos } from "./octavos.js";
 
-
+document.addEventListener("DOMContentLoaded", () => {
 
 let img4_1 = document.getElementById("img4_1")
 let img4_2 = document.getElementById("img4_2")
@@ -260,6 +260,27 @@ document.getElementById(`boton4tos`).addEventListener(`click`, () =>  {
     const guardaGanadores4tos = JSON.stringify(ganadores4tos)
     localStorage.setItem("ganadores4tos", guardaGanadores4tos);
 
+    let img2_1 = document.getElementById("img2_1")
+    let img2_2 = document.getElementById("img2_2")
+    let img2_3 = document.getElementById("img2_3")
+    let img2_4 = document.getElementById("img2_4")
+
+    let semi1 = document.getElementById("2_1")
+    let semi2 = document.getElementById("2_2")
+    let semi3 = document.getElementById("2_3")
+    let semi4 = document.getElementById("2_4")
+
+    img2_1.src = "../assets/img/escudos/"+ganadores4tos[0].id+".png"
+    img2_2.src = "../assets/img/escudos/"+ganadores4tos[1].id+".png"
+    img2_3.src = "../assets/img/escudos/"+ganadores4tos[2].id+".png"
+    img2_4.src = "../assets/img/escudos/"+ganadores4tos[3].id+".png"
+
+
+    semi1.innerText = ganadores4tos[0].pais
+    semi2.innerText = ganadores4tos[1].pais
+    semi3.innerText = ganadores4tos[2].pais
+    semi4.innerText = ganadores4tos[3].pais
+
     let valorg4_1 = parseInt(gol4_1.value)
     let valorg4_1p = parseInt(pen4_1.value)
     let valorg4_2 = parseInt(gol4_2.value)
@@ -373,6 +394,25 @@ document.getElementById(`botonReset4tos`).addEventListener(`click`, () =>  {
                         pen4_7.value = 0
                         gol4_8.value = 0
                         pen4_8.value = 0
+
+                        img4_1.src = " "
+                        img4_2.src = " "
+                        img4_3.src = " "
+                        img4_4.src = " "
+                        img4_5.src = " "
+                        img4_6.src = " "
+                        img4_7.src = " "
+                        img4_8.src = " "
+                    
+
+                        ganador1.innerText = "Ganador 1 llave A superior"
+                        ganador2.innerText = "Ganador 2 llave A superior"
+                        ganador3.innerText = "Ganador 1 llave A inferior"
+                        ganador4.innerText = "Ganador 2 llave A inferior"
+                        ganador5.innerText = "Ganador 1 llave B superior"
+                        ganador6.innerText = "Ganador 2 llave B superior"
+                        ganador7.innerText = "Ganador 1 llave B inferior"
+                        ganador8.innerText = "Ganador 2 llave B inferior"
           swalWithBootstrapButtons.fire(
             'Borrado!',
             'Tus predicciones fueron borradas!',
@@ -388,6 +428,8 @@ document.getElementById(`botonReset4tos`).addEventListener(`click`, () =>  {
           )
         }
       })
+})
+
 })
 
 const guardaGanadores4tos = JSON.parse(localStorage.getItem("ganadores4tos"))
