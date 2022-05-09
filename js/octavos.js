@@ -288,7 +288,7 @@ let octavos6 = []
 let octavos7 = []
 let octavos8 = []
 
-if (localStorage["grupoHresultados"]) {
+if (localStorage.getItem("grupoHresultados")!= null) {
 
 octavos1 = [grupoArecuperado[0], grupoBrecuperado[1]]
 octavos2 = [grupoCrecuperado[0], grupoDrecuperado[1]]
