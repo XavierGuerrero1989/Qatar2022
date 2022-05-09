@@ -37,8 +37,7 @@ Toastify({
 
 })
 
-const semis1 = [guardaGanadores4tos[0], guardaGanadores4tos[1]]
-const semis2 = [guardaGanadores4tos[2], guardaGanadores4tos[3]]
+
 
 let gol2_1 = document.getElementById("2_1G90")
 let pen2_1 = document.getElementById("2_1GP")
@@ -89,13 +88,22 @@ function revision2_2 () {
     })
 }
 
+let semis1 = []
+let semis2 = []
 
-document.getElementById(`botonSemis`).addEventListener(`click`, () =>  { 
+if (localStorage.getItem("ganadores4tos")) {
 
-    for (let index = 0; index <2; index++) {
+semis1 = [guardaGanadores4tos[0], guardaGanadores4tos[1]]
+semis2 = [guardaGanadores4tos[2], guardaGanadores4tos[3]]
+
+for (let index = 0; index <2; index++) {
         semis1[index].puntos = 0;
         semis2[index].puntos = 0;
     }
+
+    document.getElementById(`botonSemis`).addEventListener(`click`, () =>  { 
+
+    
 
     if (parseInt(gol2_1.value)>parseInt(gol2_2.value)) {
         semis1[0].puntos = 3
@@ -147,7 +155,6 @@ document.getElementById(`botonSemis`).addEventListener(`click`, () =>  {
 
     
     const ganadoresSemis = [semis1[0], semis2[0]]
-
     const perdedoresSemis = [semis1[1], semis2[1]]
 
     let img3_1 = document.getElementById("img3_1")
@@ -159,6 +166,8 @@ document.getElementById(`botonSemis`).addEventListener(`click`, () =>  {
     let tercer2 = document.getElementById("3_2")
     let final1 = document.getElementById("f1")
     let final2 = document.getElementById("f2")
+
+    console.log(ganadoresSemis, perdedoresSemis);
 
     img3_1.src = "../assets/img/escudos/"+perdedoresSemis[0].id+".png"
     img3_2.src = "../assets/img/escudos/"+perdedoresSemis[1].id+".png"
@@ -172,11 +181,14 @@ document.getElementById(`botonSemis`).addEventListener(`click`, () =>  {
     final2.innerText = ganadoresSemis[1].pais
 
 
+
     const guardaGanadoresSemis = JSON.stringify(ganadoresSemis)
     localStorage.setItem("ganadoresSemis", guardaGanadoresSemis);
 
     const guardaPerdedoresSemis = JSON.stringify(perdedoresSemis)
     localStorage.setItem("perdedoresSemis", guardaPerdedoresSemis);
+
+
 
     let valorg2_1 = parseInt(gol2_1.value)
     let valorg2_1p = parseInt(pen2_1.value)
@@ -201,7 +213,7 @@ document.getElementById(`botonSemis`).addEventListener(`click`, () =>  {
         
         }).showToast();    
 
-})
+})}
 
 
 localStorage.hasOwnProperty("golesSemis") === true && deployGolesSemis();

@@ -203,8 +203,8 @@ if (parseInt(goles95.value) > parseInt(goles96.value)) {
     img1h.src = "../assets/img/escudos/"+grupoH[0].id+".png"
     img2h.src = "../assets/img/escudos/"+grupoH[1].id+".png"
 
-    nombre1h.innerText = grupoHrecuperado[0].pais
-    nombre2h.innerText = grupoHrecuperado[1].pais
+    nombre1h.innerText = grupoH[0].pais
+    nombre2h.innerText = grupoH[1].pais
 
 
 let vGol85 = parseInt(goles85.value);

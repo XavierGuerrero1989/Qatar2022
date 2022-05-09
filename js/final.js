@@ -46,8 +46,7 @@ Toastify({
 
 })
 
-const tercerPuesto = [guardaPerdedoresSemis[0], guardaPerdedoresSemis[1]]
-const final = [guardaGanadoresSemis[0], guardaGanadoresSemis[1]]
+
 
 let goltercer1 = document.getElementById("tercer1G90")
 let pentercer1 = document.getElementById("tercer1GP")
@@ -97,12 +96,22 @@ function revisionFinal () {
     })
 }
 
-document.getElementById(`botonFinales`).addEventListener(`click`, () =>  { 
+let tercerPuesto = []
+let final = []
 
-    for (let index = 0; index <2; index++) {
+
+if (localStorage.getItem("ganadoresSemis")) {
+tercerPuesto = [guardaPerdedoresSemis[0], guardaPerdedoresSemis[1]]
+final = [guardaGanadoresSemis[0], guardaGanadoresSemis[1]]
+
+for (let index = 0; index <2; index++) {
         tercerPuesto[index].puntos = 0;
         final[index].puntos = 0;
     }
+
+document.getElementById(`botonFinales`).addEventListener(`click`, () =>  { 
+
+    
 
     if (parseInt(goltercer1.value)>parseInt(goltercer2.value)) {
         tercerPuesto[0].puntos = 3
@@ -154,6 +163,8 @@ document.getElementById(`botonFinales`).addEventListener(`click`, () =>  {
 
     const finalResultados = [final[0], final[1], tercerPuesto[0], tercerPuesto[1]] 
 
+    console.log(finalResultados);
+
     const guardaResultadoFinales = JSON.stringify(finalResultados)
     localStorage.setItem("resultadosFinales", guardaResultadoFinales);
 
@@ -189,7 +200,7 @@ document.getElementById(`botonFinales`).addEventListener(`click`, () =>  {
         duration: 3000
         
         }).showToast();    
-})
+})}
 
 
 localStorage.hasOwnProperty("golesFinales") === true && deployGolesFinales();

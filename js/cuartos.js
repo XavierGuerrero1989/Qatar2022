@@ -52,10 +52,7 @@ Toastify({
 
 })
 
-const cuartos1 = [guardaGanadores8vos[0], guardaGanadores8vos[1]]
-const cuartos2 = [guardaGanadores8vos[2], guardaGanadores8vos[3]]
-const cuartos3 = [guardaGanadores8vos[4], guardaGanadores8vos[5]]
-const cuartos4 = [guardaGanadores8vos[6], guardaGanadores8vos[7]]
+
 
 let gol4_1 = document.getElementById("4_1G90")
 let pen4_1 = document.getElementById("4_1GP")
@@ -150,14 +147,32 @@ function revision4_4 () {
         })
 }
 
-document.getElementById(`boton4tos`).addEventListener(`click`, () =>  { 
 
-    for (let index = 0; index <2; index++) {
+let cuartos1 = []
+let cuartos2 = []
+let cuartos3 = []
+let cuartos4 = []
+
+
+if (localStorage.getItem("ganadores8vos")) {
+
+cuartos1 = [guardaGanadores8vos[0], guardaGanadores8vos[1]]
+cuartos2 = [guardaGanadores8vos[2], guardaGanadores8vos[3]]
+cuartos3 = [guardaGanadores8vos[4], guardaGanadores8vos[5]]
+cuartos4 = [guardaGanadores8vos[6], guardaGanadores8vos[7]]
+
+
+
+for (let index = 0; index <2; index++) {
         cuartos1[index].puntos = 0;
         cuartos2[index].puntos = 0;
         cuartos3[index].puntos = 0;
         cuartos4[index].puntos = 0;
     }
+
+document.getElementById(`boton4tos`).addEventListener(`click`, () =>  { 
+
+    
 
     if (parseInt(gol4_1.value)>parseInt(gol4_2.value)) {
         cuartos1[0].puntos = 3
@@ -257,6 +272,8 @@ document.getElementById(`boton4tos`).addEventListener(`click`, () =>  {
 
     const ganadores4tos = [cuartos1[0], cuartos2[0], cuartos3[0], cuartos4[0]]
 
+    console.log(ganadores4tos);
+
     const guardaGanadores4tos = JSON.stringify(ganadores4tos)
     localStorage.setItem("ganadores4tos", guardaGanadores4tos);
 
@@ -311,7 +328,7 @@ document.getElementById(`boton4tos`).addEventListener(`click`, () =>  {
         
         }).showToast();    
 
-})
+})}
 
 localStorage.hasOwnProperty("goles4tos") === true && deployGoles4tos();
 

@@ -44,9 +44,6 @@ let nombre1h = document.getElementById("1h");
 let nombre2h = document.getElementById("2h");
 
 
-
-
-
 let botonGenerador = document.getElementById ("botonGenerador");
 botonGenerador.addEventListener ("click", function (){
 
@@ -95,14 +92,6 @@ Toastify({
 })
 
 
-const octavos1 = [grupoArecuperado[0], grupoBrecuperado[1]]
-const octavos2 = [grupoCrecuperado[0], grupoDrecuperado[1]]
-const octavos3 = [grupoErecuperado[0], grupoFrecuperado[1]]
-const octavos4 = [grupoGrecuperado[0], grupoHrecuperado[1]]
-const octavos5 = [grupoBrecuperado[0], grupoArecuperado[1]]
-const octavos6 = [grupoDrecuperado[0], grupoCrecuperado[1]]
-const octavos7 = [grupoFrecuperado[0], grupoErecuperado[1]]
-const octavos8 = [grupoHrecuperado[0], grupoGrecuperado[1]]
 
 let gol1a = document.getElementById("1aG90")
 let pen1a = document.getElementById("1aGP")
@@ -290,18 +279,43 @@ function revision8 () {
         })
 }
 
-document.getElementById(`boton8vos`).addEventListener(`click`, () =>  { 
-    for (let index = 0; index <2; index++) {
-        octavos1[index].puntos = 0;
-        octavos2[index].puntos = 0;
-        octavos3[index].puntos = 0;
-        octavos4[index].puntos = 0;
-        octavos5[index].puntos = 0;
-        octavos6[index].puntos = 0;
-        octavos7[index].puntos = 0;
-        octavos8[index].puntos = 0;
-    }
+let octavos1 = []
+let octavos2 = []
+let octavos3 = []
+let octavos4 = []
+let octavos5 = []
+let octavos6 = []
+let octavos7 = []
+let octavos8 = []
 
+if (localStorage["grupoHresultados"]) {
+
+octavos1 = [grupoArecuperado[0], grupoBrecuperado[1]]
+octavos2 = [grupoCrecuperado[0], grupoDrecuperado[1]]
+octavos3 = [grupoErecuperado[0], grupoFrecuperado[1]]
+octavos4 = [grupoGrecuperado[0], grupoHrecuperado[1]]
+octavos5 = [grupoBrecuperado[0], grupoArecuperado[1]]
+octavos6 = [grupoDrecuperado[0], grupoCrecuperado[1]]
+octavos7 = [grupoFrecuperado[0], grupoErecuperado[1]]
+octavos8 = [grupoHrecuperado[0], grupoGrecuperado[1]]
+
+
+for (let index = 0; index <2; index++) {
+    octavos1[index].puntos = 0;
+    octavos2[index].puntos = 0;
+    octavos3[index].puntos = 0;
+    octavos4[index].puntos = 0;
+    octavos5[index].puntos = 0;
+    octavos6[index].puntos = 0;
+    octavos7[index].puntos = 0;
+    octavos8[index].puntos = 0;
+}
+
+
+
+
+document.getElementById(`boton8vos`).addEventListener(`click`, () =>  { 
+   
 
     if (parseInt(gol1a.value)>parseInt(gol2b.value)) {
         octavos1[0].puntos = 3
@@ -590,6 +604,7 @@ document.getElementById(`boton8vos`).addEventListener(`click`, () =>  {
         
         }).showToast();
 })
+}
 
 localStorage.hasOwnProperty("goles8vos") === true && deployGoles8vos();
 
