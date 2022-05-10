@@ -149,6 +149,8 @@ if (parseInt(goles95.value) > parseInt(goles96.value)) {
         function(a,b) {
             if (b.puntos == a.puntos) {
                 return b.diferencia - a.diferencia;
+            } else if (b.diferencia == a.diferencia) {
+                return b.golesFavor - a.golesFavor
             }
             return b.puntos > a.puntos ? 1 : -1;
     })

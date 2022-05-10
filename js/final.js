@@ -21,6 +21,8 @@ let img3ro = document.getElementById("imgTercerPuesto")
 let img2do = document.getElementById("imgSegundoPuesto")
 let img1ro = document.getElementById("imgCampeon")
 
+if (localStorage.getItem("ganadoresSemis")) {
+
 let finalista1 = document.getElementById("finalista1")
 finalista1.innerText = guardaGanadoresSemis[0].pais
 let imagenFinalista1 = document.getElementById("imgFinal1")
@@ -37,6 +39,8 @@ let perdedor2 = document.getElementById("perdedor2")
 perdedor2.innerText = guardaPerdedoresSemis[1].pais
 let imagenPerdedor2 = document.getElementById("imgPerdedor2")
 imagenPerdedor2.src = "../assets/img/escudos/"+guardaPerdedoresSemis[1].id+".png"
+}
+
 
 let botonGeneradorFinal = document.getElementById ("botonGeneradorFinal");
 botonGeneradorFinal.addEventListener ("click", function (){

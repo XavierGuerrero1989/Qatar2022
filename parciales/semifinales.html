@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>QATAR 2022</title>
 </head>
 <body>
@@ -48,23 +49,31 @@
       <h1 class="divisor__titulo text-center">SEMI-FINALES!!!</h1>
       <p class="divisor__texto text-center">Estamos a un paso de la gran FINAL! Seguimos con la metodologia que veniamos aplicando: El boton  "Generar 4tos de final" carga tus predicciones de la fase previa. El boton "Cargar 4tos de final" carga al sistema las predicciones de esta fase, mientras que el boton de "Resetear 4tos de final" borra tus predicciones. Los equipos clasificados a SEMIS segun tus predicciones fueron los siguientes: </p>
       <div class="row text-center">
-          <div class="col-md-3 bloqueOscuro">
-            <h2>LLave A fase superior</h2>
+          <div class="col-md-3 bloqueOscuro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="0">
+            <h2>LLave A superior</h2>
             <img src="" alt="" id="imgAS" class="escudoSemi">
             <h3 class="" id="ganadorAS">Ganador</h3>
           </div>
-          <div class="col-md-3 bloqueClaro">
-            <h2>Llave A fase inferior</h2>
+          <div class="col-md-3 bloqueClaro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="1000">
+            <h2>Llave A inferior</h2>
             <img src="" alt="" id="imgAI" class="escudoSemi">
             <h3 class="" id="ganadorAI">Ganador</h3>
           </div>
-          <div class="col-md-3 bloqueOscuro">
-            <h2>Llave B fase superior</h2>
+          <div class="col-md-3 bloqueOscuro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="2000">
+            <h2>Llave B superior</h2>
             <img src="" alt="" id="imgBS" class="escudoSemi">
             <h3 class="" id="ganadorBS">Ganador</h3>
           </div>
-          <div class="col-md-3 bloqueClaro">
-            <h2>Llave B fase inferior</h2>
+          <div class="col-md-3 bloqueClaro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="3000">
+            <h2>Llave B inferior</h2>
             <img src="" alt="" id="imgBI" class="escudoSemi">
             <h3 class="" id="ganadorBI">Ganador</h3>
           </div>
@@ -150,5 +159,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

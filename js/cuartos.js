@@ -20,6 +20,8 @@ let ganador6 = document.getElementById("4_6")
 let ganador7 = document.getElementById("4_7")
 let ganador8 = document.getElementById("4_8")
 
+
+if (localStorage.getItem("ganadores8vos")) {
 let ganadorAS1 = document.getElementById("ganadorAS1")
 ganadorAS1.innerText = guardaGanadores8vos[0].pais
 let ganadorAS2 = document.getElementById("ganadorAS2")
@@ -36,7 +38,7 @@ let ganadorBI1 = document.getElementById("ganadorBI1")
 ganadorBI1.innerText = guardaGanadores8vos[6].pais
 let ganadorBI2 = document.getElementById("ganadorBI2")
 ganadorBI2.innerText = guardaGanadores8vos[7].pais
-
+}
 
 
 

@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>QATAR 2022</title>
 </head>
 <body>
@@ -48,22 +49,30 @@
         <h1 class="divisor__titulo text-center">LA GRAN FINAL!</h1>
         <p class="divisor__texto text-center">Haz terminado el viaje por QATAR 2022. solo nos quedan los ultimos 2 partidos: el que nadie quiere jugar (3er puesto) y el que todos sueñan con hacerlo! <br> para vos... ¿Quien gana el MUNDIAL DE LA FIFA - QATAR 2022? </p>
       <div class="row text-center">
-          <div class="col-md-3 bloqueOscuro">
+          <div class="col-md-3 bloqueOscuro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="0">
             <h2>FINALISTA 1</h2>
             <img src="" alt="" id="imgFinal1" class="escudoSemi">
             <h3 class="" id="finalista1">Ganador Semi 1</h3>
           </div>
-          <div class="col-md-3 bloqueClaro">
+          <div class="col-md-3 bloqueClaro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="1000">
             <h2>FINALISTA 2</h2>
             <img src="" alt="" id="imgFinal2" class="escudoSemi">
             <h3 class="" id="finalista2">Ganador Semi 2</h3>
           </div>
-          <div class="col-md-3 bloqueOscuro">
+          <div class="col-md-3 bloqueOscuro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="2000">
             <h2>Tercer Puesto 1</h2>
             <img src="" alt="" id="imgPerdedor1" class="escudoSemi">
             <h3 class="" id="perdedor1">Perdedor Semi 1</h3>
           </div>
-          <div class="col-md-3 bloqueClaro">
+          <div class="col-md-3 bloqueClaro" data-aos="flip-down"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="3000">
             <h2>Tercer Puesto 2</h2>
             <img src="" alt="" id="imgPerdedor2" class="escudoSemi">
             <h3 class="" id="perdedor2">Perdedor Semi 2</h3>
@@ -173,5 +182,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

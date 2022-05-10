@@ -7,7 +7,7 @@ const grupoFrecuperado = JSON.parse(localStorage.getItem("grupoFresultados"))
 const grupoGrecuperado = JSON.parse(localStorage.getItem("grupoGresultados"))
 const grupoHrecuperado = JSON.parse(localStorage.getItem("grupoHresultados"))
 
-console.log(grupoBrecuperado);
+if (localStorage.getItem("grupoHresultados")!= null) {
 
 let clasificadoA1 = document.getElementById("clasificadoA1")
 clasificadoA1.innerText = grupoArecuperado[0].pais
@@ -41,7 +41,7 @@ let clasificadoH1 = document.getElementById("clasificadoH1")
 clasificadoH1.innerText = grupoHrecuperado[0].pais 
 let clasificadoH2 = document.getElementById("clasificadoH2")
 clasificadoH2.innerText = grupoHrecuperado[1].pais 
-
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 

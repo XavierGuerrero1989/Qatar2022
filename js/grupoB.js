@@ -147,13 +147,15 @@ for (let index = 0; index <4; index++) {
 
 
 
-    grupoB.sort(
-        function(a,b) {
-            if (b.puntos == a.puntos) {
-                return b.diferencia - a.diferencia;
-            }
-            return b.puntos > a.puntos ? 1 : -1;
-    })
+grupoB.sort(
+    function(a,b) {
+        if (b.puntos == a.puntos) {
+            return b.diferencia - a.diferencia;
+        } else if (b.diferencia == a.diferencia) {
+            return b.golesFavor - a.golesFavor
+        }
+        return b.puntos > a.puntos ? 1 : -1;
+})
 
     let clasificado1B = document.getElementById("clasi1B")
     clasificado1B.innerText = grupoB[0].pais;

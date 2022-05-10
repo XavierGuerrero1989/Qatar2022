@@ -12,6 +12,8 @@ let semi2 = document.getElementById("2_2")
 let semi3 = document.getElementById("2_3")
 let semi4 = document.getElementById("2_4")
 
+if (localStorage.getItem("ganadores4tos")) {
+
 let ganadorAS = document.getElementById("ganadorAS")
 ganadorAS.innerText = guardaGanadores4tos[0].pais
 let ganadorASimg = document.getElementById("imgAS")
@@ -28,7 +30,7 @@ let ganadorBI = document.getElementById("ganadorBI")
 ganadorBI.innerText = guardaGanadores4tos[3].pais
 let ganadorBIimg = document.getElementById("imgBI")
 ganadorBIimg.src = "../assets/img/escudos/"+guardaGanadores4tos[3].id+".png"
-
+}
 
 let botonGeneradorSemis = document.getElementById ("botonGeneradorSemis");
 botonGeneradorSemis.addEventListener ("click", function (){
