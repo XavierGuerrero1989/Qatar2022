@@ -196,19 +196,6 @@ for (let index = 0; index <4; index++) {
     let difGol4 = document.getElementById("df4")
     difGol4.innerText = grupoA[3].diferencia;
 
-
-    let img1a = document.getElementById("img1a");
-    let img2a = document.getElementById("img2a");
-
-    let nombre1a = document.getElementById("1a");
-    let nombre2a = document.getElementById("2a");
-
-    img1a.src = "../assets/img/escudos/"+grupoA[0].id+".png"
-    img2a.src = "../assets/img/escudos/"+grupoA[1].id+".png"
-
-    nombre1a.innerText = grupoA[0].pais
-    nombre2a.innerText = grupoA[1].pais
-
 let vGol1 = parseInt(goles1.value);
 let vGol2 = parseInt(goles2.value);
 let vGol3 = parseInt(goles3.value);
@@ -406,6 +393,3 @@ document.getElementById(`borrarData`).addEventListener(`click`, () =>  {
 
 
 
-const grupoArecuperado = JSON.parse(localStorage.getItem("grupoAresultados"))
-
-export { grupoArecuperado }

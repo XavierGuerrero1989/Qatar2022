@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>QATAR 2022</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <img src="../assets/img/onlycup.png" alt="logo de la copa del mundo" class="logonav">
+            <h2 class="navtitle">FIFA WORLD CUP - QATAR 2022</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse navbar__list" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../parciales/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="./estadisticas.html">Estadisticas</a>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pronostico
+                    </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dropfont" href="../parciales/pronostico.html">"EL PRODE"</a></li>
+                <li><a class="dropdown-item dropfont" href="../parciales/alternate.html">El "Quini6"</a></li>
+              </ul> 
+            </li>
+          </ul>  
+      </div>
+    </div>
+</nav>
+<div class="container-fluid imginicio">
+</div>   
+  <article class="container-fluid divisor">
+    <div class="row d-flex justify-content-center">
+      <h1 class="divisor__titulo text-center">Octavos de FINAL!</h1>
+      <p class="divisor__texto text-center">A partir de aca, podras observar como quedo conformado el cuadro de octavos de final (Eliminacion directa) de acuerdo a tus predicciones en la fase de grupos. Desde aqui podras seguir eligiendo tus favoritos de cara a la Gran FINAL! <br>El boton  "Generar 8vos de final" lo vas a utilizar para poder cargar tus predicciones de la fase previa. Con el boton "Cargar 8vos de final" vas a poder cargar tus predicciones al sistema una vez las hayas ingresado, mientras que con el boton de "Resetear 8vos de final" podras borrar tus predicciones de 8vos, y volver a cargarlas. Los equipos clasificados a 8vos segun tus predicciones fueron los siguientes: </p>
+      <div class="row text-center">
+          <div class="col-md-3 bloqueOscuro">
+            <h2>GrupoA</h2>
+            <h3 class="" id="clasificadoA1"></h3>
+            <h3 class="" id="clasificadoA2"></h3>
+          </div>
+          <div class="col-md-3 bloqueClaro">
+            <h2>GrupoB</h2>
+            <h3 class="" id="clasificadoB1"></h3>
+            <h3 class="" id="clasificadoB2"></h3>
+          </div>
+          <div class="col-md-3 bloqueOscuro">
+            <h2>GrupoC</h2>
+            <h3 class="" id="clasificadoC1"></h3>
+            <h3 class="" id="clasificadoC2"></h3>
+          </div>
+          <div class="col-md-3 bloqueClaro">
+            <h2>GrupoD</h2>
+            <h3 class="" id="clasificadoD1"></h3>
+            <h3 class="" id="clasificadoD2"></h3>
+          </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-3 bloqueClaro">
+          <h2>GrupoE</h2>
+          <h3 class="" id="clasificadoE1"></h3>
+          <h3 class="" id="clasificadoE2"></h3>
+        </div>
+        <div class="col-md-3 bloqueOscuro">
+          <h2>GrupoF</h2>
+          <h3 class="" id="clasificadoF1"></h3>
+          <h3 class="" id="clasificadoF2"></h3>
+        </div>
+        <div class="col-md-3 bloqueClaro">
+          <h2>GrupoG</h2>
+          <h3 class="" id="clasificadoG1"></h3>
+          <h3 class="" id="clasificadoG2"></h3>
+        </div>
+        <div class="col-md-3 bloqueOscuro">
+          <h2>GrupoH</h2>
+          <h3 class="" id="clasificadoH1"></h3>
+          <h3 class="" id="clasificadoH2"></h3>
+        </div>
+    </div>
+      <div class="row d-flex justify-content-center">
+        <button id="boton8vos" class="col-md-2 botonCargaData">Cargar 8vos de final</button>
+        <button id="botonReset8vos" class="col-md-2 botonCargaData">Resetear 8vos de final</button>
+        <button id="botonGenerador" class="btnGrupo text-center">Generar 8vos de Final</button>
+      </div>   
+      
+    </div>
+  </article>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingNine">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+         <span class="tituloGrupo">8°vos DE FINAL - LLAVE A - FASE SUPERIOR</span> 
+        </button>
+      </h2>
+      <div id="collapseNine" class="accordion-collapse collapse show" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1a" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1a">Primero del Grupo A</h2>
+            </div>
+            <div class="col-md-1 text-center marcador49">
+              <p>90' / 120'</p>
+              <input type="number" id="1aG90" min="0" max="99" value="">
+              <p>penales</p>
+              <input type="number" id="1aGP" min="0" max="99" value="">
+            </div>
+            <div class="col-md-1 text-center marcador49B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2bG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2bGP" value="">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="2b">Segundo del Grupo B</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2b" class="imgPo">
+            </div>
+          </div>
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1c" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1c">Primero del Grupo C</h2>
+            </div>
+            <div class="col-md-1 text-center marcador50">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="1cG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="1cGP" value="">
+            </div>
+            <div class="col-md-1 text-center marcador50B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2dG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2dGP" value="">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="2d">Segundo del Grupo D</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2d" class="imgPo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTen">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          <span class="tituloGrupo">8°vos DE FINAL - LLAVE A - FASE INFERIOR</span> 
+        </button>
+      </h2>
+      <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1e" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1e">Primero del Grupo E</h2>
+            </div>
+            <div class="col-md-1 text-center marcador51">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="1eG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="1eGP" value="">
+            </div>
+            <div class="col-md-1 marcador51B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2fG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2fGP" value="">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="2f">Segundo del Grupo F</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2f" class="imgPo">
+            </div>
+          </div>
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1g" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1g">Primero del Grupo G</h2>
+            </div>
+            <div class="col-md-1 text-center marcador52">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="1gG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="1gGP" value="">
+            </div>
+            <div class="col-md-1 text-center marcador52B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2hG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2hGP" value="">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="2h">Segundo del Grupo H</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2h" class="imgPo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEleven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+        <span class="tituloGrupo">8°vos DE FINAL - LLAVE B - FASE SUPERIOR</span>  
+        </button>
+      </h2>
+      <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1b" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1b">Primero del Grupo B</h2>
+            </div>
+            <div class="col-md-1 text-center marcador53">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="1bG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="1bGP" value="">
+            </div>
+            <div class="col-md-1 text-center marcador53B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2aG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2aGP" value="">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="2a">Segundo del Grupo A</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2a" class="imgPo">
+            </div>
+          </div>
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1d" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1d">Primero del Grupo D</h2>
+            </div>
+            <div class="col-md-1 text-center marcador54">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="1dG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="1dGP" value="">
+            </div>
+            <div class="col-md-1 text-center marcador54B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2cG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2cGP" value="">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="2c">Segundo del Grupo C</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2c" class="imgPo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwelve">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+         <span class="tituloGrupo">8°vos DE FINAL - LLAVE B - FASE INFERIOR</span> 
+        </button>
+      </h2>
+      <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1f" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1f">Primero del Grupo F</h2>
+            </div>
+            <div class="col-md-1 text-center marcador55">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="1fG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="1fGP" value="">
+            </div>
+            <div class="col-md-1 text-center marcador55B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2eG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2eGP" value="">
+            </div>
+            <div class="col-md-4 text-center" class="imgPo">
+              <h2 class="equipo8vos" id="2e">Segundo del Grupo E</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2e" class="imgPo">
+            </div>
+          </div>
+          <div class="row d-flex align-items-center rowDeOctavos">
+            <div class="col-md-1">
+              <img src="" alt="" id="img1h" class="imgPo">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="1h">Primero del Grupo H</h2>
+            </div>
+            <div class="col-md-1 text-center marcador56">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="1hG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="1hGP" value="">
+            </div>
+            <div class="col-md-1 text-center marcador56B">
+              <p>90' / 120'</p>
+              <input type="number" min="0" max="99" id="2gG90" value="">
+              <p>penales</p>
+              <input type="number" min="0" max="99" id="2gGP" value="">
+            </div>
+            <div class="col-md-4 text-center">
+              <h2 class="equipo8vos" id="2g">Segundo del Grupo G</h2>
+            </div>
+            <div class="col-md-1">
+              <img src="" alt="" id="img2g" class="imgPo">
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>
+  </div>
+  <article class="container-fluid divisor">
+    <div class="row d-flex justify-content-center">
+      <h1 class="divisor__titulo text-center">Cuartos de FINAL!</h1>
+      <p class="divisor__texto text-center">Una vez que cargues los datos de los 8vos de final, podes pasar a la siguiente fase. Hace click en el siguiente boton para continuar.</p>
+      <div class="row d-flex justify-content-center">
+        <button class="col-md-2 botonCargaData"> <a href="./pronostico.html">Retroceder a fase de Grupos</a> </button>
+        <button class="col-md-2 botonCargaData"> <a href="./cuartos.html">Avanzar a 4tos</a> </button>
+      </div>   
+    </div>
+  </article>
+  
+
+  <script src="../js/octavos.js" type="module"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

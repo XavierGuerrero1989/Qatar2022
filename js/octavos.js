@@ -1,11 +1,45 @@
-import { grupoArecuperado } from "./grupoA.js";
-import { grupoBrecuperado } from "./grupoB.js";
-import { grupoCrecuperado } from "./grupoC.js";
-import { grupoDrecuperado } from "./grupoD.js";
-import { grupoErecuperado } from "./grupoE.js";
-import { grupoFrecuperado } from "./grupoF.js";
-import { grupoGrecuperado } from "./grupoG.js";
-import { grupoHrecuperado } from "./grupoH.js";
+const grupoArecuperado = JSON.parse(localStorage.getItem("grupoAresultados"))
+const grupoBrecuperado = JSON.parse(localStorage.getItem("grupoBresultados"))
+const grupoCrecuperado = JSON.parse(localStorage.getItem("grupoCresultados"))
+const grupoDrecuperado = JSON.parse(localStorage.getItem("grupoDresultados"))
+const grupoErecuperado = JSON.parse(localStorage.getItem("grupoEresultados"))
+const grupoFrecuperado = JSON.parse(localStorage.getItem("grupoFresultados"))
+const grupoGrecuperado = JSON.parse(localStorage.getItem("grupoGresultados"))
+const grupoHrecuperado = JSON.parse(localStorage.getItem("grupoHresultados"))
+
+let clasificadoA1 = document.getElementById("clasificadoA1")
+clasificadoA1.innerText = grupoArecuperado[0].pais
+let clasificadoA2 = document.getElementById("clasificadoA2")
+clasificadoA2.innerText = grupoArecuperado[1].pais 
+let clasificadoB1 = document.getElementById("clasificadoB1")
+clasificadoB1.innerText = grupoBrecuperado[0].pais 
+let clasificadoB2 = document.getElementById("clasificadoB2")
+clasificadoB2.innerText = grupoBrecuperado[1].pais 
+let clasificadoC1 = document.getElementById("clasificadoC1")
+clasificadoC1.innerText = grupoCrecuperado[0].pais 
+let clasificadoC2 = document.getElementById("clasificadoC2")
+clasificadoC2.innerText = grupoCrecuperado[1].pais 
+let clasificadoD1 = document.getElementById("clasificadoD1")
+clasificadoD1.innerText = grupoDrecuperado[0].pais 
+let clasificadoD2 = document.getElementById("clasificadoD2")
+clasificadoD2.innerText = grupoDrecuperado[1].pais 
+let clasificadoE1 = document.getElementById("clasificadoE1")
+clasificadoE1.innerText = grupoErecuperado[0].pais  
+let clasificadoE2 = document.getElementById("clasificadoE2")
+clasificadoE2.innerText = grupoErecuperado[1].pais 
+let clasificadoF1 = document.getElementById("clasificadoF1")
+clasificadoF1.innerText = grupoFrecuperado[0].pais 
+let clasificadoF2 = document.getElementById("clasificadoF2")
+clasificadoF2.innerText = grupoFrecuperado[1].pais 
+let clasificadoG1 = document.getElementById("clasificadoG1")
+clasificadoG1.innerText = grupoGrecuperado[0].pais 
+let clasificadoG2 = document.getElementById("clasificadoG2")
+clasificadoG2.innerText = grupoGrecuperado[1].pais 
+let clasificadoH1 = document.getElementById("clasificadoH1")
+clasificadoH1.innerText = grupoHrecuperado[0].pais 
+let clasificadoH2 = document.getElementById("clasificadoH2")
+clasificadoH2.innerText = grupoHrecuperado[1].pais 
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -46,6 +80,8 @@ let nombre2h = document.getElementById("2h");
 
 let botonGenerador = document.getElementById ("botonGenerador");
 botonGenerador.addEventListener ("click", function (){
+
+    console.log(grupoArecuperado);
 
 img1a.src = "../assets/img/escudos/"+grupoArecuperado[0].id+".png"
 img2a.src = "../assets/img/escudos/"+grupoArecuperado[1].id+".png"
@@ -288,6 +324,7 @@ let octavos6 = []
 let octavos7 = []
 let octavos8 = []
 
+
 if (localStorage.getItem("grupoHresultados")!= null) {
 
 octavos1 = [grupoArecuperado[0], grupoBrecuperado[1]]
@@ -299,6 +336,7 @@ octavos6 = [grupoDrecuperado[0], grupoCrecuperado[1]]
 octavos7 = [grupoFrecuperado[0], grupoErecuperado[1]]
 octavos8 = [grupoHrecuperado[0], grupoGrecuperado[1]]
 
+console.log (octavos1, octavos2, octavos3, octavos4, octavos5, octavos6, octavos7)
 
 for (let index = 0; index <2; index++) {
     octavos1[index].puntos = 0;
@@ -514,44 +552,7 @@ document.getElementById(`boton8vos`).addEventListener(`click`, () =>  {
 
     const ganadores8vos = [octavos1[0], octavos2[0], octavos3[0], octavos4[0], octavos5[0], octavos6[0], octavos7[0], octavos8[0]]
 
-    console.log(ganadores8vos);
-
-    let img4_1 = document.getElementById("img4_1")
-    let img4_2 = document.getElementById("img4_2")
-    let img4_3 = document.getElementById("img4_3")
-    let img4_4 = document.getElementById("img4_4")
-    let img4_5 = document.getElementById("img4_5")
-    let img4_6 = document.getElementById("img4_6")
-    let img4_7 = document.getElementById("img4_7")
-    let img4_8 = document.getElementById("img4_8")
-
-    let ganador1 = document.getElementById("4_1")
-    let ganador2 = document.getElementById("4_2")
-    let ganador3 = document.getElementById("4_3")
-    let ganador4 = document.getElementById("4_4")
-    let ganador5 = document.getElementById("4_5")
-    let ganador6 = document.getElementById("4_6")
-    let ganador7 = document.getElementById("4_7")
-    let ganador8 = document.getElementById("4_8")
-
-    img4_1.src = "../assets/img/escudos/"+ganadores8vos[0].id+".png"
-    img4_2.src = "../assets/img/escudos/"+ganadores8vos[1].id+".png"
-    img4_3.src = "../assets/img/escudos/"+ganadores8vos[2].id+".png"
-    img4_4.src = "../assets/img/escudos/"+ganadores8vos[3].id+".png"
-    img4_5.src = "../assets/img/escudos/"+ganadores8vos[4].id+".png"
-    img4_6.src = "../assets/img/escudos/"+ganadores8vos[5].id+".png"
-    img4_7.src = "../assets/img/escudos/"+ganadores8vos[6].id+".png"
-    img4_8.src = "../assets/img/escudos/"+ganadores8vos[7].id+".png"
-
-    ganador1.innerText = ganadores8vos[0].pais
-    ganador2.innerText = ganadores8vos[1].pais
-    ganador3.innerText = ganadores8vos[2].pais
-    ganador4.innerText = ganadores8vos[3].pais
-    ganador5.innerText = ganadores8vos[4].pais
-    ganador6.innerText = ganadores8vos[5].pais
-    ganador7.innerText = ganadores8vos[6].pais
-    ganador8.innerText = ganadores8vos[7].pais
-
+    
     const guardaGanadores8vos = JSON.stringify(ganadores8vos)
     localStorage.setItem("ganadores8vos", guardaGanadores8vos);
 
@@ -790,4 +791,3 @@ document.getElementById(`botonReset8vos`).addEventListener(`click`, () =>  {
 
 const guardaGanadores8vos = JSON.parse(localStorage.getItem("ganadores8vos"))
 
-export { guardaGanadores8vos }

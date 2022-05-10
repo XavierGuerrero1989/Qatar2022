@@ -1,4 +1,4 @@
-import { guardaGanadores4tos } from "./cuartos.js";
+const guardaGanadores4tos = JSON.parse(localStorage.getItem("ganadores4tos"))
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -11,6 +11,24 @@ let semi1 = document.getElementById("2_1")
 let semi2 = document.getElementById("2_2")
 let semi3 = document.getElementById("2_3")
 let semi4 = document.getElementById("2_4")
+
+let ganadorAS = document.getElementById("ganadorAS")
+ganadorAS.innerText = guardaGanadores4tos[0].pais
+let ganadorASimg = document.getElementById("imgAS")
+ganadorASimg.src = "../assets/img/escudos/"+guardaGanadores4tos[0].id+".png"
+let ganadorAI = document.getElementById("ganadorAI")
+ganadorAI.innerText = guardaGanadores4tos[1].pais
+let ganadorAIimg = document.getElementById("imgAI")
+ganadorAIimg.src = "../assets/img/escudos/"+guardaGanadores4tos[1].id+".png"
+let ganadorBS = document.getElementById("ganadorBS")
+ganadorBS.innerText = guardaGanadores4tos[2].pais
+let ganadorBSimg = document.getElementById("imgBS")
+ganadorBSimg.src = "../assets/img/escudos/"+guardaGanadores4tos[2].id+".png"
+let ganadorBI = document.getElementById("ganadorBI")
+ganadorBI.innerText = guardaGanadores4tos[3].pais
+let ganadorBIimg = document.getElementById("imgBI")
+ganadorBIimg.src = "../assets/img/escudos/"+guardaGanadores4tos[3].id+".png"
+
 
 let botonGeneradorSemis = document.getElementById ("botonGeneradorSemis");
 botonGeneradorSemis.addEventListener ("click", function (){
@@ -157,30 +175,6 @@ for (let index = 0; index <2; index++) {
     const ganadoresSemis = [semis1[0], semis2[0]]
     const perdedoresSemis = [semis1[1], semis2[1]]
 
-    let img3_1 = document.getElementById("img3_1")
-    let img3_2 = document.getElementById("img3_2")
-    let imgfinal1 = document.getElementById("imgf1")
-    let imgfinal2 = document.getElementById("imgf2")
-
-    let tercer1 = document.getElementById("3_1")
-    let tercer2 = document.getElementById("3_2")
-    let final1 = document.getElementById("f1")
-    let final2 = document.getElementById("f2")
-
-    console.log(ganadoresSemis, perdedoresSemis);
-
-    img3_1.src = "../assets/img/escudos/"+perdedoresSemis[0].id+".png"
-    img3_2.src = "../assets/img/escudos/"+perdedoresSemis[1].id+".png"
-    imgfinal1.src = "../assets/img/escudos/"+ganadoresSemis[0].id+".png"
-    imgfinal2.src = "../assets/img/escudos/"+ganadoresSemis[1].id+".png"
-
-
-    tercer1.innerText = perdedoresSemis[0].pais
-    tercer2.innerText = perdedoresSemis[1].pais
-    final1.innerText = ganadoresSemis[0].pais
-    final2.innerText = ganadoresSemis[1].pais
-
-
 
     const guardaGanadoresSemis = JSON.stringify(ganadoresSemis)
     localStorage.setItem("ganadoresSemis", guardaGanadoresSemis);
@@ -306,6 +300,5 @@ const guardaGanadoresSemis = JSON.parse(localStorage.getItem("ganadoresSemis"))
 
 const guardaPerdedoresSemis = JSON.parse(localStorage.getItem("perdedoresSemis"))
 
-export { guardaGanadoresSemis }
-export { guardaPerdedoresSemis }
+
 

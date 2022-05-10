@@ -1,5 +1,5 @@
-import { guardaGanadoresSemis } from "./semis.js";
-import { guardaPerdedoresSemis } from "./semis.js";
+const guardaGanadoresSemis = JSON.parse(localStorage.getItem("ganadoresSemis"))
+const guardaPerdedoresSemis = JSON.parse(localStorage.getItem("perdedoresSemis"))
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -20,6 +20,23 @@ let titulo1ro = document.getElementById("tituloCampeon")
 let img3ro = document.getElementById("imgTercerPuesto")
 let img2do = document.getElementById("imgSegundoPuesto")
 let img1ro = document.getElementById("imgCampeon")
+
+let finalista1 = document.getElementById("finalista1")
+finalista1.innerText = guardaGanadoresSemis[0].pais
+let imagenFinalista1 = document.getElementById("imgFinal1")
+imagenFinalista1.src = "../assets/img/escudos/"+guardaGanadoresSemis[0].id+".png"
+let finalista2 = document.getElementById("finalista2")
+finalista2.innerText = guardaGanadoresSemis[1].pais
+let imagenFinalista2 = document.getElementById("imgFinal2")
+imagenFinalista2.src = "../assets/img/escudos/"+guardaGanadoresSemis[1].id+".png"
+let perdedor1 = document.getElementById("perdedor1")
+perdedor1.innerText = guardaPerdedoresSemis[0].pais
+let imagenPerdedor1 = document.getElementById("imgPerdedor1")
+imagenPerdedor1.src = "../assets/img/escudos/"+guardaPerdedoresSemis[0].id+".png"
+let perdedor2 = document.getElementById("perdedor2")
+perdedor2.innerText = guardaPerdedoresSemis[1].pais
+let imagenPerdedor2 = document.getElementById("imgPerdedor2")
+imagenPerdedor2.src = "../assets/img/escudos/"+guardaPerdedoresSemis[1].id+".png"
 
 let botonGeneradorFinal = document.getElementById ("botonGeneradorFinal");
 botonGeneradorFinal.addEventListener ("click", function (){
@@ -162,8 +179,6 @@ document.getElementById(`botonFinales`).addEventListener(`click`, () =>  {
     })
 
     const finalResultados = [final[0], final[1], tercerPuesto[0], tercerPuesto[1]] 
-
-    console.log(finalResultados);
 
     const guardaResultadoFinales = JSON.stringify(finalResultados)
     localStorage.setItem("resultadosFinales", guardaResultadoFinales);

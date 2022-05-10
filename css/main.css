@@ -512,3 +512,13 @@
 .rowDeOctavos {
   color: #56042C;
   font-family: qatar2; }
+
+.bloqueOscuro {
+  background-color: #56042C;
+  color: white; }
+
+h2 {
+  text-decoration: underline; }
+
+.escudoSemi {
+  height: 20vh; }

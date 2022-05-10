@@ -1,4 +1,4 @@
-import { guardaGanadores8vos } from "./octavos.js";
+const guardaGanadores8vos = JSON.parse(localStorage.getItem("ganadores8vos"))
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -19,6 +19,25 @@ let ganador5 = document.getElementById("4_5")
 let ganador6 = document.getElementById("4_6")
 let ganador7 = document.getElementById("4_7")
 let ganador8 = document.getElementById("4_8")
+
+let ganadorAS1 = document.getElementById("ganadorAS1")
+ganadorAS1.innerText = guardaGanadores8vos[0].pais
+let ganadorAS2 = document.getElementById("ganadorAS2")
+ganadorAS2.innerText = guardaGanadores8vos[1].pais
+let ganadorAI1 = document.getElementById("ganadorAI1")
+ganadorAI1.innerText = guardaGanadores8vos[2].pais
+let ganadorAI2 = document.getElementById("ganadorAI2")
+ganadorAI2.innerText = guardaGanadores8vos[3].pais
+let ganadorBS1 = document.getElementById("ganadorBS1")
+ganadorBS1.innerText = guardaGanadores8vos[4].pais
+let ganadorBS2 = document.getElementById("ganadorBS2")
+ganadorBS2.innerText = guardaGanadores8vos[5].pais
+let ganadorBI1 = document.getElementById("ganadorBI1")
+ganadorBI1.innerText = guardaGanadores8vos[6].pais
+let ganadorBI2 = document.getElementById("ganadorBI2")
+ganadorBI2.innerText = guardaGanadores8vos[7].pais
+
+
 
 
 let botonGenerador4tos = document.getElementById ("botonGenerador4tos");
@@ -272,32 +291,10 @@ document.getElementById(`boton4tos`).addEventListener(`click`, () =>  {
 
     const ganadores4tos = [cuartos1[0], cuartos2[0], cuartos3[0], cuartos4[0]]
 
-    console.log(ganadores4tos);
-
     const guardaGanadores4tos = JSON.stringify(ganadores4tos)
     localStorage.setItem("ganadores4tos", guardaGanadores4tos);
 
-    let img2_1 = document.getElementById("img2_1")
-    let img2_2 = document.getElementById("img2_2")
-    let img2_3 = document.getElementById("img2_3")
-    let img2_4 = document.getElementById("img2_4")
-
-    let semi1 = document.getElementById("2_1")
-    let semi2 = document.getElementById("2_2")
-    let semi3 = document.getElementById("2_3")
-    let semi4 = document.getElementById("2_4")
-
-    img2_1.src = "../assets/img/escudos/"+ganadores4tos[0].id+".png"
-    img2_2.src = "../assets/img/escudos/"+ganadores4tos[1].id+".png"
-    img2_3.src = "../assets/img/escudos/"+ganadores4tos[2].id+".png"
-    img2_4.src = "../assets/img/escudos/"+ganadores4tos[3].id+".png"
-
-
-    semi1.innerText = ganadores4tos[0].pais
-    semi2.innerText = ganadores4tos[1].pais
-    semi3.innerText = ganadores4tos[2].pais
-    semi4.innerText = ganadores4tos[3].pais
-
+    
     let valorg4_1 = parseInt(gol4_1.value)
     let valorg4_1p = parseInt(pen4_1.value)
     let valorg4_2 = parseInt(gol4_2.value)
@@ -451,4 +448,3 @@ document.getElementById(`botonReset4tos`).addEventListener(`click`, () =>  {
 
 const guardaGanadores4tos = JSON.parse(localStorage.getItem("ganadores4tos"))
 
-export { guardaGanadores4tos }
