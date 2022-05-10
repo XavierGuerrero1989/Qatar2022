@@ -7,6 +7,8 @@ const grupoFrecuperado = JSON.parse(localStorage.getItem("grupoFresultados"))
 const grupoGrecuperado = JSON.parse(localStorage.getItem("grupoGresultados"))
 const grupoHrecuperado = JSON.parse(localStorage.getItem("grupoHresultados"))
 
+console.log(grupoBrecuperado);
+
 let clasificadoA1 = document.getElementById("clasificadoA1")
 clasificadoA1.innerText = grupoArecuperado[0].pais
 let clasificadoA2 = document.getElementById("clasificadoA2")

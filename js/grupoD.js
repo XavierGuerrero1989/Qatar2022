@@ -196,17 +196,6 @@ for (let index = 0; index <4; index++) {
     let difGol4D = document.getElementById("df4D")
     difGol4D.innerText = grupoD[3].diferencia;
 
-    let img1d = document.getElementById("img1d");
-    let img2d = document.getElementById("img2d");
-
-    let nombre1d = document.getElementById("1d");
-    let nombre2d = document.getElementById("2d");
-
-    img1d.src = "../assets/img/escudos/"+grupoD[0].id+".png"
-    img2d.src = "../assets/img/escudos/"+grupoD[1].id+".png"
-
-    nombre1d.innerText = grupoD[0].pais
-    nombre2d.innerText = grupoD[1].pais
 
 let vGol37 = parseInt(goles37.value);
 let vGol38 = parseInt(goles38.value);

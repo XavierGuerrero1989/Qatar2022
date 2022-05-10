@@ -197,19 +197,6 @@ for (let index = 0; index <4; index++) {
     difGol4B.innerText = grupoB[3].diferencia;
 
 
-    let img1b = document.getElementById("img1b");
-    let img2b = document.getElementById("img2b");
-
-    let nombre1b = document.getElementById("1b");
-    let nombre2b = document.getElementById("2b");
-
-    img1b.src = "../assets/img/escudos/"+grupoB[0].id+".png"
-    img2b.src = "../assets/img/escudos/"+grupoB[1].id+".png"
-
-    nombre1b.innerText = grupoB[0].pais
-    nombre2b.innerText = grupoB[1].pais
-
-
 let vGol13 = parseInt(goles13.value);
 let vGol14 = parseInt(goles14.value);
 let vGol15 = parseInt(goles15.value);
