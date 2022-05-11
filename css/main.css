@@ -79,6 +79,25 @@
 
 .nav-link {
   color: white !important; }
+  .nav-link:hover {
+    -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
+    animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both; }
+
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0); }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg); } }
+
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0); }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg); } }
 
 .dropfont {
   font-family: qatar1 !important;
@@ -411,6 +430,29 @@
 
 .filabotones {
   padding: 15px; }
+
+.copaDelCampeon {
+  padding: 50px;
+  -webkit-animation: blink-1 5s infinite both;
+  animation: blink-1 5s infinite both; }
+
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
+
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1; }
+  25%,
+  75% {
+    opacity: 0; } }
 
 @font-face {
   font-family: qatar1;
