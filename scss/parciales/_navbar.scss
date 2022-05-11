@@ -33,6 +33,23 @@
     padding: 25px;
 }
 
+.botonRepro{
+    background-color: white;
+    border: white;
+    color: $color-qatar;
 
+    &:hover {
+        background-color: $color-qatar;
+        border: white;
+        color: white;
+    }
+}
 
+.tituloRepro{
+    color: $color-qatar;
+}
+
+.textoRepro{
+    color: $color-qatar;
+}
 

@@ -66,8 +66,10 @@ ganador8.innerText = guardaGanadores8vos[7].pais
 Toastify({
 
     text: "Generaste los 4tos de final con exito",
-    
-    duration: 3000
+    duration: 3000,
+    style: {
+        background: "#56042C",
+      } 
     
     }).showToast();
 
@@ -322,8 +324,10 @@ document.getElementById(`boton4tos`).addEventListener(`click`, () =>  {
     Toastify({
 
         text: "Cargaste los 4tos de final con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();    
 

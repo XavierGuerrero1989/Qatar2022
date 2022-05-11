@@ -223,8 +223,10 @@ localStorage.setItem("grupoCresultados", grupoCterminado);
 Toastify({
 
     text: "Cargaste a los partidos del GRUPO C con exito",
-    
-    duration: 3000
+    duration: 3000,
+    style: {
+        background: "#56042C",
+      } 
     
     }).showToast();
 

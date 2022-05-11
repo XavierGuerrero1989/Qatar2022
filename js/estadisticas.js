@@ -42,8 +42,10 @@ document.getElementById(`cargarHistorico`).addEventListener(`click`, async funct
 	Toastify({
 
         text: "Cargaste las estadisticas con exito",
-        
-        duration: 3000
+        duration: 3000,
+		style: {
+            background: "#56042C",
+          } 
         
         }).showToast();
 })

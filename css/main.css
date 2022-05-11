@@ -88,6 +88,21 @@
   height: 200px;
   padding: 25px; }
 
+.botonRepro {
+  background-color: white;
+  border: white;
+  color: #56042C; }
+  .botonRepro:hover {
+    background-color: #56042C;
+    border: white;
+    color: white; }
+
+.tituloRepro {
+  color: #56042C; }
+
+.textoRepro {
+  color: #56042C; }
+
 @font-face {
   font-family: qatar1;
   src: url(../assets/fonts/ArabicMedium.ttf); }

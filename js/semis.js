@@ -50,8 +50,10 @@ semi4.innerText = guardaGanadores4tos[3].pais
 Toastify({
 
     text: "Generaste las SEMIFINALES con exito",
-    
-    duration: 3000
+    duration: 3000,
+    style: {
+        background: "#56042C",
+      } 
     
     }).showToast();
 
@@ -204,8 +206,10 @@ for (let index = 0; index <2; index++) {
     Toastify({
 
         text: "Cargaste las SEMIFINALES con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();    
 

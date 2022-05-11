@@ -38,6 +38,27 @@
                 <li><a class="dropdown-item dropfont" href="../parciales/alternate.html">El "Quini6"</a></li>
               </ul> 
             </li>
+            <li>
+              <button class="btn btn-primary botonRepro" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Reproductor</button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel" class="tituloRepro">La musica de los mundiales! </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div> 
+                <div class="offcanvas-body">
+                  <p class="textoRepro">Mientras estas completando tus pronosticos, disfruta de la musica Oficial de los Mundiales pasados, y de QATAR 2022!</p>
+                  <div id="reproductorBox"></div>
+                    <select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+                    <option path="../assets/sounds/1990.mp3">Un'Estate Italiana - Italia 1990 </option>
+                    <option path="../assets/sounds/1998.mp3">La Copa de la Vida - Francia 1998</option>
+                    <option path="../assets/sounds/2010.mp3">Waka Waka - Sudafrica 2010</option>
+                    <option path="../assets/sounds/2014.mp3">We are One - Brasil 2014</option>
+                    <option path="../assets/sounds/2018.mp3">Live it Up - Rusia 2018</option>
+                    <option path="../assets/sounds/2022.mp3">Haya Haya - Better Together - Qatar 2022</option>
+                    </select>
+                </div>
+              </div>
+            </li>
           </ul>  
       </div>
     </div>
@@ -229,6 +250,7 @@
   </article>
   
   <script src="../js/cuartos.js" type="module"></script>
+  <script src="../js/musica.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

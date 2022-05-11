@@ -9,9 +9,11 @@ document.getElementById(`botonCamp`).addEventListener(`click`, function(){
     Toastify({
 
         text: "Cargaste al CAMPEON con exito",
-        
-        duration: 3000
-        
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
+
         }).showToast();
 })
 
@@ -42,9 +44,10 @@ document.getElementById(`botonSubCamp`).addEventListener(`click`, function(){
     Toastify({
 
         text: "Cargaste al SUB-CAMPEON con exito",
-        
-        duration: 3000
-        
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          }        
         }).showToast();
 })
 
@@ -72,8 +75,10 @@ document.getElementById(`botonTercero`).addEventListener(`click`, function(){
     Toastify({
 
         text: "Cargaste al Tercer puesto con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();
 })
@@ -102,8 +107,10 @@ document.getElementById(`botonSorpresa`).addEventListener(`click`, function(){
     Toastify({
 
         text: "Cargaste a la Sorpresa con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();
 })
@@ -131,8 +138,10 @@ document.getElementById(`botonDecep`).addEventListener(`click`, function(){
     Toastify({
 
         text: "Cargaste a la decepcion con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();
 })
@@ -160,8 +169,10 @@ document.getElementById(`botonFigura`).addEventListener(`click`, function(){
     Toastify({
 
         text: "Cargaste a la FIGURA con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();
 })

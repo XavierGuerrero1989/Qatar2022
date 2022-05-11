@@ -122,8 +122,10 @@ nombre2h.innerText = grupoHrecuperado[1].pais
 Toastify({
 
     text: "Generaste los 8vos de final con exito",
-    
-    duration: 3000
+    duration: 3000,
+    style: {
+        background: "#56042C",
+      } 
     
     }).showToast();
 
@@ -602,8 +604,10 @@ document.getElementById(`boton8vos`).addEventListener(`click`, () =>  {
     Toastify({
 
         text: "Cargaste los 8vos de final con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();
 })

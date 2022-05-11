@@ -60,8 +60,10 @@ final2.innerText = guardaGanadoresSemis[1].pais
 Toastify({
 
     text: "Generaste las FINALES con exito",
-    
-    duration: 3000
+    duration: 3000,
+    style: {
+        background: "#56042C",
+      } 
     
     }).showToast();
 
@@ -215,8 +217,10 @@ document.getElementById(`botonFinales`).addEventListener(`click`, () =>  {
     Toastify({
 
         text: "Cargaste las FINALES con exito",
-        
-        duration: 3000
+        duration: 3000,
+        style: {
+            background: "#56042C",
+          } 
         
         }).showToast();    
 })}
